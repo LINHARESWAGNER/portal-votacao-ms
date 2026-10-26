@@ -9,6 +9,16 @@ a partir do Portal de Dados Abertos do TSE.
 | Deputado Federal 2022 e 2026 | MS inteiro |
 | Deputado Estadual 2022 e 2026 | MS inteiro |
 
+## O que o portal faz
+
+- **Mapa** dos locais de votação, com o **resumo embaixo** por bairro ou cidade.
+- **Abrangência:** Estado, Capital (Campo Grande) ou Interior; no Estado e no Interior dá para ver por **bairros** ou só por **cidades**.
+- **Comparação de até 4 candidatos**, da mesma eleição ou de eleições diferentes
+  (ex.: vereador 2020 × vereador 2024, ou vereador 2024 × deputado estadual 2026).
+  A mesma pessoa é reconhecida entre eleições pelo nome completo; os locais são casados pela coordenada
+  e os bairros pelo nome padronizado. No mapa, cada local fica com a cor de quem teve a maior % dos votos válidos ali.
+- O endereço da página guarda a análise (eleição, candidatos, recorte), então dá para compartilhar o link.
+
 ## Como funciona
 
 ```
