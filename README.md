@@ -11,21 +11,21 @@ a partir do Portal de Dados Abertos do TSE.
 
 ## O que o portal faz
 
-- **Filtros no painel lateral:** abrangência (Estado, Capital, Interior), agrupamento
-  (Capital: Regiões / Bairros / Locais de votação; Estado e Interior: Cidades / Bairros / Locais de votação),
-  município, partido e busca de candidato.
-- **Mapa preso a Mato Grosso do Sul:** abre enquadrado no estado, não deixa arrastar nem afastar o zoom para fora dele, e escurece o que fica fora de MS (`docs/data/geo/ms.geojson`).
-- **Mapa:** em Campo Grande, regiões e bairros aparecem **pintados** pelo contorno oficial; nos demais casos,
-  bolhas por local, bairro ou cidade. Passe o mouse para ver os números; clique para abrir o ranking na tabela.
-- **Tabela e gráfico de colunas** logo abaixo do mapa, com as mesmas linhas e a mesma ordem (o gráfico mostra votos ou % dos válidos).
-- **Comparação de até 4 candidatos**, da mesma eleição ou de eleições diferentes
-  (ex.: vereador 2020 × vereador 2024, ou vereador 2024 × deputado estadual 2026). As colunas ficam sempre em
-  **ordem cronológica** e a diferença (Δ) é **eleição mais recente − mais antiga**.
-  A mesma pessoa é reconhecida entre eleições pelo nome completo; os locais são casados pela coordenada.
-  No mapa, cada área fica com a cor de quem teve a maior % dos votos válidos ali (cor mais forte = vantagem maior).
-- **Campo Grande:** 7 regiões urbanas (Anhanduizinho, Bandeira, Centro, Imbirussu, Lagoa, Prosa, Segredo) e 74 bairros oficiais.
-  Distritos (Anhanduí, Rochedinho, Bom Fim) e zona rural aparecem à parte.
-- O endereço da página guarda a análise (eleição, candidatos, recorte), então dá para compartilhar o link.
+- **Filtros no painel lateral**, com várias seleções ou "Todos": **Eleição**, **Município** e **Partido**;
+  além de abrangência (Estado, Capital, Interior), agrupamento (Capital: Regiões / Bairros / Locais de votação;
+  Estado e Interior: Cidades / Bairros / Locais de votação) e busca de candidato.
+  Com várias eleições, a lista de candidatos junta todas (com a eleição indicada) e a tabela mostra válidos e mais votado de cada uma.
+- **Mapa** ocupando a tela, preso a Mato Grosso do Sul (o que fica fora do estado aparece escurecido), com botão **⌖ centralizar**.
+  Municípios, regiões e bairros de Campo Grande aparecem **pintados** pelo contorno; locais de votação e bairros do interior, como bolhas.
+  Passe o mouse para ver os números; clique para abrir o ranking na tabela.
+- **Tabela e gráfico de colunas** abaixo do mapa, com as mesmas linhas e a mesma ordem (votos ou % dos válidos).
+- **Comparação de até 4 candidatos**, da mesma eleição ou de eleições diferentes. Colunas em **ordem cronológica**;
+  a diferença (Δ) é **eleição mais recente − mais antiga**. A mesma pessoa é reconhecida entre eleições pelo nome completo.
+- **Nomes dos candidatos:** o portal mostra o **nome de urna** do TSE (ex.: "Marquinhos Trad"). Em **⚙ Ajustes de nomes**
+  dá para corrigir qualquer nome; o ajuste fica salvo no navegador e pode ser exportado como `docs/data/apelidos.json`
+  para valer para todos que acessarem o site.
+- **Campo Grande:** 7 regiões urbanas e 74 bairros oficiais; distritos e zona rural à parte.
+- O endereço da página guarda a análise (eleições, candidatos, recorte), então dá para compartilhar o link.
 
 ## Como funciona
 
@@ -55,6 +55,13 @@ Salve os ZIPs em `data/raw/` (não precisa descompactar):
 - https://cdn.tse.jus.br/estatistica/sead/odsele/eleitorado_locais_votacao/eleitorado_local_votacao_2022.zip
 - https://cdn.tse.jus.br/estatistica/sead/odsele/eleitorado_locais_votacao/eleitorado_local_votacao_2024.zip
 - https://cdn.tse.jus.br/estatistica/sead/odsele/eleitorado_locais_votacao/eleitorado_local_votacao_2026.zip
+
+Para o **nome de urna** dos candidatos, baixe também (opcional, mas recomendado):
+
+- https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2020.zip
+- https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2022.zip
+- https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2024.zip
+- https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip
 
 Se algum link falhar, procure em https://dadosabertos.tse.jus.br pelos conjuntos
 "Resultados <ano> → Votação por seção eleitoral" e "Eleitorado <ano> → Eleitorado por local de votação".
@@ -95,7 +102,8 @@ Branch: `main` / pasta `/docs`**. Cada `git push` atualiza o site.
 - **Regiões**: da planilha *ListaGlobalRegioes* (loteamento → bairro → região urbana).
 - **`nome`**: reserva por nome de bairro/loteamento, usada quando surge um local novo sem coordenada conhecida.
 
-Os contornos usados para pintar o mapa ficam em `docs/data/geo/` (`cg_bairros.geojson` e `cg_regioes.geojson`):
+Os contornos usados para pintar o mapa ficam em `docs/data/geo/`: `ms.geojson` (estado), `ms_municipios.geojson` (79 municípios, simplificados a ~1 km), `cg_bairros.geojson` e `cg_regioes.geojson`.
+Nos bairros:
 72 bairros vêm do OpenStreetMap (via Nominatim); Pioneiros e Centenário, que lá só existem como ponto, foram
 desenhados pelo vão entre os bairros vizinhos. As regiões são a união dos bairros de cada uma.
 
@@ -107,7 +115,7 @@ Se uma eleição futura trouxer locais novos, eles caem na reserva por nome; o q
 |---|---|
 | `meta.json` | totais e indicadores de qualidade (locais sem coordenada, seções sem local) |
 | `locais.json` | um array por local: id, nome, endereço, bairro, município, lat, lon, eleitores, seções, válidos, brancos, nulos, top 10 |
-| `candidatos.json` | `[número, nome, nº partido, votos]`, ordenado por votos |
+| `candidatos.json` | `[número, nome civil, nº partido, votos, nome de urna]`, ordenado por votos |
 | `partidos.json` | `[número, sigla, votos nominais + legenda]` |
 | `bairros.json` | por bairro: índices dos locais, votos válidos, eleitores, top 20 |
 | `cg_grupos.json` | Campo Grande por bairro oficial e por região urbana (top 20 de cada) |

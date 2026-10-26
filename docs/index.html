@@ -19,12 +19,13 @@
       <p class="sub">Dados abertos do TSE · por local de votação</p>
     </div>
   </div>
-  <nav id="tabs" class="tabs" aria-label="Eleição"></nav>
+  <button id="btnAjustes" class="btn-ghost" title="Corrigir os nomes exibidos dos candidatos">⚙ Ajustes de nomes</button>
 </header>
 
 <main class="layout">
   <aside class="side">
     <section class="kpis" id="kpis"></section>
+    <p id="kpiNota" class="kpi-nota muted small" hidden></p>
 
     <section class="block" id="cmpBlock" hidden>
       <div class="block-head">
@@ -36,6 +37,7 @@
 
     <section class="block">
       <h2>Filtros</h2>
+      <div class="row"><label>Eleição</label><div class="ms" id="fEleicao"></div></div>
       <div class="row stack">
         <label>Abrangência</label>
         <div class="seg" id="segScope" role="group" aria-label="Abrangência">
@@ -48,14 +50,8 @@
         <label>Agrupar por</label>
         <div class="seg" id="segLevel" role="group" aria-label="Agrupar por"></div>
       </div>
-      <div class="row">
-        <label for="fMun">Município</label>
-        <select id="fMun"></select>
-      </div>
-      <div class="row">
-        <label for="fPartido">Partido</label>
-        <select id="fPartido"></select>
-      </div>
+      <div class="row"><label>Município</label><div class="ms" id="fMun"></div></div>
+      <div class="row"><label>Partido</label><div class="ms" id="fPartido"></div></div>
       <input id="fBusca" type="search" placeholder="Buscar candidato por nome ou número…" autocomplete="off">
     </section>
 
@@ -106,10 +102,36 @@
       "Bairro" é onde fica o <em>local de votação</em> (a escola), não onde o eleitor mora.
       Entre eleições diferentes, o mesmo candidato é reconhecido pelo nome completo; locais e bairros são casados pela posição e pelo nome.
       Diferenças (Δ) são sempre da eleição mais recente menos a mais antiga.
-      Limites de bairros: © contribuidores do OpenStreetMap (ODbL).
+      Limites de municípios e bairros: © contribuidores do OpenStreetMap (ODbL).
     </p>
   </section>
 </main>
+
+<dialog id="dlgAjustes" class="dlg">
+  <form method="dialog" class="dlg-inner">
+    <div class="dlg-head">
+      <h2>Ajustes de nomes</h2>
+      <span class="spacer"></span>
+      <button class="link" value="fechar" aria-label="Fechar">fechar ✕</button>
+    </div>
+    <p class="muted small">
+      Escreva como o candidato é conhecido. O ajuste vale para a mesma pessoa em todas as eleições.
+      Fica salvo neste navegador; para valer para todo mundo, clique em <b>Exportar</b> e salve o arquivo como
+      <code>docs/data/apelidos.json</code> no projeto.
+    </p>
+    <div class="dlg-tools">
+      <input id="ajBusca" type="search" placeholder="Buscar por nome, nome de urna ou número…" autocomplete="off">
+      <label class="chk"><input type="checkbox" id="ajSoAjustados"> só os ajustados</label>
+      <span class="spacer"></span>
+      <button type="button" id="ajImportar" class="btn-ghost">Importar</button>
+      <button type="button" id="ajExportar" class="btn-ghost">Exportar</button>
+      <input type="file" id="ajArquivo" accept="application/json,.json" hidden>
+    </div>
+    <div class="dlg-table">
+      <table id="ajTabela"><thead><tr><th>Eleições</th><th>Nome no TSE</th><th>Nome de urna</th><th>Nome exibido</th></tr></thead><tbody></tbody></table>
+    </div>
+  </form>
+</dialog>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>

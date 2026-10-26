@@ -233,6 +233,41 @@ def load_locais(ano: int) -> dict[tuple[str, str, str], dict]:
     return out
 
 
+# ------------------------------------------------------- candidatos (urna)
+_URNA_CACHE: dict = {}
+
+
+def load_urnas(ano: int, cargo: str, ue: str) -> tuple[dict, dict]:
+    """Lê consulta_cand_<ano>.zip e devolve ({número: nome de urna}, {nº partido: sigla})
+    para o cargo e a unidade eleitoral (código TSE do município ou 'MS')."""
+    if ano not in _URNA_CACHE:
+        z = find_zip([f"consulta_cand_{ano}*.zip"])
+        rows = []
+        if z:
+            for r in iter_csv_from_zip(z, "consulta_cand", UF):
+                rows.append(r)
+            log(f"   {len(rows):,} candidaturas em {z.name}")
+        else:
+            log(f"   (sem consulta_cand_{ano}.zip: nomes de urna ficam em branco)")
+        _URNA_CACHE[ano] = rows
+    urnas, siglas = {}, {}
+    for r in _URNA_CACHE[ano]:
+        if r.get("SG_UF") != UF or r.get("CD_CARGO", "").lstrip("0") != cargo:
+            continue
+        if r.get("NR_TURNO", "1").lstrip("0") not in ("1", ""):
+            continue
+        if str(r.get("SG_UE", "")).lstrip("0") != str(ue).lstrip("0"):
+            continue
+        nr = r.get("NR_CANDIDATO", "").strip()
+        nm = r.get("NM_URNA_CANDIDATO", "").strip()
+        if nr and nm and nm not in ("#NULO#", "#NE#"):
+            urnas[nr] = nm
+        pn, sg = r.get("NR_PARTIDO", "").strip(), r.get("SG_PARTIDO", "").strip()
+        if pn and sg and sg not in ("#NULO#", "#NE#"):
+            siglas[pn] = sg
+    return urnas, siglas
+
+
 # --------------------------------------------------------- votação por seção
 def build_dataset(ds: dict, locais_cache: dict) -> dict | None:
     ano = ds["ano"]
@@ -338,8 +373,14 @@ def build_dataset(ds: dict, locais_cache: dict) -> dict | None:
     for nr, q in tot_cand.items():
         tot_partido[nr[:2]] += q
 
+    # nome de urna e sigla do partido (arquivo consulta_cand do TSE, quando disponível)
+    urnas, siglas = load_urnas(ano, ds["cargo"], ds["municipio"] or UF)
+    for nr, sg in siglas.items():
+        partidos_nome[nr] = sg
+
     candidatos = sorted(
-        ([nr, title_pt(nomes[nr]) if len(nr) > 2 else f"Legenda {partidos_nome.get(nr, nr)}", nr[:2], tot_cand[nr]]
+        ([nr, title_pt(nomes[nr]) if len(nr) > 2 else f"Legenda {partidos_nome.get(nr, nr)}", nr[:2], tot_cand[nr],
+          title_pt(urnas[nr]) if nr in urnas else ""]
          for nr in tot_cand),
         key=lambda x: -x[3],
     )
