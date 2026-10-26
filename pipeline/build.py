@@ -62,6 +62,36 @@ def cg_bairro_regiao(info: dict) -> tuple[str, str]:
     return "Não classificado", "Não classificado"
 
 
+_RURAL = re.compile(r"\b(ZONA RURAL|RURAL|FAZENDA|SITIO|CHACARA|GLEBA|LINHA|ESTRADA|RODOVIA|BR \d+|MS \d+|KM \d+|CORREGO|PORTO|POVOADO|COLONIA|LOTE|SETOR RURAL|AREA RURAL)\b")
+_ASSENT = re.compile(r"\b(ASSENTAMENTO|ASSENT|ACAMPAMENTO|PA )")
+_ALDEIA = re.compile(r"\b(ALDEIA|RESERVA INDIGENA|TERRA INDIGENA|INDIGENA)\b")
+_DISTR = re.compile(r"^(DISTRITO|DIST)( DE| DO| DA)? ")
+
+
+def agrupa_bairro_interior(b: str, raw: str = "") -> str:
+    """Agrupa os bairros do interior: junta numerações (Jardim X II -> Jardim X), separa distritos,
+    e reúne zona rural, assentamentos e aldeias em três grupos."""
+    s = norm_bairro(b)
+    if s in ("NÃO INFORMADO", ""):
+        return "Não informado"
+    if _DISTR.search(s):
+        return "Distrito de " + title_pt(_DISTR.sub("", s))
+    if _ALDEIA.search(s):
+        return "Aldeias / reservas indígenas"
+    if _ASSENT.search(s + " "):
+        return "Assentamentos"
+    if _RURAL.search(s):
+        return "Zona rural"
+    s = re.sub(r"(\s+([IVX]+|\d+))+$", "", s).strip() or s
+    # exibe com os acentos da grafia original do TSE, quando ela corresponde ao nome padronizado
+    if raw:
+        r = re.sub(r"\s+", " ", re.sub(r"[^\w ]", " ", raw.upper())).strip()
+        r = re.sub(r"(\s+([IVX]+|\d+))+$", "", r).strip()
+        if strip_accents(r) == s:
+            return title_pt(r)
+    return title_pt(s)
+
+
 _PREFIXOS = ("LOTEAMENTO MUNICIPAL ", "LOTEAMENTO ", "CONJUNTO HABITACIONAL ", "CONJUNTO RESIDENCIAL ", "CONJUNTO ",
              "NUCLEO HABITACIONAL ", "PARQUE RESIDENCIAL ", "RESIDENCIAL ", "PARQUE ", "JARDIM ", "VILA ", "BAIRRO ")
 
@@ -342,6 +372,7 @@ def build_dataset(ds: dict, locais_cache: dict) -> dict | None:
                     "nome": (loc or {}).get("nome") or (r.get(c_nmloc, "") if c_nmloc else "") or f"Seção {sec}",
                     "endereco": (loc or {}).get("endereco") or (r.get(c_end, "") if c_end else ""),
                     "bairro": norm_bairro((loc or {}).get("bairro_raw")),
+                    "bairro_raw": (loc or {}).get("bairro_raw") or "",
                     "municipio": (loc or {}).get("municipio") or r.get(c_nmmun, ""),
                     "lat": (loc or {}).get("lat"),
                     "lon": (loc or {}).get("lon"),
@@ -404,7 +435,7 @@ def build_dataset(ds: dict, locais_cache: dict) -> dict | None:
     for lid in lids:
         i = local_info[lid]
         top = sorted(por_local[lid], key=lambda x: -x[1])[:10]
-        bo, reg = cg_bairro_regiao(i) if title_pt(i["municipio"]) == CAPITAL_NOME else ("", "")
+        bo, reg = cg_bairro_regiao(i) if title_pt(i["municipio"]) == CAPITAL_NOME else (agrupa_bairro_interior(i["bairro"], i.get("bairro_raw", "")), "")
         cg_info[lid] = (bo, reg)
         locais_out.append([
             lid, title_pt(i["nome"]), title_pt(i["endereco"]), i["bairro"], title_pt(i["municipio"]),
@@ -415,18 +446,22 @@ def build_dataset(ds: dict, locais_cache: dict) -> dict | None:
         ])
 
     # Campo Grande: agregados por bairro oficial e por região urbana
+    # (bairros agrupados de todos os municípios; regiões urbanas só da capital)
     cg_grupos = {}
     for nivel, pos in (("bairro", 0), ("regiao", 1)):
-        g = defaultdict(lambda: {"locais": [], "validos": 0, "eleitores": 0, "cand": defaultdict(int), "r": ""})
+        g = defaultdict(lambda: {"locais": [], "validos": 0, "eleitores": 0, "cand": defaultdict(int), "r": "", "m": ""})
         for lid in lids:
             if not cg_info[lid][0]:
                 continue
-            x = g[cg_info[lid][pos]]
-            x["r"] = cg_info[lid][1]
+            mun = title_pt(local_info[lid]["municipio"])
+            if nivel == "regiao" and mun != CAPITAL_NOME:
+                continue
+            x = g[(mun, cg_info[lid][pos])]
+            x["r"] = cg_info[lid][1]; x["m"] = mun
             x["locais"].append(lidx[lid]); x["validos"] += validos_local[lid]; x["eleitores"] += local_info[lid]["eleitores"]
             for nr, q in por_local[lid]:
                 x["cand"][nr] += q
-        cg_grupos[nivel] = [{"m": CAPITAL_NOME, "b": k, "r": x["r"], "l": x["locais"], "v": x["validos"], "e": x["eleitores"],
+        cg_grupos[nivel] = [{"m": x["m"], "b": k[1], "r": x["r"], "l": x["locais"], "v": x["validos"], "e": x["eleitores"],
                              "top": [[nr, q] for nr, q in sorted(x["cand"].items(), key=lambda t: -t[1])[:20]]}
                             for k, x in sorted(g.items())]
 

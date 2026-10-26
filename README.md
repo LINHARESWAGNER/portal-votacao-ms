@@ -12,8 +12,8 @@ a partir do Portal de Dados Abertos do TSE.
 ## O que o portal faz
 
 - **Filtros no painel lateral**, com várias seleções ou "Todos": **Eleição**, **Município** e **Partido**;
-  além de abrangência (Estado, Capital, Interior), agrupamento (Capital: Regiões / Bairros / Locais de votação;
-  Estado e Interior: Cidades / Bairros / Locais de votação) e busca de candidato.
+  além de abrangência (Estado, Capital, Interior), agrupamento (Capital: Regiões urbanas / Bairros / Locais de votação;
+  Estado e Interior: Regiões do estado / Cidades / Bairros) e busca de candidato.
   Com várias eleições, a lista de candidatos junta todas (com a eleição indicada) e a tabela mostra válidos e mais votado de cada uma.
 - **Mapa** ocupando a tela, preso a Mato Grosso do Sul (o que fica fora do estado aparece escurecido), com botão **⌖ centralizar**.
   Municípios, regiões e bairros de Campo Grande aparecem **pintados** pelo contorno; locais de votação e bairros do interior, como bolhas.
@@ -24,7 +24,13 @@ a partir do Portal de Dados Abertos do TSE.
 - **Nomes dos candidatos:** o portal mostra o **nome de urna** do TSE (ex.: "Marquinhos Trad"). Em **⚙ Ajustes de nomes**
   dá para corrigir qualquer nome; o ajuste fica salvo no navegador e pode ser exportado como `docs/data/apelidos.json`
   para valer para todos que acessarem o site.
+- **Regiões do estado:** as 10 regiões turísticas de MS (Pantanal, Costa Leste, Vale do Aporé, Caminho dos Ipês,
+  Bonito/Serra da Bodoquena, Caminhos da Fronteira, Vale das Águas, Grande Dourados, 7 Caminhos da Natureza/Cone Sul
+  e Rota Norte), pintadas no mapa. A lista município → região está em `pipeline/geo/regioes_ms.py`.
 - **Campo Grande:** 7 regiões urbanas e 74 bairros oficiais; distritos e zona rural à parte.
+- **Bairros do interior:** agrupados a partir do cadastro do TSE — numerações viram um bairro só
+  (Jardim Flórida e Jardim Flórida II), cada distrito vira "Distrito de …", e zona rural, assentamentos e
+  aldeias/reservas indígenas formam três grupos.
 - O endereço da página guarda a análise (eleições, candidatos, recorte), então dá para compartilhar o link.
 
 ## Como funciona
@@ -102,7 +108,7 @@ Branch: `main` / pasta `/docs`**. Cada `git push` atualiza o site.
 - **Regiões**: da planilha *ListaGlobalRegioes* (loteamento → bairro → região urbana).
 - **`nome`**: reserva por nome de bairro/loteamento, usada quando surge um local novo sem coordenada conhecida.
 
-Os contornos usados para pintar o mapa ficam em `docs/data/geo/`: `ms.geojson` (estado), `ms_municipios.geojson` (79 municípios, simplificados a ~1 km), `cg_bairros.geojson` e `cg_regioes.geojson`.
+Os contornos usados para pintar o mapa ficam em `docs/data/geo/`: `ms.geojson` (estado), `ms_municipios.geojson` (79 municípios, simplificados a ~1 km), `ms_regioes.geojson` (10 regiões do estado, união dos municípios), `cg_bairros.geojson` e `cg_regioes.geojson`.
 Nos bairros:
 72 bairros vêm do OpenStreetMap (via Nominatim); Pioneiros e Centenário, que lá só existem como ponto, foram
 desenhados pelo vão entre os bairros vizinhos. As regiões são a união dos bairros de cada uma.

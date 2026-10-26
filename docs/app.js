@@ -48,7 +48,7 @@
     series: [], seq: 0,         // comparação: [{ds, nr, color, ord, votes}] em ordem cronológica
     persons: new Map(),         // nome civil normalizado -> [{ds, nr, v}]
     apelidos: {}, apelidosLocal: {},
-    geo: { bairro: null, regiao: null, mun: null },
+    geo: { bairro: null, regiao: null, mun: null, regms: null }, regDe: new Map(),
     scope: "estado", level: "cidades", levelCap: "regioes", busca: "", metric: "v",
     detail: null, sort: { key: null, dir: -1 }, rows: [], cols: [], units: [],
   };
@@ -96,7 +96,8 @@
     const cg = await getJSON(base + "cg_grupos.json").catch(() => ({ bairro: [], regiao: [] }));
     const D = {
       id, locais, candidatos, partidos, bairros, municipios,
-      cg: { bairro: new Map(cg.bairro.map((x) => [x.b, x])), regiao: new Map(cg.regiao.map((x) => [x.b, x])) },
+      cg: { bairro: new Map(cg.bairro.map((x) => [(x.m || CAPITAL) + "|" + x.b, x])), regiao: new Map(cg.regiao.map((x) => [x.b, x])) },
+      rankReg: new Map(),
       candByNr: new Map(candidatos.map((c) => [c[0], c])),
       partidoNome: new Map(partidos.map((p) => [p[0], sigla(p[1])])),
       bairroIdx: new Map(bairros.map((b, i) => [b.m + "|" + b.b, i])),
@@ -135,8 +136,10 @@
     if (!state.datasets.length) { loading("Nenhum conjunto de dados gerado ainda."); return; }
     setTopHeight();
 
-    const geo = await Promise.all(["cg_bairros", "cg_regioes", "ms", "ms_municipios"].map((n) => getJSON(`data/geo/${n}.geojson`).catch(() => null)));
-    state.geo.bairro = geo[0]; state.geo.regiao = geo[1]; state.geo.mun = geo[3];
+    const geo = await Promise.all(["cg_bairros", "cg_regioes", "ms", "ms_municipios", "ms_regioes"].map((n) => getJSON(`data/geo/${n}.geojson`).catch(() => null)));
+    state.geo.bairro = geo[0]; state.geo.regiao = geo[1]; state.geo.mun = geo[3]; state.geo.regms = geo[4];
+    // município -> região do estado
+    (geo[4]?.features || []).forEach((f) => f.properties.municipios.forEach((m) => state.regDe.set(normName(m), f.properties.nome)));
     if (geo[2]) maskOutsideMS(geo[2]);
     state.apelidos = await getJSON("data/apelidos.json").catch(() => ({}));
     state.apelidosLocal = lsGet(LS_KEY) || {};
@@ -154,7 +157,7 @@
     const ids = (h.get("e") || "").split(",").filter((x) => state.datasets.some((d) => d.id === x));
     state.eleicoes = new Set(ids.length ? ids : [state.datasets[state.datasets.length - 1].id]);
     if (["estado", "capital", "interior"].includes(h.get("g"))) state.scope = h.get("g");
-    if (["bairros", "cidades", "locais"].includes(h.get("n"))) state.level = h.get("n");
+    if (["regioes", "bairros", "cidades"].includes(h.get("n"))) state.level = h.get("n");
     const nc = h.get("nc") === "tse" ? "locais" : h.get("nc");
     if (["regioes", "bairros", "locais"].includes(nc)) state.levelCap = nc;
     if (["v", "p"].includes(h.get("m"))) state.metric = h.get("m");
@@ -235,11 +238,12 @@
   const involved = () => (state.series.length ? chrono(new Set(state.series.map((s) => s.ds))) : selEleicoes());
   const capView = () => state.scope === "capital" || (state.muns.size === 1 && state.muns.has(CAPITAL));
   const LEVELS_CAP = [["regioes", "Regiões"], ["bairros", "Bairros"], ["locais", "Locais de votação"]];
-  const LEVELS_EST = [["cidades", "Cidades"], ["bairros", "Bairros"], ["locais", "Locais de votação"]];
+  const LEVELS_EST = [["regioes", "Regiões"], ["cidades", "Cidades"], ["bairros", "Bairros"]];
+  const regTur = (m) => state.regDe.get(normName(m)) || "Sem região";
   function effLevel() {
     if (capView()) return state.levelCap;
-    if (state.muns.size === 1 && state.level === "cidades") return "bairros";
-    return state.level;
+    if (state.muns.size === 1 && state.level !== "bairros") return "bairros";
+    return state.level === "locais" ? "cidades" : state.level;
   }
   const LVLNAME = { regioes: "Regiões", bairros: "Bairros", locais: "Locais de votação", cidades: "Cidades" };
   function munIn(m) {
@@ -255,14 +259,32 @@
   function unitOf(l, lvl) {
     const m = l[L.MUN], cg = m === CAPITAL && l[L.BO];
     if (lvl === "cidades") return { k: m, m, b: "", g: "cidade" };
-    if (lvl === "regioes") return cg ? { k: "R|" + l[L.REG], m, b: l[L.REG], g: "regiao" } : { k: m, m, b: "", g: "cidade" };
+    if (lvl === "regioes") {
+      if (capView()) return cg ? { k: "R|" + l[L.REG], m, b: l[L.REG], g: "regiao" } : { k: m, m, b: "", g: "cidade" };
+      const r = regTur(m);
+      return { k: "RT|" + r, m: r, b: r, g: "regms" };
+    }
     if (lvl === "locais") return { k: "L|" + (coordKey(l) || l[L.ID]), m, b: l[L.NOME], bb: l[L.BO] || l[L.BAIRRO], g: "local" };
-    if (cg) return { k: "B|" + l[L.BO], m, b: l[L.BO], r: l[L.REG], g: "bairro" };
+    if (l[L.BO]) return { k: "B|" + m + "|" + l[L.BO], m, b: l[L.BO], r: cg ? l[L.REG] : regTur(m), g: "bairro" };
     return { k: m + "|" + l[L.BAIRRO], m, b: l[L.BAIRRO], g: "tse" };
   }
   function unitTop(d, u) {
     if (u.g === "cidade") return d.municipios[u.m] || [];
-    if (u.g === "regiao" || u.g === "bairro") return d.cg[u.g].get(u.b)?.top || [];
+    if (u.g === "regiao") return d.cg.regiao.get(u.b)?.top || [];
+    if (u.g === "bairro") return d.cg.bairro.get(u.m + "|" + u.b)?.top || [];
+    if (u.g === "regms") {
+      // soma o ranking dos municípios da região que estão no recorte
+      const key = u.b + "|" + state.scope + "|" + [...state.muns].join(",");
+      if (!d.rankReg.has(key)) {
+        const acc = new Map();
+        Object.entries(d.municipios).forEach(([m, lst]) => {
+          if (regTur(m) !== u.b || !munIn(m)) return;
+          lst.forEach(([nr, v]) => acc.set(nr, (acc.get(nr) || 0) + v));
+        });
+        d.rankReg.set(key, [...acc.entries()].sort((a, b) => b[1] - a[1]));
+      }
+      return d.rankReg.get(key);
+    }
     if (u.g === "local") { const ref = u.locs.find(([id]) => id === d.id); return ref ? d.locais[ref[1]][L.TOP] : []; }
     return d.bairros[d.bairroIdx.get(u.m + "|" + u.b)]?.top || [];
   }
@@ -333,7 +355,7 @@
     });
     const lvl = effLevel(), opts = capView() ? LEVELS_CAP : LEVELS_EST;
     $("#segLevel").innerHTML = opts.map(([v, t]) =>
-      `<button data-v="${v}" aria-pressed="${v === lvl}" ${!capView() && state.muns.size === 1 && v === "cidades" ? "disabled" : ""}>${t}</button>`).join("");
+      `<button data-v="${v}" aria-pressed="${v === lvl}" ${!capView() && state.muns.size === 1 && v !== "bairros" ? "disabled" : ""}>${t}</button>`).join("");
 
     msEleicao.set(chrono(state.datasets.map((d) => d.id)).map((id) => ({ v: id, t: meta(id).titulo })), state.eleicoes.size === state.datasets.length ? new Set() : state.eleicoes);
     const muns = new Set();
@@ -453,6 +475,7 @@
   // contornos disponíveis para o nível atual (municípios de MS; regiões e bairros de Campo Grande)
   function shapesFor(lvl) {
     if (lvl === "cidades" && state.geo.mun) return { fc: state.geo.mun, key: (u) => u.m };
+    if (!capView() && lvl === "regioes" && state.geo.regms) return { fc: state.geo.regms, key: (u) => u.b };
     if (capView() && lvl === "regioes" && state.geo.regiao) return { fc: state.geo.regiao, key: (u) => u.b };
     if (capView() && lvl === "bairros" && state.geo.bairro) return { fc: state.geo.bairro, key: (u) => u.b };
     return null;
@@ -518,6 +541,10 @@
       head = l[L.NOME];
       addr = `${esc(l[L.END])}<br>${esc(l[L.BO] ? `${l[L.BO]} · Região ${l[L.REG]}` : l[L.BAIRRO])} · ${esc(l[L.MUN])}`;
     } else if (u.g === "regiao") { head = "Região " + u.b; addr = esc(u.m); }
+    else if (u.g === "regms") {
+      const ms = new Set(u.locs.map(([id, i]) => D(id).locais[i][L.MUN]));
+      head = "Região " + u.b; addr = `${ms.size} município${ms.size > 1 ? "s" : ""}`;
+    }
     else if (u.g === "bairro") { head = u.b; addr = `Região ${esc(u.r)} · ${esc(u.m)}`; }
     else if (u.g === "cidade") head = u.m;
     else { head = u.b; addr = esc(u.m); }
@@ -564,13 +591,13 @@
     const geoCols = lvl === "regioes" ? [["b", "Região"]]
       : lvl === "cidades" ? [["m", "Cidade"]]
       : lvl === "locais" ? [...(showMun ? [["m", "Município"]] : []), ["b", "Local de votação"], ["bb", "Bairro"]]
-      : [...(showMun ? [["m", "Município"]] : []), ["b", "Bairro"], ...(capView() ? [["r", "Região"]] : [])];
+      : [...(showMun ? [["m", "Município"]] : []), ["b", "Bairro"], ["r", "Região"]];
     let cols, rows, titulo, sub, total = null;
     $("#voltar").hidden = !state.detail;
 
     if (state.detail) {
       const u = state.detail, p = principal(), a = D(p);
-      titulo = u.g === "regiao" ? "Região " + u.b : u.g === "cidade" ? u.m : `${u.b} · ${u.m}`;
+      titulo = u.g === "regiao" || u.g === "regms" ? "Região " + u.b : u.g === "cidade" ? u.m : `${u.b} · ${u.m}`;
       const val = u.val[p] || 0;
       sub = `${label(p)} · ${fmt.format(val)} votos válidos · clique num candidato para adicioná-lo à comparação`;
       cols = [["pos", "#", true], ["nome", "Candidato"], ["part", "Partido"], ["v", "Votos", true], ["p", "% válidos", true]];
