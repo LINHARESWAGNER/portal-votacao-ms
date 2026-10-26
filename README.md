@@ -16,7 +16,8 @@ a partir do Portal de Dados Abertos do TSE.
   Estado e Interior: Regiões do estado / Cidades / Bairros) e busca de candidato.
   Com várias eleições, a lista de candidatos junta todas (com a eleição indicada) e a tabela mostra válidos e mais votado de cada uma.
 - **Mapa** ocupando a tela, preso a Mato Grosso do Sul (o que fica fora do estado aparece escurecido), com botão **⌖ centralizar**.
-  Municípios, regiões e bairros de Campo Grande aparecem **pintados** pelo contorno; locais de votação e bairros do interior, como bolhas.
+  Regiões, municípios e bairros oficiais aparecem **pintados** pelo contorno; locais de votação e bairros sem contorno oficial, como bolhas.
+  Ao agrupar por bairros (ou locais), a cidade aparece só com o **contorno tracejado**, sem preenchimento.
   Passe o mouse para ver os números; clique para abrir o ranking na tabela.
 - **Tabela e gráfico de colunas** abaixo do mapa, com as mesmas linhas e a mesma ordem (votos ou % dos válidos).
 - **Comparação de até 4 candidatos**, da mesma eleição ou de eleições diferentes. Colunas em **ordem cronológica**;

@@ -528,6 +528,15 @@
       mk.on("click", () => onUnit(u));
       mk.addTo(layer); ll.push([u.lat, u.lon]);
     });
+    // bairros / locais: só o contorno da cidade (sem preenchimento); quem colore são os bairros
+    if ((lvl === "bairros" || lvl === "locais") && state.geo.mun) {
+      const cidades = new Set(units.map((u) => u.m));
+      window.L.geoJSON(state.geo.mun, {
+        renderer: svgRenderer, interactive: false,
+        filter: (f) => cidades.has(f.properties.nome),
+        style: () => ({ fill: false, color: "#1b1f1d", weight: cidades.size > 5 ? 1.2 : 2.4, opacity: 0.8, dashArray: cidades.size > 5 ? "4 3" : "7 4" }),
+      }).eachLayer((lyr) => lyr.addTo(layer));
+    }
     state.fitTo = llPoly.length && lvl !== "cidades" ? llPoly : (llPoly.length ? llPoly.concat(ll) : ll);
     if (fit) fitDefault();
     renderLegend(sh);
