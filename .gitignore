@@ -1,0 +1,7 @@
+# dados brutos do TSE (grandes; baixe de novo com os links do README)
+data/raw/
+data/processed/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
