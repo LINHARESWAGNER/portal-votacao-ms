@@ -43,6 +43,40 @@ DATASETS = [
 
 csv.field_size_limit(10**9)
 
+# Campo Grande: bairro oficial e região urbana de cada local de votação.
+# geo/cg_regioes.json -> "coord": {"lat,lon" (4 casas): [bairro, região]} (classificação pelos limites do
+# OpenStreetMap) e "nome": {bairro do TSE normalizado: [bairro, região]} (reserva para locais novos).
+CAPITAL_NOME = "Campo Grande"
+_CG = json.loads((Path(__file__).resolve().parent / "geo" / "cg_regioes.json").read_text("utf-8"))
+
+
+def cg_bairro_regiao(info: dict) -> tuple[str, str]:
+    if info.get("lat") is not None:
+        hit = _CG["coord"].get(f"{info['lat']:.4f},{info['lon']:.4f}")
+        if hit:
+            return hit[0], hit[1]
+    b = info.get("bairro", "")
+    hit = _CG["nome"].get(b) or _CG["nome"].get(loose_key(b))
+    if hit:
+        return hit[0], hit[1]
+    return "Não classificado", "Não classificado"
+
+
+_PREFIXOS = ("LOTEAMENTO MUNICIPAL ", "LOTEAMENTO ", "CONJUNTO HABITACIONAL ", "CONJUNTO RESIDENCIAL ", "CONJUNTO ",
+             "NUCLEO HABITACIONAL ", "PARQUE RESIDENCIAL ", "RESIDENCIAL ", "PARQUE ", "JARDIM ", "VILA ", "BAIRRO ")
+
+
+def loose_key(b: str) -> str:
+    """Chave tolerante: sem prefixos genéricos (Jardim, Vila, Loteamento…) e sem numeração final (I, II, 2…)."""
+    s = norm_bairro(b)
+    changed = True
+    while changed:
+        changed = False
+        for p in _PREFIXOS:
+            if s.startswith(p) and len(s) > len(p):
+                s = s[len(p):]; changed = True
+    return "~" + re.sub(r"(\s+([IVX]+|\d+))+$", "", s).strip()
+
 
 # ----------------------------------------------------------------- utilidades
 def log(*a):
@@ -312,15 +346,35 @@ def build_dataset(ds: dict, locais_cache: dict) -> dict | None:
     partidos = sorted(([nr, partidos_nome.get(nr, nr), q] for nr, q in tot_partido.items()), key=lambda x: -x[2])
 
     locais_out = []
+    cg_info = {}
     for lid in lids:
         i = local_info[lid]
         top = sorted(por_local[lid], key=lambda x: -x[1])[:10]
+        bo, reg = cg_bairro_regiao(i) if title_pt(i["municipio"]) == CAPITAL_NOME else ("", "")
+        cg_info[lid] = (bo, reg)
         locais_out.append([
             lid, title_pt(i["nome"]), title_pt(i["endereco"]), i["bairro"], title_pt(i["municipio"]),
             i["lat"], i["lon"], i["eleitores"], i["secoes"],
             validos_local[lid], brancos[lid], nulos[lid],
             [[nr, q] for nr, q in top],
+            bo, reg,
         ])
+
+    # Campo Grande: agregados por bairro oficial e por região urbana
+    cg_grupos = {}
+    for nivel, pos in (("bairro", 0), ("regiao", 1)):
+        g = defaultdict(lambda: {"locais": [], "validos": 0, "eleitores": 0, "cand": defaultdict(int), "r": ""})
+        for lid in lids:
+            if not cg_info[lid][0]:
+                continue
+            x = g[cg_info[lid][pos]]
+            x["r"] = cg_info[lid][1]
+            x["locais"].append(lidx[lid]); x["validos"] += validos_local[lid]; x["eleitores"] += local_info[lid]["eleitores"]
+            for nr, q in por_local[lid]:
+                x["cand"][nr] += q
+        cg_grupos[nivel] = [{"m": CAPITAL_NOME, "b": k, "r": x["r"], "l": x["locais"], "v": x["validos"], "e": x["eleitores"],
+                             "top": [[nr, q] for nr, q in sorted(x["cand"].items(), key=lambda t: -t[1])[:20]]}
+                            for k, x in sorted(g.items())]
 
     # bairros
     bairros = defaultdict(lambda: {"locais": [], "validos": 0, "eleitores": 0, "cand": defaultdict(int)})
@@ -357,6 +411,7 @@ def build_dataset(ds: dict, locais_cache: dict) -> dict | None:
     dump("partidos.json", partidos)
     dump("bairros.json", bairros_out)
     dump("municipios.json", municipios_out)
+    dump("cg_grupos.json", cg_grupos)
     for nr, rows in por_cand.items():
         dump(f"cand/{nr}.json", sorted(rows, key=lambda x: -x[1]))
 

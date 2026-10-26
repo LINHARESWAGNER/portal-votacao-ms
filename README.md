@@ -17,6 +17,9 @@ a partir do Portal de Dados Abertos do TSE.
   (ex.: vereador 2020 × vereador 2024, ou vereador 2024 × deputado estadual 2026).
   A mesma pessoa é reconhecida entre eleições pelo nome completo; os locais são casados pela coordenada
   e os bairros pelo nome padronizado. No mapa, cada local fica com a cor de quem teve a maior % dos votos válidos ali.
+- **Campo Grande por região:** na Capital, o resumo mostra as **7 regiões urbanas** (Anhanduizinho, Bandeira,
+  Centro, Imbirussu, Lagoa, Prosa, Segredo), os **bairros oficiais** ou os **bairros como estão no cadastro do TSE**.
+  Distritos (Anhanduí, Rochedinho, Bom Fim) e zona rural aparecem à parte.
 - O endereço da página guarda a análise (eleição, candidatos, recorte), então dá para compartilhar o link.
 
 ## Como funciona
@@ -77,6 +80,17 @@ O site fica na pasta `docs/`, que o GitHub Pages publica direto, sem build.
 No repositório: **Settings → Pages → Build and deployment → Source: Deploy from a branch →
 Branch: `main` / pasta `/docs`**. Cada `git push` atualiza o site.
 
+## Regiões e bairros oficiais de Campo Grande
+
+`pipeline/geo/cg_regioes.json` diz a qual bairro oficial e região pertence cada local de votação da capital:
+
+- **`coord`**: classificação pela coordenada do local, feita com os limites de bairros do
+  [OpenStreetMap](https://www.openstreetmap.org/user/ivaldonm/diary/36824) (dados © contribuidores OSM, licença ODbL).
+- **Regiões**: da planilha *ListaGlobalRegioes* (loteamento → bairro → região urbana).
+- **`nome`**: reserva por nome de bairro/loteamento, usada quando surge um local novo sem coordenada conhecida.
+
+Se uma eleição futura trouxer locais novos, eles caem na reserva por nome; o que não casar aparece como "Não classificado".
+
 ## Estrutura dos dados gerados (`docs/data/<conjunto>/`)
 
 | Arquivo | Conteúdo |
@@ -86,6 +100,7 @@ Branch: `main` / pasta `/docs`**. Cada `git push` atualiza o site.
 | `candidatos.json` | `[número, nome, nº partido, votos]`, ordenado por votos |
 | `partidos.json` | `[número, sigla, votos nominais + legenda]` |
 | `bairros.json` | por bairro: índices dos locais, votos válidos, eleitores, top 20 |
+| `cg_grupos.json` | Campo Grande por bairro oficial e por região urbana (top 20 de cada) |
 | `municipios.json` | ranking completo de candidatos por município |
 | `cand/<número>.json` | `[índice do local, votos]` de um candidato |
 

@@ -1,0 +1,8143 @@
+{
+"fonte": "Bairros: limites do OpenStreetMap (contribuidores OSM, ODbL). Regiões urbanas: planilha ListaGlobalRegioes (Prefeitura de Campo Grande).",
+"coord": {
+"-20.5296,-54.6578": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.5220,-54.6565": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.5209,-54.6492": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.5343,-54.6533": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.5151,-54.6463": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.4436,-54.6888": [
+"Popular",
+"Imbirussu"
+],
+"-20.4414,-54.6874": [
+"Popular",
+"Imbirussu"
+],
+"-20.4465,-54.6866": [
+"Popular",
+"Imbirussu"
+],
+"-20.4682,-54.6332": [
+"Amambaí",
+"Centro"
+],
+"-20.4611,-54.6247": [
+"Amambaí",
+"Centro"
+],
+"-20.4614,-54.6272": [
+"Amambaí",
+"Centro"
+],
+"-20.4664,-54.6337": [
+"Amambaí",
+"Centro"
+],
+"-20.4685,-54.6253": [
+"Amambaí",
+"Centro"
+],
+"-20.4676,-54.6327": [
+"Amambaí",
+"Centro"
+],
+"-20.4665,-54.6251": [
+"Amambaí",
+"Centro"
+],
+"-20.4725,-54.6336": [
+"Bandeirantes",
+"Lagoa"
+],
+"-20.4711,-54.5606": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.4704,-54.6537": [
+"Taveirópolis",
+"Lagoa"
+],
+"-20.5231,-54.6601": [
+"Batistão",
+"Lagoa"
+],
+"-20.4917,-54.6633": [
+"Leblon",
+"Lagoa"
+],
+"-20.4933,-54.6605": [
+"Leblon",
+"Lagoa"
+],
+"-20.4580,-54.7060": [
+"Popular",
+"Imbirussu"
+],
+"-20.5238,-54.6253": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"-20.4940,-54.6689": [
+"Leblon",
+"Lagoa"
+],
+"-20.4827,-54.6473": [
+"Caiçara",
+"Lagoa"
+],
+"-20.4815,-54.6434": [
+"Bandeirantes",
+"Lagoa"
+],
+"-20.4008,-54.5811": [
+"Mata do Segredo",
+"Segredo"
+],
+"-20.4048,-54.5926": [
+"Mata do Segredo",
+"Segredo"
+],
+"-20.4578,-54.6196": [
+"Centro",
+"Centro"
+],
+"-20.4536,-54.6112": [
+"Centro",
+"Centro"
+],
+"-20.4560,-54.6178": [
+"Centro",
+"Centro"
+],
+"-20.4560,-54.6133": [
+"Centro",
+"Centro"
+],
+"-20.4674,-54.6140": [
+"Centro",
+"Centro"
+],
+"-20.4493,-54.6184": [
+"São Francisco",
+"Centro"
+],
+"-20.4632,-54.6130": [
+"Centro",
+"Centro"
+],
+"-20.4606,-54.6051": [
+"Centro",
+"Centro"
+],
+"-20.4610,-54.6048": [
+"Centro",
+"Centro"
+],
+"-20.4651,-54.6190": [
+"Centro",
+"Centro"
+],
+"-20.4693,-54.6211": [
+"Amambaí",
+"Centro"
+],
+"-20.5528,-54.6097": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"-20.4648,-54.5843": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.4615,-54.5797": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.6917,-54.5837": [
+"Zona rural",
+"Zona rural"
+],
+"-20.5150,-54.6424": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.4203,-54.6095": [
+"Monte Castelo",
+"Segredo"
+],
+"-20.5267,-54.5838": [
+"Universitário",
+"Bandeira"
+],
+"-20.5012,-54.5912": [
+"Rita Vieira",
+"Bandeira"
+],
+"-20.4234,-54.6346": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.4359,-54.6485": [
+"Santo Amaro",
+"Imbirussu"
+],
+"-20.4334,-54.6561": [
+"Santo Amaro",
+"Imbirussu"
+],
+"-20.5348,-54.6735": [
+"Coophavilla",
+"Lagoa"
+],
+"-20.5363,-54.6695": [
+"Coophavilla",
+"Lagoa"
+],
+"-20.5348,-54.6687": [
+"Coophavilla",
+"Lagoa"
+],
+"-20.5357,-54.6706": [
+"Coophavilla",
+"Lagoa"
+],
+"-20.4303,-54.5988": [
+"Coronel Antonino",
+"Segredo"
+],
+"-20.4312,-54.5991": [
+"Coronel Antonino",
+"Segredo"
+],
+"-20.2423,-54.7899": [
+"Distrito de Rochedinho",
+"Distritos"
+],
+"-20.4387,-54.5590": [
+"Veraneio",
+"Prosa"
+],
+"-20.4387,-54.5592": [
+"Veraneio",
+"Prosa"
+],
+"-20.2251,-54.5903": [
+"Distrito de Bom Fim",
+"Distritos"
+],
+"-20.5521,-54.6490": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"-20.4288,-54.5611": [
+"Estrela Dalva",
+"Prosa"
+],
+"-20.4199,-54.5964": [
+"Coronel Antonino",
+"Segredo"
+],
+"-20.4182,-54.5974": [
+"Coronel Antonino",
+"Segredo"
+],
+"-20.4517,-54.5974": [
+"Cruzeiro",
+"Centro"
+],
+"-20.4937,-54.6444": [
+"Guanandi",
+"Anhanduizinho"
+],
+"-20.4991,-54.6485": [
+"Guanandi",
+"Anhanduizinho"
+],
+"-20.5024,-54.6445": [
+"Guanandi",
+"Anhanduizinho"
+],
+"-20.4790,-54.7530": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"-20.4797,-54.7528": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"-20.4681,-54.5915": [
+"Bela Vista",
+"Centro"
+],
+"-20.4859,-54.6397": [
+"Jacy",
+"Anhanduizinho"
+],
+"-20.4878,-54.6392": [
+"Jacy",
+"Anhanduizinho"
+],
+"-20.5327,-54.6558": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.4858,-54.6199": [
+"América",
+"Anhanduizinho"
+],
+"-20.3737,-54.5638": [
+"Nova Lima",
+"Segredo"
+],
+"-20.3809,-54.5608": [
+"Nova Lima",
+"Segredo"
+],
+"-20.3727,-54.5683": [
+"Nova Lima",
+"Segredo"
+],
+"-20.4479,-54.5913": [
+"Autonomista",
+"Prosa"
+],
+"-20.4739,-54.5908": [
+"Bela Vista",
+"Centro"
+],
+"-20.5411,-54.6082": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"-20.5257,-54.6059": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"-20.5139,-54.6092": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"-20.3824,-54.5499": [
+"Nova Lima",
+"Segredo"
+],
+"-20.5215,-54.6457": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.5497,-54.6191": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"-20.5533,-54.6178": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"-20.4596,-54.6024": [
+"Jardim dos Estados",
+"Centro"
+],
+"-20.4558,-54.5966": [
+"Jardim dos Estados",
+"Centro"
+],
+"-20.4690,-54.5764": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.4235,-54.5879": [
+"Coronel Antonino",
+"Segredo"
+],
+"-20.4480,-54.6604": [
+"Santo Antônio",
+"Imbirussu"
+],
+"-20.4232,-54.5923": [
+"Coronel Antonino",
+"Segredo"
+],
+"-20.5117,-54.5700": [
+"Rita Vieira",
+"Bandeira"
+],
+"-20.4940,-54.6525": [
+"Leblon",
+"Lagoa"
+],
+"-20.4768,-54.6122": [
+"Glória",
+"Centro"
+],
+"-20.4718,-54.6089": [
+"Glória",
+"Centro"
+],
+"-20.5235,-54.6238": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"-20.4938,-54.6328": [
+"Piratininga",
+"Anhanduizinho"
+],
+"-20.4609,-54.5302": [
+"Noroeste",
+"Prosa"
+],
+"-20.4505,-54.5322": [
+"Noroeste",
+"Prosa"
+],
+"-20.5315,-54.6689": [
+"Coophavilla",
+"Lagoa"
+],
+"-20.5193,-54.5769": [
+"Universitário",
+"Bandeira"
+],
+"-20.5094,-54.6329": [
+"Parati",
+"Anhanduizinho"
+],
+"-20.4865,-54.6077": [
+"Jardim Paulista",
+"Bandeira"
+],
+"-20.4902,-54.6053": [
+"Jardim Paulista",
+"Bandeira"
+],
+"-20.5515,-54.6046": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"-20.5522,-54.6617": [
+"Centenário",
+"Anhanduizinho"
+],
+"-20.4553,-54.6690": [
+"Popular",
+"Imbirussu"
+],
+"-20.4523,-54.6677": [
+"Santo Antônio",
+"Imbirussu"
+],
+"-20.5023,-54.6751": [
+"São Conrado",
+"Lagoa"
+],
+"-20.4733,-54.5968": [
+"Bela Vista",
+"Centro"
+],
+"-20.4957,-54.6764": [
+"São Conrado",
+"Lagoa"
+],
+"-20.4979,-54.6720": [
+"São Conrado",
+"Lagoa"
+],
+"-20.4891,-54.6787": [
+"São Conrado",
+"Lagoa"
+],
+"-20.4251,-54.6159": [
+"Seminário",
+"Segredo"
+],
+"-20.4081,-54.6185": [
+"Seminário",
+"Segredo"
+],
+"-20.5431,-54.6688": [
+"Tarumã",
+"Lagoa"
+],
+"-20.5442,-54.6722": [
+"Tarumã",
+"Lagoa"
+],
+"-20.5082,-54.6643": [
+"Tijuca",
+"Lagoa"
+],
+"-20.5178,-54.6640": [
+"Tijuca",
+"Lagoa"
+],
+"-20.4178,-54.6623": [
+"José Abrão",
+"Segredo"
+],
+"-20.4686,-54.5701": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.4272,-54.6504": [
+"Santo Amaro",
+"Imbirussu"
+],
+"-20.4246,-54.5702": [
+"Mata do Jacinto",
+"Prosa"
+],
+"-20.4275,-54.5713": [
+"Mata do Jacinto",
+"Prosa"
+],
+"-20.4229,-54.5765": [
+"Mata do Jacinto",
+"Prosa"
+],
+"-20.4702,-54.5893": [
+"Bela Vista",
+"Centro"
+],
+"-20.4664,-54.5907": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.4345,-54.6167": [
+"Monte Castelo",
+"Segredo"
+],
+"-20.4348,-54.6089": [
+"Monte Castelo",
+"Segredo"
+],
+"-20.4383,-54.6073": [
+"Cruzeiro",
+"Centro"
+],
+"-20.4348,-54.6169": [
+"Monte Castelo",
+"Segredo"
+],
+"-20.5499,-54.5764": [
+"Moreninha",
+"Bandeira"
+],
+"-20.5568,-54.5772": [
+"Moreninha",
+"Bandeira"
+],
+"-20.5568,-54.5733": [
+"Moreninha",
+"Bandeira"
+],
+"-20.5553,-54.5725": [
+"Moreninha",
+"Bandeira"
+],
+"-20.5599,-54.5693": [
+"Moreninha",
+"Bandeira"
+],
+"-20.4121,-54.5929": [
+"Mata do Segredo",
+"Segredo"
+],
+"-20.4163,-54.5665": [
+"Novos Estados",
+"Prosa"
+],
+"-20.3893,-54.5649": [
+"Nova Lima",
+"Segredo"
+],
+"-20.4085,-54.5736": [
+"Nova Lima",
+"Segredo"
+],
+"-20.3896,-54.5639": [
+"Nova Lima",
+"Segredo"
+],
+"-20.4204,-54.5570": [
+"Novos Estados",
+"Prosa"
+],
+"-20.4751,-54.6593": [
+"União",
+"Lagoa"
+],
+"-20.4862,-54.6619": [
+"União",
+"Lagoa"
+],
+"-20.5475,-54.6464": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"-20.5338,-54.6449": [
+"Centenário",
+"Anhanduizinho"
+],
+"-20.4689,-54.5493": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"-20.4988,-54.5704": [
+"Rita Vieira",
+"Bandeira"
+],
+"-20.5231,-54.6788": [
+"Caiobá",
+"Lagoa"
+],
+"-20.5215,-54.6856": [
+"Caiobá",
+"Lagoa"
+],
+"-20.5176,-54.6865": [
+"Caiobá",
+"Lagoa"
+],
+"-20.4436,-54.6691": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"-20.5089,-54.6037": [
+"Universitário",
+"Bandeira"
+],
+"-20.4749,-54.5433": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"-20.4557,-54.5930": [
+"Jardim dos Estados",
+"Centro"
+],
+"-20.4516,-54.5872": [
+"Santa Fé",
+"Prosa"
+],
+"-20.4551,-54.6434": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"-20.4465,-54.6491": [
+"Santo Amaro",
+"Imbirussu"
+],
+"-20.4210,-54.6638": [
+"Santo Amaro",
+"Imbirussu"
+],
+"-20.4561,-54.6543": [
+"Santo Antônio",
+"Imbirussu"
+],
+"-20.4598,-54.6491": [
+"Santo Antônio",
+"Imbirussu"
+],
+"-20.4452,-54.6174": [
+"São Francisco",
+"Centro"
+],
+"-20.4433,-54.6208": [
+"São Francisco",
+"Centro"
+],
+"-20.4404,-54.6231": [
+"São Francisco",
+"Centro"
+],
+"-20.5066,-54.6557": [
+"Tijuca",
+"Lagoa"
+],
+"-20.4799,-54.6339": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"-20.4820,-54.6300": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"-20.4751,-54.6450": [
+"Taveirópolis",
+"Lagoa"
+],
+"-20.4655,-54.5685": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.4723,-54.5826": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.4808,-54.5699": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.4795,-54.5723": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.6262,-54.5313": [
+"Zona rural",
+"Zona rural"
+],
+"-20.4807,-54.5998": [
+"TV Morena",
+"Bandeira"
+],
+"-20.4799,-54.6662": [
+"União",
+"Lagoa"
+],
+"-20.5193,-54.5958": [
+"Universitário",
+"Bandeira"
+],
+"-20.5227,-54.6033": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"-20.5263,-54.5975": [
+"Universitário",
+"Bandeira"
+],
+"-20.4986,-54.6112": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"-20.5365,-54.6191": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"-20.3845,-54.5682": [
+"Nova Lima",
+"Segredo"
+],
+"-20.3806,-54.5686": [
+"Nova Lima",
+"Segredo"
+],
+"-20.4584,-54.6388": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"-20.4622,-54.6349": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"-20.4996,-54.6034": [
+"Dr. Albuquerque",
+"Bandeira"
+],
+"-20.4394,-54.6597": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"-20.4410,-54.6524": [
+"Santo Amaro",
+"Imbirussu"
+],
+"-20.5311,-54.6018": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"-20.4826,-54.6400": [
+"Bandeirantes",
+"Lagoa"
+],
+"-20.4765,-54.6453": [
+"Taveirópolis",
+"Lagoa"
+],
+"-20.4901,-54.5991": [
+"Carlota",
+"Bandeira"
+],
+"-20.4772,-54.6226": [
+"Carvalho",
+"Centro"
+],
+"-20.4789,-54.6162": [
+"Glória",
+"Centro"
+],
+"-20.4503,-54.5962": [
+"Cruzeiro",
+"Centro"
+],
+"-20.5552,-54.5865": [
+"Moreninha",
+"Bandeira"
+],
+"-20.5507,-54.5873": [
+"Moreninha",
+"Bandeira"
+],
+"-20.4471,-54.6294": [
+"Planalto",
+"Centro"
+],
+"-20.4534,-54.6828": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"-20.4467,-54.6012": [
+"Cruzeiro",
+"Centro"
+],
+"-20.5004,-54.6318": [
+"Piratininga",
+"Anhanduizinho"
+],
+"-20.4913,-54.6245": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"-20.4898,-54.6264": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"-20.4967,-54.6588": [
+"Leblon",
+"Lagoa"
+],
+"-20.4698,-54.5868": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.4339,-54.5897": [
+"Margarida",
+"Prosa"
+],
+"-20.4359,-54.5881": [
+"Margarida",
+"Prosa"
+],
+"-20.4184,-54.6382": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.4141,-54.6360": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.4163,-54.6348": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.4145,-54.6359": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.4153,-54.6351": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.4962,-54.6384": [
+"Piratininga",
+"Anhanduizinho"
+],
+"-20.4672,-54.6956": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"-20.4448,-54.6599": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"-20.4980,-54.6290": [
+"Piratininga",
+"Anhanduizinho"
+],
+"-20.4976,-54.6331": [
+"Piratininga",
+"Anhanduizinho"
+],
+"-20.4560,-54.6320": [
+"Planalto",
+"Centro"
+],
+"-20.4543,-54.6296": [
+"Planalto",
+"Centro"
+],
+"-20.4481,-54.7035": [
+"Popular",
+"Imbirussu"
+],
+"-20.4521,-54.7060": [
+"Popular",
+"Imbirussu"
+],
+"-20.4535,-54.7036": [
+"Popular",
+"Imbirussu"
+],
+"-20.4499,-54.7032": [
+"Popular",
+"Imbirussu"
+],
+"-20.4374,-54.5941": [
+"Autonomista",
+"Prosa"
+],
+"-20.4476,-54.6036": [
+"Cruzeiro",
+"Centro"
+],
+"-20.4507,-54.6076": [
+"Cruzeiro",
+"Centro"
+],
+"-20.4488,-54.6035": [
+"Cruzeiro",
+"Centro"
+],
+"-20.5178,-54.6147": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"-20.4782,-54.6130": [
+"Glória",
+"Centro"
+],
+"-20.4126,-54.6431": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.5223,-54.5929": [
+"Universitário",
+"Bandeira"
+],
+"-20.4576,-54.6843": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"-20.4464,-54.6670": [
+"Santo Antônio",
+"Imbirussu"
+],
+"-20.4486,-54.6336": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"-20.4583,-54.6369": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"-20.4821,-54.5948": [
+"Vilasboas",
+"Bandeira"
+],
+"-20.4508,-54.5821": [
+"Santa Fé",
+"Prosa"
+],
+"-20.4329,-54.6734": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"-20.4663,-54.6337": [
+"Amambaí",
+"Centro"
+],
+"-20.4684,-54.6252": [
+"Amambaí",
+"Centro"
+],
+"-20.4724,-54.6336": [
+"Bandeirantes",
+"Lagoa"
+],
+"-20.5231,-54.6602": [
+"Batistão",
+"Lagoa"
+],
+"-20.4934,-54.6604": [
+"Leblon",
+"Lagoa"
+],
+"-20.4581,-54.7062": [
+"Popular",
+"Imbirussu"
+],
+"-20.4718,-54.6142": [
+"Glória",
+"Centro"
+],
+"-20.4681,-54.6217": [
+"Amambaí",
+"Centro"
+],
+"-20.4536,-54.6113": [
+"Centro",
+"Centro"
+],
+"-20.4632,-54.5770": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.4647,-54.5842": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.4616,-54.5797": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.5267,-54.5837": [
+"Universitário",
+"Bandeira"
+],
+"-20.5011,-54.5912": [
+"Rita Vieira",
+"Bandeira"
+],
+"-20.4313,-54.5992": [
+"Coronel Antonino",
+"Segredo"
+],
+"-20.9863,-54.5064": [
+"Distrito de Anhanduí",
+"Distritos"
+],
+"-21.1992,-54.2386": [
+"Distrito de Anhanduí",
+"Distritos"
+],
+"-20.5521,-54.6491": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"-20.4936,-54.6444": [
+"Guanandi",
+"Anhanduizinho"
+],
+"-20.4796,-54.7528": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"-20.4789,-54.7530": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"-20.4680,-54.5914": [
+"Bela Vista",
+"Centro"
+],
+"-20.4877,-54.6392": [
+"Jacy",
+"Anhanduizinho"
+],
+"-20.4689,-54.5765": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.5118,-54.5699": [
+"Rita Vieira",
+"Bandeira"
+],
+"-20.5520,-54.6230": [
+"Los Angeles",
+"Anhanduizinho"
+],
+"-20.4716,-54.6088": [
+"Glória",
+"Centro"
+],
+"-20.4608,-54.5302": [
+"Noroeste",
+"Prosa"
+],
+"-20.4504,-54.5322": [
+"Noroeste",
+"Prosa"
+],
+"-20.5315,-54.6688": [
+"Coophavilla",
+"Lagoa"
+],
+"-20.5193,-54.5768": [
+"Universitário",
+"Bandeira"
+],
+"-20.4879,-54.6041": [
+"TV Morena",
+"Bandeira"
+],
+"-20.5523,-54.6617": [
+"Centenário",
+"Anhanduizinho"
+],
+"-20.5005,-54.6857": [
+"São Conrado",
+"Lagoa"
+],
+"-20.4892,-54.6787": [
+"São Conrado",
+"Lagoa"
+],
+"-20.5430,-54.6688": [
+"Tarumã",
+"Lagoa"
+],
+"-20.5442,-54.6721": [
+"Tarumã",
+"Lagoa"
+],
+"-20.5125,-54.6620": [
+"Tijuca",
+"Lagoa"
+],
+"-20.5083,-54.6643": [
+"Tijuca",
+"Lagoa"
+],
+"-20.4686,-54.5700": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.4705,-54.5892": [
+"Bela Vista",
+"Centro"
+],
+"-20.4654,-54.5908": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.5496,-54.5763": [
+"Moreninha",
+"Bandeira"
+],
+"-20.5570,-54.5772": [
+"Moreninha",
+"Bandeira"
+],
+"-20.5568,-54.5732": [
+"Moreninha",
+"Bandeira"
+],
+"-20.5599,-54.5695": [
+"Moreninha",
+"Bandeira"
+],
+"-20.4690,-54.5493": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"-20.4989,-54.5703": [
+"Rita Vieira",
+"Bandeira"
+],
+"-20.5232,-54.6789": [
+"Caiobá",
+"Lagoa"
+],
+"-20.5214,-54.6856": [
+"Caiobá",
+"Lagoa"
+],
+"-20.5088,-54.6035": [
+"Universitário",
+"Bandeira"
+],
+"-20.4750,-54.5433": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"-20.4584,-54.6553": [
+"Santo Antônio",
+"Imbirussu"
+],
+"-20.5066,-54.6556": [
+"Tijuca",
+"Lagoa"
+],
+"-20.4807,-54.5699": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.6263,-54.5311": [
+"Zona rural",
+"Zona rural"
+],
+"-20.5193,-54.5960": [
+"Universitário",
+"Bandeira"
+],
+"-20.5262,-54.5975": [
+"Universitário",
+"Bandeira"
+],
+"-20.4996,-54.6035": [
+"Dr. Albuquerque",
+"Bandeira"
+],
+"-20.5507,-54.5871": [
+"Moreninha",
+"Bandeira"
+],
+"-20.4361,-54.5749": [
+"Carandá",
+"Prosa"
+],
+"-20.4968,-54.6589": [
+"Leblon",
+"Lagoa"
+],
+"-20.4698,-54.5867": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.5223,-54.5928": [
+"Universitário",
+"Bandeira"
+],
+"-20.4821,-54.5947": [
+"Vilasboas",
+"Bandeira"
+],
+"-20.4695,-54.5684": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.4943,-54.6614": [
+"Leblon",
+"Lagoa"
+],
+"-20.4536,-54.6040": [
+"Cruzeiro",
+"Centro"
+],
+"-20.4961,-54.6582": [
+"Leblon",
+"Lagoa"
+],
+"-20.5296,-54.6579": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.5220,-54.6566": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.4436,-54.6889": [
+"Popular",
+"Imbirussu"
+],
+"-20.4416,-54.6873": [
+"Popular",
+"Imbirussu"
+],
+"-20.4464,-54.6866": [
+"Popular",
+"Imbirussu"
+],
+"-20.4682,-54.6333": [
+"Amambaí",
+"Centro"
+],
+"-20.4614,-54.6273": [
+"Amambaí",
+"Centro"
+],
+"-20.4666,-54.6252": [
+"Amambaí",
+"Centro"
+],
+"-20.4724,-54.6337": [
+"Bandeirantes",
+"Lagoa"
+],
+"-20.5230,-54.6601": [
+"Batistão",
+"Lagoa"
+],
+"-20.4933,-54.6604": [
+"Leblon",
+"Lagoa"
+],
+"-20.4580,-54.7061": [
+"Popular",
+"Imbirussu"
+],
+"-20.4520,-54.6233": [
+"Cabreúva",
+"Centro"
+],
+"-20.4008,-54.5812": [
+"Mata do Segredo",
+"Segredo"
+],
+"-20.4047,-54.5925": [
+"Mata do Segredo",
+"Segredo"
+],
+"-20.4560,-54.6180": [
+"Centro",
+"Centro"
+],
+"-20.4673,-54.6140": [
+"Centro",
+"Centro"
+],
+"-20.4493,-54.6185": [
+"São Francisco",
+"Centro"
+],
+"-20.4719,-54.6143": [
+"Glória",
+"Centro"
+],
+"-20.4536,-54.6043": [
+"Cruzeiro",
+"Centro"
+],
+"-20.4680,-54.6219": [
+"Amambaí",
+"Centro"
+],
+"-20.4642,-54.5843": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.4612,-54.5797": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.4621,-54.5749": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.6918,-54.5836": [
+"Zona rural",
+"Zona rural"
+],
+"-20.5151,-54.6424": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.4203,-54.6094": [
+"Monte Castelo",
+"Segredo"
+],
+"-20.5010,-54.5913": [
+"Rita Vieira",
+"Bandeira"
+],
+"-20.4231,-54.6345": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.4359,-54.6486": [
+"Santo Amaro",
+"Imbirussu"
+],
+"-20.5364,-54.6696": [
+"Coophavilla",
+"Lagoa"
+],
+"-20.5346,-54.6735": [
+"Coophavilla",
+"Lagoa"
+],
+"-20.5349,-54.6686": [
+"Coophavilla",
+"Lagoa"
+],
+"-20.5357,-54.6705": [
+"Coophavilla",
+"Lagoa"
+],
+"-20.4313,-54.5991": [
+"Coronel Antonino",
+"Segredo"
+],
+"-20.2425,-54.7898": [
+"Distrito de Rochedinho",
+"Distritos"
+],
+"-20.9864,-54.5065": [
+"Distrito de Anhanduí",
+"Distritos"
+],
+"-21.1992,-54.2382": [
+"Distrito de Anhanduí",
+"Distritos"
+],
+"-20.2251,-54.5904": [
+"Distrito de Bom Fim",
+"Distritos"
+],
+"-20.5521,-54.6489": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"-20.4182,-54.5975": [
+"Coronel Antonino",
+"Segredo"
+],
+"-20.4517,-54.5975": [
+"Cruzeiro",
+"Centro"
+],
+"-20.5024,-54.6446": [
+"Guanandi",
+"Anhanduizinho"
+],
+"-20.4790,-54.7531": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"-20.4679,-54.5915": [
+"Bela Vista",
+"Centro"
+],
+"-20.5334,-54.6555": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.5210,-54.6493": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.5342,-54.6535": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.4854,-54.6198": [
+"América",
+"Anhanduizinho"
+],
+"-20.3739,-54.5638": [
+"Nova Lima",
+"Segredo"
+],
+"-20.3726,-54.5684": [
+"Nova Lima",
+"Segredo"
+],
+"-20.3810,-54.5608": [
+"Nova Lima",
+"Segredo"
+],
+"-20.5237,-54.6253": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"-20.5412,-54.6078": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"-20.5139,-54.6093": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"-20.5215,-54.6458": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"-20.5498,-54.6192": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"-20.5532,-54.6178": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"-20.4597,-54.6024": [
+"Jardim dos Estados",
+"Centro"
+],
+"-20.4555,-54.5967": [
+"Jardim dos Estados",
+"Centro"
+],
+"-20.4691,-54.5763": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.4481,-54.6604": [
+"Santo Antônio",
+"Imbirussu"
+],
+"-20.4860,-54.6396": [
+"Jacy",
+"Anhanduizinho"
+],
+"-20.4913,-54.6244": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"-20.4767,-54.6122": [
+"Glória",
+"Centro"
+],
+"-20.4716,-54.6089": [
+"Glória",
+"Centro"
+],
+"-20.4938,-54.6329": [
+"Piratininga",
+"Anhanduizinho"
+],
+"-20.4612,-54.5385": [
+"Noroeste",
+"Prosa"
+],
+"-20.5192,-54.5768": [
+"Universitário",
+"Bandeira"
+],
+"-20.5095,-54.6329": [
+"Parati",
+"Anhanduizinho"
+],
+"-20.4878,-54.6041": [
+"TV Morena",
+"Bandeira"
+],
+"-20.4902,-54.6054": [
+"Jardim Paulista",
+"Bandeira"
+],
+"-20.5514,-54.6045": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"-20.4552,-54.6690": [
+"Popular",
+"Imbirussu"
+],
+"-20.4524,-54.6677": [
+"Santo Antônio",
+"Imbirussu"
+],
+"-20.5023,-54.6752": [
+"São Conrado",
+"Lagoa"
+],
+"-20.5004,-54.6858": [
+"São Conrado",
+"Lagoa"
+],
+"-20.4956,-54.6765": [
+"São Conrado",
+"Lagoa"
+],
+"-20.4980,-54.6719": [
+"São Conrado",
+"Lagoa"
+],
+"-20.4891,-54.6788": [
+"São Conrado",
+"Lagoa"
+],
+"-20.4252,-54.6158": [
+"Seminário",
+"Segredo"
+],
+"-20.4080,-54.6193": [
+"Seminário",
+"Segredo"
+],
+"-20.5430,-54.6689": [
+"Tarumã",
+"Lagoa"
+],
+"-20.5124,-54.6620": [
+"Tijuca",
+"Lagoa"
+],
+"-20.5082,-54.6642": [
+"Tijuca",
+"Lagoa"
+],
+"-20.4179,-54.6623": [
+"José Abrão",
+"Segredo"
+],
+"-20.4687,-54.5701": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.4272,-54.6503": [
+"Santo Amaro",
+"Imbirussu"
+],
+"-20.4245,-54.5703": [
+"Mata do Jacinto",
+"Prosa"
+],
+"-20.4276,-54.5715": [
+"Mata do Jacinto",
+"Prosa"
+],
+"-20.4231,-54.5764": [
+"Mata do Jacinto",
+"Prosa"
+],
+"-20.4705,-54.5893": [
+"Bela Vista",
+"Centro"
+],
+"-20.4651,-54.5909": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.4348,-54.6090": [
+"Monte Castelo",
+"Segredo"
+],
+"-20.4382,-54.6073": [
+"Cruzeiro",
+"Centro"
+],
+"-20.4348,-54.6168": [
+"Monte Castelo",
+"Segredo"
+],
+"-20.5498,-54.5764": [
+"Moreninha",
+"Bandeira"
+],
+"-20.5569,-54.5773": [
+"Moreninha",
+"Bandeira"
+],
+"-20.5598,-54.5694": [
+"Moreninha",
+"Bandeira"
+],
+"-20.4123,-54.5928": [
+"Mata do Segredo",
+"Segredo"
+],
+"-20.4169,-54.5665": [
+"Novos Estados",
+"Prosa"
+],
+"-20.3891,-54.5650": [
+"Nova Lima",
+"Segredo"
+],
+"-20.4086,-54.5737": [
+"Nova Lima",
+"Segredo"
+],
+"-20.3896,-54.5638": [
+"Nova Lima",
+"Segredo"
+],
+"-20.4204,-54.5571": [
+"Novos Estados",
+"Prosa"
+],
+"-20.4862,-54.6618": [
+"União",
+"Lagoa"
+],
+"-20.4689,-54.5490": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"-20.4986,-54.5703": [
+"Rita Vieira",
+"Bandeira"
+],
+"-20.5231,-54.6789": [
+"Caiobá",
+"Lagoa"
+],
+"-20.5214,-54.6857": [
+"Caiobá",
+"Lagoa"
+],
+"-20.4435,-54.6691": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"-20.4749,-54.5434": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"-20.4553,-54.6430": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"-20.4465,-54.6492": [
+"Santo Amaro",
+"Imbirussu"
+],
+"-20.4216,-54.6637": [
+"Santo Amaro",
+"Imbirussu"
+],
+"-20.4597,-54.6491": [
+"Santo Antônio",
+"Imbirussu"
+],
+"-20.4453,-54.6174": [
+"São Francisco",
+"Centro"
+],
+"-20.4402,-54.6228": [
+"São Francisco",
+"Centro"
+],
+"-20.4432,-54.6208": [
+"São Francisco",
+"Centro"
+],
+"-20.5067,-54.6556": [
+"Tijuca",
+"Lagoa"
+],
+"-20.4798,-54.6338": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"-20.4820,-54.6301": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"-20.4810,-54.5700": [
+"Tiradentes",
+"Bandeira"
+],
+"-20.6235,-54.5260": [
+"Zona rural",
+"Zona rural"
+],
+"-20.4801,-54.6669": [
+"União",
+"Lagoa"
+],
+"-20.5192,-54.5960": [
+"Universitário",
+"Bandeira"
+],
+"-20.5226,-54.6033": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"-20.4985,-54.6113": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"-20.5262,-54.5976": [
+"Universitário",
+"Bandeira"
+],
+"-20.3807,-54.5685": [
+"Nova Lima",
+"Segredo"
+],
+"-20.4622,-54.6348": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"-20.5310,-54.6019": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"-20.4827,-54.6400": [
+"Bandeirantes",
+"Lagoa"
+],
+"-20.4766,-54.6454": [
+"Taveirópolis",
+"Lagoa"
+],
+"-20.4902,-54.5991": [
+"Carlota",
+"Bandeira"
+],
+"-20.4788,-54.6163": [
+"Glória",
+"Centro"
+],
+"-20.4499,-54.5967": [
+"Cruzeiro",
+"Centro"
+],
+"-20.5506,-54.5872": [
+"Moreninha",
+"Bandeira"
+],
+"-20.4472,-54.6295": [
+"Planalto",
+"Centro"
+],
+"-20.4362,-54.5750": [
+"Carandá",
+"Prosa"
+],
+"-20.4535,-54.6828": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"-20.4466,-54.6015": [
+"Cruzeiro",
+"Centro"
+],
+"-20.4695,-54.5870": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"-20.4338,-54.5896": [
+"Margarida",
+"Prosa"
+],
+"-20.4359,-54.5880": [
+"Margarida",
+"Prosa"
+],
+"-20.4161,-54.6349": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.4152,-54.6352": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.4142,-54.6360": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.4963,-54.6384": [
+"Piratininga",
+"Anhanduizinho"
+],
+"-20.4449,-54.6600": [
+"Santo Amaro",
+"Imbirussu"
+],
+"-20.4976,-54.6295": [
+"Piratininga",
+"Anhanduizinho"
+],
+"-20.4976,-54.6330": [
+"Piratininga",
+"Anhanduizinho"
+],
+"-20.4561,-54.6319": [
+"Planalto",
+"Centro"
+],
+"-20.4481,-54.7037": [
+"Popular",
+"Imbirussu"
+],
+"-20.4521,-54.7061": [
+"Popular",
+"Imbirussu"
+],
+"-20.4535,-54.7037": [
+"Popular",
+"Imbirussu"
+],
+"-20.4499,-54.7031": [
+"Popular",
+"Imbirussu"
+],
+"-20.4374,-54.5940": [
+"Autonomista",
+"Prosa"
+],
+"-20.4475,-54.6036": [
+"Cruzeiro",
+"Centro"
+],
+"-20.4505,-54.6080": [
+"Cruzeiro",
+"Centro"
+],
+"-20.5179,-54.6147": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"-20.4126,-54.6432": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.4116,-54.6438": [
+"Vila Nasser",
+"Segredo"
+],
+"-20.4465,-54.6669": [
+"Santo Antônio",
+"Imbirussu"
+],
+"-20.4487,-54.6336": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"-20.4584,-54.6369": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"-20.4821,-54.5949": [
+"Vilasboas",
+"Bandeira"
+],
+"-20.4508,-54.5822": [
+"Santa Fé",
+"Prosa"
+],
+"-20.4329,-54.6733": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+]
+},
+"nome": {
+"AERO RANCHO": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"AERO RANCHO III": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"AEROPORTO": [
+"Popular",
+"Imbirussu"
+],
+"AMAMBAI": [
+"Amambaí",
+"Centro"
+],
+"ARNALDO ESTEVAO DE FIGUEIREDO": [
+"Tiradentes",
+"Bandeira"
+],
+"BASE AEREA": [
+"Taveirópolis",
+"Lagoa"
+],
+"BATISTAO": [
+"Batistão",
+"Lagoa"
+],
+"BOM JARDIM": [
+"Leblon",
+"Lagoa"
+],
+"BONANCA": [
+"Leblon",
+"Lagoa"
+],
+"BORDON": [
+"Popular",
+"Imbirussu"
+],
+"BOTAFOGO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"BURITI": [
+"Leblon",
+"Lagoa"
+],
+"CAICARA": [
+"Caiçara",
+"Lagoa"
+],
+"CAMPO BELO": [
+"Mata do Segredo",
+"Segredo"
+],
+"CAMPO NOVO": [
+"Mata do Segredo",
+"Segredo"
+],
+"CENTRO": [
+"Centro",
+"Centro"
+],
+"CENTRO OESTE": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"CHACARA CACHOEIRA": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"CHACARA DAS MANSOES": [
+"Zona rural",
+"Zona rural"
+],
+"CONJUNTO AERO RANCHO": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"CONJUNTO RESIDENCIAL OCTAVIO PECORA": [
+"Monte Castelo",
+"Segredo"
+],
+"CONJUNTO RESIDENCIAL RECANTO DOS ROUXINOIS": [
+"Universitário",
+"Bandeira"
+],
+"COOPHARADIO": [
+"Rita Vieira",
+"Bandeira"
+],
+"COOPHASUL": [
+"Vila Nasser",
+"Segredo"
+],
+"COOPHATRABALHO": [
+"Santo Amaro",
+"Imbirussu"
+],
+"COOPHAVILA II": [
+"Coophavilla",
+"Lagoa"
+],
+"CORONEL ANTONINO": [
+"Coronel Antonino",
+"Segredo"
+],
+"DISTRITO DE AGUAO": [
+"Distrito de Rochedinho",
+"Distritos"
+],
+"DISTRITO DE ANHANDUI": [
+"Distrito de Anhanduí",
+"Distritos"
+],
+"DISTRITO DE ROCHEDINHO": [
+"Distrito de Bom Fim",
+"Distritos"
+],
+"DOM ANTONIO BARBOSA": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"ESTRELA D ALVA I": [
+"Estrela Dalva",
+"Prosa"
+],
+"ESTRELA DO SUL": [
+"Coronel Antonino",
+"Segredo"
+],
+"EUDES COSTA": [
+"Cruzeiro",
+"Centro"
+],
+"GUANANDI": [
+"Guanandi",
+"Anhanduizinho"
+],
+"INDUBRASIL": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"ITANHANGA PARK": [
+"Bela Vista",
+"Centro"
+],
+"JACY": [
+"Jacy",
+"Anhanduizinho"
+],
+"JARDIM AERO RANCHO": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"JARDIM AMERICA": [
+"América",
+"Anhanduizinho"
+],
+"JARDIM ANACHE": [
+"Nova Lima",
+"Segredo"
+],
+"JARDIM AUTONOMISTA": [
+"Autonomista",
+"Prosa"
+],
+"JARDIM BELA VISTA": [
+"Bela Vista",
+"Centro"
+],
+"JARDIM CANGURU": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"JARDIM COLIBRI II": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"JARDIM COLONIAL": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"JARDIM COLUMBIA": [
+"Nova Lima",
+"Segredo"
+],
+"JARDIM DAS HORTENCIAS": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"JARDIM DAS MACAUBAS": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"JARDIM DAS MENINAS": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"JARDIM DOS ESTADOS": [
+"Jardim dos Estados",
+"Centro"
+],
+"JARDIM FLAMBOYANT": [
+"Tiradentes",
+"Bandeira"
+],
+"JARDIM GUANABARA": [
+"Coronel Antonino",
+"Segredo"
+],
+"JARDIM IMA": [
+"Santo Antônio",
+"Imbirussu"
+],
+"JARDIM IMPERIAL": [
+"Coronel Antonino",
+"Segredo"
+],
+"JARDIM ITAMARACA": [
+"Rita Vieira",
+"Bandeira"
+],
+"JARDIM LEBLON": [
+"Leblon",
+"Lagoa"
+],
+"JARDIM MONTE LIBANO": [
+"Glória",
+"Centro"
+],
+"JARDIM MORENAO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"JARDIM NHANHA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"JARDIM NOROESTE": [
+"Noroeste",
+"Prosa"
+],
+"JARDIM OURO VERDE": [
+"Coophavilla",
+"Lagoa"
+],
+"JARDIM PACAEMBU": [
+"Universitário",
+"Bandeira"
+],
+"JARDIM PARATI": [
+"Parati",
+"Anhanduizinho"
+],
+"JARDIM PAULISTA": [
+"Jardim Paulista",
+"Bandeira"
+],
+"JARDIM PAULO COELHO MACHADO": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"JARDIM PENFIGO": [
+"Centenário",
+"Anhanduizinho"
+],
+"JARDIM PETROPOLIS": [
+"Popular",
+"Imbirussu"
+],
+"JARDIM SANTA EMILIA": [
+"São Conrado",
+"Lagoa"
+],
+"JARDIM SAO BENTO": [
+"Bela Vista",
+"Centro"
+],
+"JARDIM SAO CONRADO": [
+"São Conrado",
+"Lagoa"
+],
+"JARDIM SEMINARIO": [
+"Seminário",
+"Segredo"
+],
+"JARDIM TARUMA": [
+"Tarumã",
+"Lagoa"
+],
+"JARDIM TIJUCA I": [
+"Tijuca",
+"Lagoa"
+],
+"JARDIM TIJUCA II": [
+"Tijuca",
+"Lagoa"
+],
+"JOSE ABRAO": [
+"José Abrão",
+"Segredo"
+],
+"LOTEAMENTO MARCAL DE SOUZA": [
+"Tiradentes",
+"Bandeira"
+],
+"MANOEL TAVEIRA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"MATA DO JACINTO": [
+"Mata do Jacinto",
+"Prosa"
+],
+"MIGUEL COUTO": [
+"Bela Vista",
+"Centro"
+],
+"MONTE CASTELO": [
+"Monte Castelo",
+"Segredo"
+],
+"MORENINHA I": [
+"Moreninha",
+"Bandeira"
+],
+"MORENINHA II": [
+"Moreninha",
+"Bandeira"
+],
+"MORENINHA III": [
+"Moreninha",
+"Bandeira"
+],
+"MORENINHA IV": [
+"Moreninha",
+"Bandeira"
+],
+"NASCENTE DO SEGREDO": [
+"Mata do Segredo",
+"Segredo"
+],
+"NOVA BAHIA": [
+"Novos Estados",
+"Prosa"
+],
+"NOVA LIMA": [
+"Nova Lima",
+"Segredo"
+],
+"NOVO MARANHAO": [
+"Novos Estados",
+"Prosa"
+],
+"OLIVEIRA I": [
+"União",
+"Lagoa"
+],
+"OLIVEIRA III": [
+"União",
+"Lagoa"
+],
+"PARQUE DO LAGEADO": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"PARQUE RESIDENCIAL IRACY COELHO NETTO": [
+"Centenário",
+"Anhanduizinho"
+],
+"PARQUE RESIDENCIAL MARIA APARECIDA PEDROSSIAN": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"PARQUE RESIDENCIAL RITA VIEIRA": [
+"Rita Vieira",
+"Bandeira"
+],
+"PORTAL CAIOBA": [
+"Caiobá",
+"Lagoa"
+],
+"PORTAL CAIOBA II": [
+"Caiobá",
+"Lagoa"
+],
+"RECANTO DOS PASSAROS": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"RESIDENCIAL BETAVILLE": [
+"Universitário",
+"Bandeira"
+],
+"RESIDENCIAL OITI": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"SANTA FE": [
+"Jardim dos Estados",
+"Centro"
+],
+"SANTO AMARO": [
+"Santo Amaro",
+"Imbirussu"
+],
+"SANTO ANTONIO": [
+"Santo Antônio",
+"Imbirussu"
+],
+"SAO FRANCISCO": [
+"São Francisco",
+"Centro"
+],
+"SAO PEDRO": [
+"Tijuca",
+"Lagoa"
+],
+"TAQUARUSSU": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"TAVEIROPOLIS": [
+"Taveirópolis",
+"Lagoa"
+],
+"TIRADENTES": [
+"Tiradentes",
+"Bandeira"
+],
+"TRES BARRAS": [
+"Zona rural",
+"Zona rural"
+],
+"TV MORENA": [
+"TV Morena",
+"Bandeira"
+],
+"UNIAO": [
+"União",
+"Lagoa"
+],
+"UNIVERSITARIO": [
+"Universitário",
+"Bandeira"
+],
+"UNIVERSITARIO II": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"VIDA NOVA": [
+"Nova Lima",
+"Segredo"
+],
+"VIDA NOVA III": [
+"Nova Lima",
+"Segredo"
+],
+"VILA ALBA": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"VILA ALBUQUERQUE": [
+"Dr. Albuquerque",
+"Bandeira"
+],
+"VILA ALMEIDA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"VILA ALVES PEREIRA": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"VILA BANDEIRANTE": [
+"Bandeirantes",
+"Lagoa"
+],
+"VILA BELO HORIZONTE": [
+"Taveirópolis",
+"Lagoa"
+],
+"VILA CARLOTA": [
+"Carlota",
+"Bandeira"
+],
+"VILA CARVALHO": [
+"Carvalho",
+"Centro"
+],
+"VILA CELIA": [
+"Cruzeiro",
+"Centro"
+],
+"VILA CIDADE MORENA": [
+"Moreninha",
+"Bandeira"
+],
+"VILA CORUMBA": [
+"Planalto",
+"Centro"
+],
+"VILA ELIANE": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"VILA GOMES": [
+"Cruzeiro",
+"Centro"
+],
+"VILA IPIRANGA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"VILA JOCKEI CLUBE": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"VILA JUSSARA": [
+"Leblon",
+"Lagoa"
+],
+"VILA MANOEL DA COSTA LIMA": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"VILA MARGARIDA": [
+"Margarida",
+"Prosa"
+],
+"VILA NASSER": [
+"Vila Nasser",
+"Segredo"
+],
+"VILA NHANHA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"VILA NOVA CAMPO GRANDE": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"VILA PALMIRA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"VILA PIRATININGA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"VILA PLANALTO": [
+"Planalto",
+"Centro"
+],
+"VILA POPULAR": [
+"Popular",
+"Imbirussu"
+],
+"VILA RICA": [
+"Autonomista",
+"Prosa"
+],
+"VILA ROSA": [
+"Cruzeiro",
+"Centro"
+],
+"VILA SANTA BRANCA": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"VILA SANTA DOROTHEIA": [
+"Glória",
+"Centro"
+],
+"VILA SANTA LUZIA": [
+"Vila Nasser",
+"Segredo"
+],
+"VILA SANTO EUGENIO": [
+"Universitário",
+"Bandeira"
+],
+"VILA SERRADINHO": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"VILA SILVIA REGINA": [
+"Santo Antônio",
+"Imbirussu"
+],
+"VILA SOBRINHO": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"VILA VILAS BOAS": [
+"Vilasboas",
+"Bandeira"
+],
+"VIVENDAS DO BOSQUE": [
+"Santa Fé",
+"Prosa"
+],
+"ZE PEREIRA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"JARDIM BOTAFOGO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"JARDIM JOCKEY CLUBE": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"JARDIM LOS ANGELES": [
+"Los Angeles",
+"Anhanduizinho"
+],
+"JARDIM TIJUCA": [
+"Tijuca",
+"Lagoa"
+],
+"NUCLEO HABITACIONAL UNIVERSITARIAS": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"RESIDENCIAL OLIVEIRA": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"VILA DO POLONES": [
+"Carandá",
+"Prosa"
+],
+"CABREUVA": [
+"Cabreúva",
+"Centro"
+],
+"JARDIM JACY": [
+"Jacy",
+"Anhanduizinho"
+],
+"CIDADE NOVA": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"COHAFAMA": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"CONJUNTO HABITACIONAL JARDIM ANAPOLIS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"FAVELA DONA NETA": [
+"Guanandi",
+"Anhanduizinho"
+],
+"FAVELA NUCLEO GUANANDI I": [
+"Guanandi",
+"Anhanduizinho"
+],
+"GRANJA BANDEIRA": [
+"Parati",
+"Anhanduizinho"
+],
+"GRANJA SAO LUIZ": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"HOMEX": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"IRACY COELHO": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"JARDIM AGULHAS NEGRAS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"JARDIM BALSAMO": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"JARDIM BOTANICO 1": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"JARDIM BOTANICO 2": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"JARDIM CAMPO NOBRE": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"JARDIM CENTENARIO": [
+"Centenário",
+"Anhanduizinho"
+],
+"JARDIM CENTRO OESTE": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"JARDIM COLIBRI 1": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"JARDIM COLIBRI 2": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"JARDIM COLORADO": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"JARDIM DAS HORTENSIAS I": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"JARDIM DAS HORTENSIAS II": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"JARDIM DAS HORTENSIAS III": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"JARDIM DAS MANSOES UNIVERSITARIAS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"JARDIM DAS NACOES": [
+"Parati",
+"Anhanduizinho"
+],
+"JARDIM DAS PRINCESAS 1": [
+"Centenário",
+"Anhanduizinho"
+],
+"JARDIM DAS PRINCESAS 2": [
+"Centenário",
+"Anhanduizinho"
+],
+"JARDIM JANE": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"JARDIM MACAPA": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"JARDIM MANAIRA": [
+"Centenário",
+"Anhanduizinho"
+],
+"JARDIM MARAJOARA": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"JARDIM MARIO COVAS": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"JARDIM MONTE ALEGRE": [
+"Centenário",
+"Anhanduizinho"
+],
+"JARDIM MONTEREY": [
+"Centenário",
+"Anhanduizinho"
+],
+"JARDIM MONUMENTO": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"JARDIM MORADA DO SOL": [
+"Los Angeles",
+"Anhanduizinho"
+],
+"JARDIM NASHVILLE": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"JARDIM PARATI II": [
+"Parati",
+"Anhanduizinho"
+],
+"JARDIM RADIALISTA": [
+"Centenário",
+"Anhanduizinho"
+],
+"JARDIM ROSELANDIA": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"JARDIM RUBIACEA": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"JARDIM SANTA URSULA": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"JARDIM TAQUARUSSU": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"JARDIM UIRAPURU": [
+"Los Angeles",
+"Anhanduizinho"
+],
+"JARDIM VICENTINO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"JOCKEY CLUB": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"LOTEAMENTO AERO RANCHO": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"LOTEAMENTO ALTO DA BOA VISTA": [
+"Parati",
+"Anhanduizinho"
+],
+"LOTEAMENTO GUANANDI II": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"LOTEAMENTO MUNICIPAL ALAN SOARES": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"LOTEAMENTO MUNICIPAL BRANDAO": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"LOTEAMENTO PORTO SEGURO": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"LOTEAMENTO RESIDENCIAL CEDRINHO": [
+"Centenário",
+"Anhanduizinho"
+],
+"NUCLEO AERO RANCHO I Q 21": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"NUCLEO AERO RANCHO Q 5 A": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"NUCLEO ALVES PEREIRA": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"NUCLEO CENTENARIO": [
+"Centenário",
+"Anhanduizinho"
+],
+"NUCLEO COLIBRI II": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"NUCLEO HABITACIONAL AERO RANCHO": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"NUCLEO HABITACIONAL AERO RANCHO I": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"NUCLEO HABITACIONAL AERO RANCHO III": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"NUCLEO HABITACIONAL AERO RANCHO IV": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"NUCLEO HABITACIONAL AERO RANCHO V": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"NUCLEO HABITACIONAL UNIVERSITARIA 2": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"NUCLEO HABITACIONAL UNIVERSITARIA COHAB": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"NUCLEO HABITACIONAL UNIVERSITARIA I": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"NUCLEO JARDIM DAS MACAUBAS": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"NUCLEO PIRATININGA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"NUCLEO VILA NOGUEIRA": [
+"Centenário",
+"Anhanduizinho"
+],
+"PARQUE DO SOL": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"PARQUE DO TRABALHADOR": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"PARQUE DOS SABIAS": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"PARQUE NOVO SECULO": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"PARQUE RESIDENCIAL IRACY COELHO NETTO 1": [
+"Centenário",
+"Anhanduizinho"
+],
+"PARQUE RESIDENCIAL IRACY COELHO NETTO 2": [
+"Centenário",
+"Anhanduizinho"
+],
+"PARQUE RESIDENCIAL IRACY COELHO NETTO 3": [
+"Centenário",
+"Anhanduizinho"
+],
+"PARQUE RESIDENCIAL LISBOAS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"PORTO GALO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"PROMORAR": [
+"Piratininga",
+"Anhanduizinho"
+],
+"RECANTO DAS ANDORINHAS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"RESIDENCIAL BOTAFOGO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"RESIDENCIAL DO LAGO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"RESIDENCIAL GERALDO CORREA DA SILVA": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"RESIDENCIAL ILHEUS": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"RESIDENCIAL JOAO SCARANO": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"RESIDENCIAL JOSE TERUEL FILHO": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"RESIDENCIAL OURO PRETO": [
+"Centenário",
+"Anhanduizinho"
+],
+"RESIDENCIAL SANTA CELINA": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"RESIDENCIAL TERRA MORENA": [
+"Los Angeles",
+"Anhanduizinho"
+],
+"RESIDENCIAL VILA BELA": [
+"Centenário",
+"Anhanduizinho"
+],
+"VARANDAS DO CAMPO": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"VESPASIANO MARTINS": [
+"Los Angeles",
+"Anhanduizinho"
+],
+"VILA ADELINA": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"VILA AFONSO PENA": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"VILA AFONSO PENA JUNIOR": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"VILA AIMORE 1": [
+"Centenário",
+"Anhanduizinho"
+],
+"VILA AIMORE 2": [
+"Centenário",
+"Anhanduizinho"
+],
+"VILA AMAPA": [
+"Centenário",
+"Anhanduizinho"
+],
+"VILA ANTUNES": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"VILA BOM JESUS": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"VILA CLELIA": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"VILA GETULIA BARBOSA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"VILA ITAMARATI": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"VILA JARDIM": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"VILA JARDIM AMERICA": [
+"América",
+"Anhanduizinho"
+],
+"VILA JARDIM PIONEIROS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"VILA MACIEL": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"VILA MARCOS ROBERTO": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"VILA NOGUEIRA": [
+"Centenário",
+"Anhanduizinho"
+],
+"VILA NOVA BANDEIRANTES": [
+"Jacy",
+"Anhanduizinho"
+],
+"VILA PROGRESSO": [
+"América",
+"Anhanduizinho"
+],
+"VILA SANTA AMELIA BAIS": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"VILA SANTA BRANCA 1": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"VILA SANTA BRANCA 2": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"VILA SANTO AFONSO": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"VILA VALPARAISO": [
+"América",
+"Anhanduizinho"
+],
+"VITTA BELLA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"AMANTINI RESIDENCE": [
+"Vilasboas",
+"Bandeira"
+],
+"CHACARA JOSE ANTONIO PEREIRA": [
+"Rita Vieira",
+"Bandeira"
+],
+"CHACARA NOVO HORIZONTE": [
+"Moreninha",
+"Bandeira"
+],
+"DESBARRANCADO": [
+"Tiradentes",
+"Bandeira"
+],
+"EDSON BRITO GARCIA": [
+"Universitário",
+"Bandeira"
+],
+"ESTRELA PARQUE": [
+"Tiradentes",
+"Bandeira"
+],
+"INDIANA PARK": [
+"Vilasboas",
+"Bandeira"
+],
+"JARDIM AGUAS VIVAS": [
+"Rita Vieira",
+"Bandeira"
+],
+"JARDIM ALEGRE": [
+"Vilasboas",
+"Bandeira"
+],
+"JARDIM AMETISTA": [
+"Universitário",
+"Bandeira"
+],
+"JARDIM ANHANGUERA": [
+"Rita Vieira",
+"Bandeira"
+],
+"JARDIM ANTARES": [
+"Universitário",
+"Bandeira"
+],
+"JARDIM AUXILIADORA": [
+"Vilasboas",
+"Bandeira"
+],
+"JARDIM CAMPINA VERDE": [
+"Universitário",
+"Bandeira"
+],
+"JARDIM CAMPO ALTO": [
+"Universitário",
+"Bandeira"
+],
+"JARDIM CAMPO LIMPO": [
+"Universitário",
+"Bandeira"
+],
+"JARDIM CRISTO REDENTOR": [
+"Tiradentes",
+"Bandeira"
+],
+"JARDIM DAS PERDIZES": [
+"Universitário",
+"Bandeira"
+],
+"JARDIM DO CORREGO": [
+"Moreninha",
+"Bandeira"
+],
+"JARDIM FLAMBOYANT 1": [
+"Tiradentes",
+"Bandeira"
+],
+"JARDIM FLAMBOYANT 2": [
+"Tiradentes",
+"Bandeira"
+],
+"JARDIM GRAMADO": [
+"Moreninha",
+"Bandeira"
+],
+"JARDIM IBIRAPUERA": [
+"São Lourenço",
+"Bandeira"
+],
+"JARDIM INDIANAPOLIS": [
+"Universitário",
+"Bandeira"
+],
+"JARDIM IPANEMA": [
+"Vilasboas",
+"Bandeira"
+],
+"JARDIM ITAPEMA": [
+"Carlota",
+"Bandeira"
+],
+"JARDIM JERUSALEM": [
+"Tiradentes",
+"Bandeira"
+],
+"JARDIM LAGOA DOURADA": [
+"Rita Vieira",
+"Bandeira"
+],
+"JARDIM MANSUR": [
+"Vilasboas",
+"Bandeira"
+],
+"JARDIM MOEMA": [
+"Universitário",
+"Bandeira"
+],
+"JARDIM NOSSA SENHORA DO PERPETUO SOCORRO": [
+"Rita Vieira",
+"Bandeira"
+],
+"JARDIM NOVA CAPITAL": [
+"Moreninha",
+"Bandeira"
+],
+"JARDIM NOVA JERUSALEM": [
+"Moreninha",
+"Bandeira"
+],
+"JARDIM SAMAMBAIA": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"JARDIM SANTA FELICIDADE": [
+"Moreninha",
+"Bandeira"
+],
+"JARDIM SAO JUDAS TADEU": [
+"Tiradentes",
+"Bandeira"
+],
+"JARDIM SAO LOURENCO": [
+"São Lourenço",
+"Bandeira"
+],
+"JARDIM TROPICAL": [
+"Universitário",
+"Bandeira"
+],
+"JARDIM TV MORENA": [
+"TV Morena",
+"Bandeira"
+],
+"JARDIM VITORIA": [
+"Tiradentes",
+"Bandeira"
+],
+"LOTEAMENTO MORENINHA IV": [
+"Moreninha",
+"Bandeira"
+],
+"LOTEAMENTO MUNICIPAL CAVAN": [
+"Tiradentes",
+"Bandeira"
+],
+"LOTEAMENTO MUNICIPAL DALVA DE OLIVEIRA 1": [
+"Tiradentes",
+"Bandeira"
+],
+"LOTEAMENTO MUNICIPAL DALVA DE OLIVEIRA 2": [
+"Tiradentes",
+"Bandeira"
+],
+"LOTEAMENTO MUNICIPAL RIBEIRA": [
+"Moreninha",
+"Bandeira"
+],
+"LOTEAMENTO PORTOBELLO": [
+"Tiradentes",
+"Bandeira"
+],
+"LOTEAMENTO VOLPE 1": [
+"Universitário",
+"Bandeira"
+],
+"LOTEAMENTO VOLPE 2": [
+"Universitário",
+"Bandeira"
+],
+"NUCLEO CAMPINA VERDE": [
+"Universitário",
+"Bandeira"
+],
+"NUCLEO HABITACIONAL MORENINHA II": [
+"Moreninha",
+"Bandeira"
+],
+"NUCLEO HABITACIONAL MORENINHA III": [
+"Moreninha",
+"Bandeira"
+],
+"NUCLEO HABITACIONAL RECANTO DOS ROUXINOIS": [
+"Universitário",
+"Bandeira"
+],
+"NUCLEO PANORAMA": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"NUCLEO TIRADENTES": [
+"Tiradentes",
+"Bandeira"
+],
+"PANORAMA": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"PARAISO": [
+"Moreninha",
+"Bandeira"
+],
+"PARANAENSE": [
+"Jardim Paulista",
+"Bandeira"
+],
+"PARQUE DALLAS": [
+"Vilasboas",
+"Bandeira"
+],
+"PARQUE RESIDENCIAL ANHEMBI": [
+"Tiradentes",
+"Bandeira"
+],
+"PARQUE RESIDENCIAL DAMHA 1": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"PARQUE RESIDENCIAL DAMHA 2": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"PARQUE RESIDENCIAL DAMHA 3": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"PARQUE RESIDENCIAL DAMHA 4": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"PARQUE RITA VIEIRA": [
+"Rita Vieira",
+"Bandeira"
+],
+"PEQUENA FLOR I": [
+"Universitário",
+"Bandeira"
+],
+"RECANTO DAS PALMEIRAS": [
+"Universitário",
+"Bandeira"
+],
+"REGINA": [
+"Tiradentes",
+"Bandeira"
+],
+"RESIDENCIAL ARNALDO ESTEVAO DE FIGUEIREDO 1": [
+"Tiradentes",
+"Bandeira"
+],
+"RESIDENCIAL ARNALDO ESTEVAO DE FIGUEIREDO 2": [
+"Tiradentes",
+"Bandeira"
+],
+"RESIDENCIAL ITATIAIA": [
+"Tiradentes",
+"Bandeira"
+],
+"RESIDENCIAL NOVA TIRADENTES": [
+"Tiradentes",
+"Bandeira"
+],
+"RESIDENCIAL TERRA DOS PEQUI": [
+"Moreninha",
+"Bandeira"
+],
+"RESIDENCIAL VILA OLIMPICA": [
+"Vilasboas",
+"Bandeira"
+],
+"SITIOCAS ALVORADA": [
+"Universitário",
+"Bandeira"
+],
+"UNIVERSITARIO 1": [
+"Universitário",
+"Bandeira"
+],
+"UNIVERSITARIO 2": [
+"Universitário",
+"Bandeira"
+],
+"VILA ALMEIDA LIMA": [
+"São Lourenço",
+"Bandeira"
+],
+"VILA ANTONIO VENDAS": [
+"São Lourenço",
+"Bandeira"
+],
+"VILA CONCORDIA": [
+"Universitário",
+"Bandeira"
+],
+"VILA DOM PEDRITO": [
+"Rita Vieira",
+"Bandeira"
+],
+"VILA DOUTOR ALBUQUERQUE": [
+"Carlota",
+"Bandeira"
+],
+"VILA IEDA": [
+"Carlota",
+"Bandeira"
+],
+"VILA JARDIM SAO BERNARDO": [
+"Tiradentes",
+"Bandeira"
+],
+"VILA JULIETA": [
+"Universitário",
+"Bandeira"
+],
+"VILA MORUMBI": [
+"Rita Vieira",
+"Bandeira"
+],
+"VILA OLINDA": [
+"Dr. Albuquerque",
+"Bandeira"
+],
+"VILA PORTINHO FREDERICO PACHE": [
+"Vilasboas",
+"Bandeira"
+],
+"VILA ZOE": [
+"São Lourenço",
+"Bandeira"
+],
+"VILLAS PARK RESIDENCE": [
+"Vilasboas",
+"Bandeira"
+],
+"VIVENDAS DO PARQUE": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"ANTONIO VENDAS": [
+"Bela Vista",
+"Centro"
+],
+"CACHOEIRA": [
+"Jardim dos Estados",
+"Centro"
+],
+"CACHOEIRINHA": [
+"Jardim dos Estados",
+"Centro"
+],
+"CASCUDO": [
+"São Francisco",
+"Centro"
+],
+"CHACARA BOA VISTA": [
+"Bela Vista",
+"Centro"
+],
+"CHACARA DOS COQUEIROS": [
+"Jardim dos Estados",
+"Centro"
+],
+"CHACARA VENDAS": [
+"Bela Vista",
+"Centro"
+],
+"CIDADE": [
+"Centro",
+"Centro"
+],
+"CLUBE CAMPESTRE YPE": [
+"Cruzeiro",
+"Centro"
+],
+"COFERMAT": [
+"São Francisco",
+"Centro"
+],
+"COHASMAT SARGENTO AMARAL": [
+"Amambaí",
+"Centro"
+],
+"COLINAS DE CAMPO GRANDE": [
+"Planalto",
+"Centro"
+],
+"CONJUNTO RESIDENCIAL MONTE CASTELO": [
+"Cruzeiro",
+"Centro"
+],
+"COOPHABAN": [
+"Cruzeiro",
+"Centro"
+],
+"COOPHAGRANDE CONJUNTO EUDES COSTA": [
+"Cruzeiro",
+"Centro"
+],
+"COOPHAMORENA": [
+"Itanhangá",
+"Centro"
+],
+"CRUZEIRO": [
+"Cruzeiro",
+"Centro"
+],
+"DESMEMBRAMENTO CLARA GOLDMAN": [
+"Jardim dos Estados",
+"Centro"
+],
+"DESMEMBRAMENTO EMILIO CURY": [
+"Carvalho",
+"Centro"
+],
+"DESMEMBRAMENTO GLAUCOS DA COSTA MARQUES": [
+"Itanhangá",
+"Centro"
+],
+"DESMEMBRAMENTO HUGO ZAPATA": [
+"Jardim dos Estados",
+"Centro"
+],
+"JARDIM 7 DE SETEMBRO": [
+"Jardim dos Estados",
+"Centro"
+],
+"JARDIM ACLIMACAO": [
+"Centro",
+"Centro"
+],
+"JARDIM ACLIMACAO VILA": [
+"Jardim dos Estados",
+"Centro"
+],
+"JARDIM BRASIL": [
+"São Francisco",
+"Centro"
+],
+"JARDIM CIDADE": [
+"São Francisco",
+"Centro"
+],
+"JARDIM DE ALLAH": [
+"Monte Líbano",
+"Centro"
+],
+"JARDIM GUARUJA": [
+"São Bento",
+"Centro"
+],
+"JARDIM NOVA ERA": [
+"Bela Vista",
+"Centro"
+],
+"JARDIM PIRACICABA": [
+"Itanhangá",
+"Centro"
+],
+"JARDIM SANTA CATARINA": [
+"Bela Vista",
+"Centro"
+],
+"JARDIM SAO PAULO": [
+"São Francisco",
+"Centro"
+],
+"JARDIM VISTA ALEGRE": [
+"Itanhangá",
+"Centro"
+],
+"MONTE VERDE": [
+"Planalto",
+"Centro"
+],
+"NOSSA SENHORA DE FATIMA": [
+"São Francisco",
+"Centro"
+],
+"RESIDENCIAL VILLAGE": [
+"Bela Vista",
+"Centro"
+],
+"SKY RESIDENCE": [
+"Planalto",
+"Centro"
+],
+"VILA ABDO": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA ALTA": [
+"Centro",
+"Centro"
+],
+"VILA ALTO CAMPO DE MARTE": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA ALTO DAS PAINEIRAS": [
+"São Francisco",
+"Centro"
+],
+"VILA ALTO SUMARE": [
+"Planalto",
+"Centro"
+],
+"VILA AMERICA": [
+"Centro",
+"Centro"
+],
+"VILA AMERICANA": [
+"Carvalho",
+"Centro"
+],
+"VILA ANFE": [
+"São Francisco",
+"Centro"
+],
+"VILA ANTONIO INACIO DE SOUZA": [
+"Monte Líbano",
+"Centro"
+],
+"VILA APRAZIVEL": [
+"São Francisco",
+"Centro"
+],
+"VILA AURORA": [
+"Amambaí",
+"Centro"
+],
+"VILA BARAO DO RIO BRANCO": [
+"Amambaí",
+"Centro"
+],
+"VILA BARTIRIA": [
+"Centro",
+"Centro"
+],
+"VILA BENJAMIM": [
+"São Francisco",
+"Centro"
+],
+"VILA BERNARDO GOLDMAN": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA BOA VISTA": [
+"Planalto",
+"Centro"
+],
+"VILA CAPRI": [
+"São Francisco",
+"Centro"
+],
+"VILA CARVALHO BAIS": [
+"Carvalho",
+"Centro"
+],
+"VILA CASTELO": [
+"Glória",
+"Centro"
+],
+"VILA CLEMENTINA": [
+"Centro",
+"Centro"
+],
+"VILA COSTA LIMA": [
+"Bela Vista",
+"Centro"
+],
+"VILA CRISTINA": [
+"São Francisco",
+"Centro"
+],
+"VILA DA SAUDE": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA DOUTOR JOAO ROSA": [
+"Itanhangá",
+"Centro"
+],
+"VILA ESPLANADA": [
+"São Francisco",
+"Centro"
+],
+"VILA ESPORTIVA": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA ESTEPHANIA": [
+"Planalto",
+"Centro"
+],
+"VILA EVA": [
+"Glória",
+"Centro"
+],
+"VILA FELICIANA CAROLINA": [
+"Cabreúva",
+"Centro"
+],
+"VILA FLORESTA": [
+"Amambaí",
+"Centro"
+],
+"VILA FORTUNA": [
+"Glória",
+"Centro"
+],
+"VILA GALVAO": [
+"São Bento",
+"Centro"
+],
+"VILA GASPAR": [
+"Glória",
+"Centro"
+],
+"VILA GATAO": [
+"Itanhangá",
+"Centro"
+],
+"VILA GENERAL WOLFGRAND": [
+"Centro",
+"Centro"
+],
+"VILA GLORIA": [
+"Glória",
+"Centro"
+],
+"VILA GUARACIABA": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA GUARANI": [
+"Cabreúva",
+"Centro"
+],
+"VILA GUENKA": [
+"Amambaí",
+"Centro"
+],
+"VILA HELENA": [
+"São Francisco",
+"Centro"
+],
+"VILA ILGENFRITZ": [
+"Centro",
+"Centro"
+],
+"VILA INDEPENDENCIA": [
+"Cabreúva",
+"Centro"
+],
+"VILA ISIS": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA JARDIM ALVORADA": [
+"Glória",
+"Centro"
+],
+"VILA JOSELITO": [
+"Itanhangá",
+"Centro"
+],
+"VILA LIA": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA LIBERDADE": [
+"Glória",
+"Centro"
+],
+"VILA LIDIA": [
+"São Francisco",
+"Centro"
+],
+"VILA MANDETA": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA MARACAJU": [
+"Amambaí",
+"Centro"
+],
+"VILA MARIA": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA MARIANA": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA MARISA": [
+"Cabreúva",
+"Centro"
+],
+"VILA MARMAN": [
+"Cruzeiro",
+"Centro"
+],
+"VILA MIGUEL COUTO": [
+"Bela Vista",
+"Centro"
+],
+"VILA NOSSA SENHORA DE LOURDES": [
+"Carvalho",
+"Centro"
+],
+"VILA NOVA SAO BENTO": [
+"São Bento",
+"Centro"
+],
+"VILA OLGA": [
+"Amambaí",
+"Centro"
+],
+"VILA OLIVEIRA": [
+"Carvalho",
+"Centro"
+],
+"VILA ONZE": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA ORIENTE": [
+"Glória",
+"Centro"
+],
+"VILA ORNELAS": [
+"Glória",
+"Centro"
+],
+"VILA ORPHEU BAIS": [
+"Amambaí",
+"Centro"
+],
+"VILA PARAISO": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA PAULISTANA": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA PERSEVERANCA": [
+"Amambaí",
+"Centro"
+],
+"VILA PORTAO DE FERRO": [
+"Amambaí",
+"Centro"
+],
+"VILA QUITO": [
+"Carvalho",
+"Centro"
+],
+"VILA REZENDE": [
+"Itanhangá",
+"Centro"
+],
+"VILA ROLIM": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA ROSA PIRES": [
+"Itanhangá",
+"Centro"
+],
+"VILA SANTA BARBARA": [
+"São Francisco",
+"Centro"
+],
+"VILA SANTA DOROTHEA": [
+"Glória",
+"Centro"
+],
+"VILA SANTA FILOMENA": [
+"Glória",
+"Centro"
+],
+"VILA SANTA LUIZA": [
+"Carvalho",
+"Centro"
+],
+"VILA SANTA MARIA": [
+"Carvalho",
+"Centro"
+],
+"VILA SANTA ODETE": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA SANTA ROSA": [
+"Cabreúva",
+"Centro"
+],
+"VILA SANTA TEREZA": [
+"Planalto",
+"Centro"
+],
+"VILA SANT ANA": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA SANTERIO": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA SANTO ANDRE": [
+"Monte Líbano",
+"Centro"
+],
+"VILA SANTO ANTONIO": [
+"Amambaí",
+"Centro"
+],
+"VILA SANTOS": [
+"Planalto",
+"Centro"
+],
+"VILA SANTOS GOMES": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA SAO ELIAS": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA SAO FRANCISCO": [
+"São Francisco",
+"Centro"
+],
+"VILA SAO GABRIEL": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA SAO JOAO": [
+"Amambaí",
+"Centro"
+],
+"VILA SAO JORGE": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA SAO JOSE": [
+"Carvalho",
+"Centro"
+],
+"VILA SAO LUIS": [
+"São Francisco",
+"Centro"
+],
+"VILA SAO MANOEL": [
+"Planalto",
+"Centro"
+],
+"VILA SAO MIGUEL": [
+"Glória",
+"Centro"
+],
+"VILA SAO RAFAEL": [
+"Carvalho",
+"Centro"
+],
+"VILA SAO SEBASTIAO": [
+"São Francisco",
+"Centro"
+],
+"VILA SAO THOME": [
+"São Francisco",
+"Centro"
+],
+"VILA SAO VICENTE": [
+"Amambaí",
+"Centro"
+],
+"VILA SILVIA": [
+"Cruzeiro",
+"Centro"
+],
+"VILA SOARES": [
+"Planalto",
+"Centro"
+],
+"VILA SOL NASCENTE": [
+"Glória",
+"Centro"
+],
+"VILA SUBURBANO": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA SUICA": [
+"Cruzeiro",
+"Centro"
+],
+"VILA TAVEIRA": [
+"Glória",
+"Centro"
+],
+"VILA TUPACERETAN": [
+"Jardim dos Estados",
+"Centro"
+],
+"VILA WARDE": [
+"Amambaí",
+"Centro"
+],
+"VILLA DI PARMA": [
+"Bela Vista",
+"Centro"
+],
+"XV DE NOVEMBRO": [
+"Jardim dos Estados",
+"Centro"
+],
+"BOSQUE DAS ARARAS": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"BOSQUE SANTA MONICA 1 E 2": [
+"Popular",
+"Imbirussu"
+],
+"BOSQUE SANTA MONICA 2": [
+"Popular",
+"Imbirussu"
+],
+"COOPERMAT": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"COPHACO": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"JARDIM AEROPORTO": [
+"Popular",
+"Imbirussu"
+],
+"JARDIM AROEIRA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"JARDIM CANADA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"JARDIM CARIOCA": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"JARDIM DAS REGINAS": [
+"Popular",
+"Imbirussu"
+],
+"JARDIM DAS VIRTUDES": [
+"Santo Amaro",
+"Imbirussu"
+],
+"JARDIM DO ZE PEREIRA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"JARDIM INAPOLIS": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"JARDIM ITALIA": [
+"Popular",
+"Imbirussu"
+],
+"JARDIM ITAPUA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"JARDIM LEONIDIA": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"JARDIM MANDALA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"JARDIM MATHILDE": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"JARDIM PANAMA 1": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"JARDIM PANAMA 2": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"JARDIM PANAMA 3": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"JARDIM PANAMA 4": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"JARDIM PANAMA 5": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"JARDIM PANAMA 6": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"JARDIM PANTANAL": [
+"Popular",
+"Imbirussu"
+],
+"JARDIM SAYONARA": [
+"Popular",
+"Imbirussu"
+],
+"LAR DO TRABALHADOR": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"LOTEAMENTO PAPA JOAO PAULO II": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"LOTEAMENTO MUNICIPAL JAGUARIBE": [
+"Santo Antônio",
+"Imbirussu"
+],
+"LOTEAMENTO MUNICIPAL MACAE": [
+"Popular",
+"Imbirussu"
+],
+"MORADA IMPERIAL": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"NOVA CAMPO GRANDE": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"NUCLEO INDUSTRIAL": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"PARQUE DOS IPES": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"PARQUE DOS LARANJAIS": [
+"Santo Amaro",
+"Imbirussu"
+],
+"PARQUE RESIDENCIAL BELLINATE": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"PARQUE RESIDENCIAL DOS BANCARIOS": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"PARQUE SAO DOMINGOS": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"POLO EMPRESARIAL OESTE": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"POPULAR": [
+"Popular",
+"Imbirussu"
+],
+"PORTAL DO PANAMA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"RESIDENCIAL SIRIO LIBANES 1": [
+"Santo Amaro",
+"Imbirussu"
+],
+"RESIDENCIAL SIRIO LIBANES 2": [
+"Santo Amaro",
+"Imbirussu"
+],
+"RESIDENCIAL ANA MARIA DO COUTO": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"RESIDENCIAL BUZIOS": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"RESIDENCIAL HUGO RODRIGUES": [
+"Santo Amaro",
+"Imbirussu"
+],
+"RESIDENCIAL NELSON TRAD": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"RESIDENCIAL PARQUE DOS FLAMINGOS": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"RESIDENCIAL SAGARANA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"SANTA CARMELIA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"VILA ACROPOLIS": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"VILA AVIACAO": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"VILA BOSQUE DA SAUDADE": [
+"Santo Antônio",
+"Imbirussu"
+],
+"VILA CINAMOMO": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"VILA COUTINHO": [
+"Santo Antônio",
+"Imbirussu"
+],
+"VILA DORIZA": [
+"Santo Antônio",
+"Imbirussu"
+],
+"VILA DOUTOR JAIR GARCIA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"VILA DUQUE DE CAXIAS": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"VILA ENTRONCAMENTO": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"VILA ESPANHOLA": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"VILA JARDIM BEIJA FLOR": [
+"Santo Amaro",
+"Imbirussu"
+],
+"VILA MANOEL SECCO THOME": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"VILA NOSSA SENHORA AUXILIADORA": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"VILA NOVA": [
+"Santo Antônio",
+"Imbirussu"
+],
+"VILA OESTE": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"VILA ROMANA": [
+"Popular",
+"Imbirussu"
+],
+"VILA ROSALINA": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"VILA SANTA RITA": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"VILA SANTO AMARO": [
+"Santo Amaro",
+"Imbirussu"
+],
+"VILA SAO MARCOS": [
+"Santo Amaro",
+"Imbirussu"
+],
+"ALTO LEBLON": [
+"Leblon",
+"Lagoa"
+],
+"ARAPONGAS": [
+"Tarumã",
+"Lagoa"
+],
+"BELA LAGUNA": [
+"Caiobá",
+"Lagoa"
+],
+"CONJUNTO HABITACIONAL BONANCA": [
+"Leblon",
+"Lagoa"
+],
+"CONJUNTO RESIDENCIAL SERRA AZUL": [
+"Batistão",
+"Lagoa"
+],
+"CONJUNTO RESIDENCIAL TARUMA": [
+"Tarumã",
+"Lagoa"
+],
+"COOPHAMAT": [
+"Leblon",
+"Lagoa"
+],
+"COOPHAVILA": [
+"Bandeirantes",
+"Lagoa"
+],
+"DESMEMBRAMENTO ESTEBAN CORNELAS": [
+"Bandeirantes",
+"Lagoa"
+],
+"DESMEMBRAMENTO FLORIO ALCEBIADES BRANDAO": [
+"Leblon",
+"Lagoa"
+],
+"ESTEBAN CORNELAS": [
+"Leblon",
+"Lagoa"
+],
+"FAVELA TARUMA": [
+"Coophavilla",
+"Lagoa"
+],
+"JARDIM ANTARCTICA": [
+"Leblon",
+"Lagoa"
+],
+"JARDIM BATISTAO": [
+"Batistão",
+"Lagoa"
+],
+"JARDIM CORCOVADO": [
+"Tarumã",
+"Lagoa"
+],
+"JARDIM DA LAPA": [
+"Leblon",
+"Lagoa"
+],
+"JARDIM DOS BOGGI": [
+"Tijuca",
+"Lagoa"
+],
+"JARDIM EUROPA": [
+"Leblon",
+"Lagoa"
+],
+"JARDIM LEBLON 1": [
+"Leblon",
+"Lagoa"
+],
+"JARDIM LEBLON 2": [
+"Leblon",
+"Lagoa"
+],
+"JARDIM MATO GROSSO": [
+"Batistão",
+"Lagoa"
+],
+"JARDIM OURO VERDE 1": [
+"Coophavilla",
+"Lagoa"
+],
+"JARDIM OURO VERDE 2": [
+"Coophavilla",
+"Lagoa"
+],
+"JARDIM RANCHO ALEGRE I": [
+"Caiobá",
+"Lagoa"
+],
+"JARDIM SOL POENTE": [
+"Tarumã",
+"Lagoa"
+],
+"JARDIM TATIANA": [
+"Leblon",
+"Lagoa"
+],
+"JARDIM TIJUCA 1": [
+"Tijuca",
+"Lagoa"
+],
+"JARDIM TIJUCA 2": [
+"Tijuca",
+"Lagoa"
+],
+"JARDIM VERDES MARES": [
+"Tijuca",
+"Lagoa"
+],
+"JARDIM VILA KELLEM 1": [
+"Coophavilla",
+"Lagoa"
+],
+"JARDIM VILA KELLEM 2": [
+"Coophavilla",
+"Lagoa"
+],
+"JARDIM VILLA LOBOS 1": [
+"Batistão",
+"Lagoa"
+],
+"JARDIM VILLA LOBOS 2": [
+"Batistão",
+"Lagoa"
+],
+"LAGOA PARK": [
+"Batistão",
+"Lagoa"
+],
+"LOTEAMENTO BONJARDIM": [
+"Leblon",
+"Lagoa"
+],
+"LOTEAMENTO MUNICIPAL INTERPRAIA": [
+"São Conrado",
+"Lagoa"
+],
+"NUCLEO HABITACIONAL BURITI": [
+"Leblon",
+"Lagoa"
+],
+"PARQUE RESIDENCIAL DOS GIRASSOIS": [
+"União",
+"Lagoa"
+],
+"PARQUE RESIDENCIAL UNIAO 1": [
+"União",
+"Lagoa"
+],
+"PARQUE RESIDENCIAL UNIAO 2": [
+"União",
+"Lagoa"
+],
+"PORTAL CAIOBA 1": [
+"Caiobá",
+"Lagoa"
+],
+"PORTAL CAIOBA 2": [
+"Caiobá",
+"Lagoa"
+],
+"PORTAL DAS LARANJEIRAS": [
+"Tarumã",
+"Lagoa"
+],
+"RANCHO ALEGRE II": [
+"Caiobá",
+"Lagoa"
+],
+"RESIDENCIAL AQUARIUS 2": [
+"São Conrado",
+"Lagoa"
+],
+"RESIDENCIAL AQUARIUS I": [
+"São Conrado",
+"Lagoa"
+],
+"RESIDENCIAL BARRA DA TIJUCA 1": [
+"Tijuca",
+"Lagoa"
+],
+"RESIDENCIAL BARRA DA TIJUCA 2": [
+"Tijuca",
+"Lagoa"
+],
+"RESIDENCIAL DAS FLORES": [
+"União",
+"Lagoa"
+],
+"RESIDENCIAL OLIVEIRA 1": [
+"União",
+"Lagoa"
+],
+"RESIDENCIAL OLIVEIRA 2": [
+"União",
+"Lagoa"
+],
+"RESIDENCIAL OLIVEIRA 3": [
+"União",
+"Lagoa"
+],
+"RIVIEIRA PARK": [
+"Caiobá",
+"Lagoa"
+],
+"SANTOS DUMONT": [
+"Taveirópolis",
+"Lagoa"
+],
+"SAO JORGE DA LAGOA": [
+"Batistão",
+"Lagoa"
+],
+"VILA BANDEIRANTES": [
+"Bandeirantes",
+"Lagoa"
+],
+"VILA DOS MARIMBAS": [
+"Caiçara",
+"Lagoa"
+],
+"VILA FERNANDA": [
+"Caiobá",
+"Lagoa"
+],
+"VILA JANDAIA": [
+"Tarumã",
+"Lagoa"
+],
+"VILA JARDIM ANAHY 1": [
+"Caiçara",
+"Lagoa"
+],
+"VILA JARDIM ANAHY 2": [
+"Caiçara",
+"Lagoa"
+],
+"VILA JUREMA": [
+"Bandeirantes",
+"Lagoa"
+],
+"VILA MAJOR JUARES": [
+"São Conrado",
+"Lagoa"
+],
+"VILA MARINGA": [
+"Caiçara",
+"Lagoa"
+],
+"VILA OSPAMPAS": [
+"Leblon",
+"Lagoa"
+],
+"VILA OURO FINO": [
+"Leblon",
+"Lagoa"
+],
+"VILA TAVEIROPOLIS": [
+"Taveirópolis",
+"Lagoa"
+],
+"VILA VILMA": [
+"Tijuca",
+"Lagoa"
+],
+"ALPHAVILLE CAMPO GRANDE 1": [
+"Novos Estados",
+"Prosa"
+],
+"ALPHAVILLE CAMPO GRANDE 2": [
+"Novos Estados",
+"Prosa"
+],
+"ALPHAVILLE CAMPO GRANDE 3": [
+"Novos Estados",
+"Prosa"
+],
+"ALPHAVILLE CAMPO GRANDE 4": [
+"Novos Estados",
+"Prosa"
+],
+"ALTOS DA AFONSO PENA": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"BEIRUTE RESIDENCE PARK": [
+"Estrela Dalva",
+"Prosa"
+],
+"BOSQUE DA ESPERANCA": [
+"Estrela Dalva",
+"Prosa"
+],
+"CARANDA BOSQUE": [
+"Mata do Jacinto",
+"Prosa"
+],
+"CARANDA BOSQUE 1": [
+"Carandá",
+"Prosa"
+],
+"CARANDA BOSQUE 2": [
+"Carandá",
+"Prosa"
+],
+"CARANDA BOSQUE 3": [
+"Carandá",
+"Prosa"
+],
+"CHACARA CACHOEIRA 1": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"CHACARA CACHOEIRA 2": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"CHACARA DOS PODERES": [
+"Chácara dos Poderes",
+"Prosa"
+],
+"CIDADE JARDIM": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"CONJUNTO MATA DO JACINTO": [
+"Mata do Jacinto",
+"Prosa"
+],
+"CONJUNTO RESIDENCIAL NOVA IPANEMA": [
+"Santa Fé",
+"Prosa"
+],
+"COOPHABANCO": [
+"Autonomista",
+"Prosa"
+],
+"COOPHAFE": [
+"Autonomista",
+"Prosa"
+],
+"FAVELA DO LIMAO": [
+"Mata do Jacinto",
+"Prosa"
+],
+"GOLDEN GATE PARK": [
+"Carandá",
+"Prosa"
+],
+"JARDIM ARCO IRIS": [
+"Estrela Dalva",
+"Prosa"
+],
+"JARDIM AUTONOMISTA 1": [
+"Autonomista",
+"Prosa"
+],
+"JARDIM AUTONOMISTA 2": [
+"Autonomista",
+"Prosa"
+],
+"JARDIM AUTONOMISTA 3": [
+"Autonomista",
+"Prosa"
+],
+"JARDIM CABRAL": [
+"Chácara dos Poderes",
+"Prosa"
+],
+"JARDIM GIOCONDO ORSI 1": [
+"Autonomista",
+"Prosa"
+],
+"JARDIM GIOCONDO ORSI 2": [
+"Autonomista",
+"Prosa"
+],
+"JARDIM JACARANDA": [
+"Novos Estados",
+"Prosa"
+],
+"JARDIM MARABA": [
+"Margarida",
+"Prosa"
+],
+"JARDIM MONTEVIDEU": [
+"Novos Estados",
+"Prosa"
+],
+"JARDIM PINHEIROS": [
+"Chácara dos Poderes",
+"Prosa"
+],
+"JARDIM TAYANA": [
+"Estrela Dalva",
+"Prosa"
+],
+"JARDIM UMUARAMA": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"JARDIM VERANEIO": [
+"Estrela Dalva",
+"Prosa"
+],
+"JARDIM VITRINE": [
+"Autonomista",
+"Prosa"
+],
+"JATIUCA PARK": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"LOTEAMENTO MUNICIPAL PAULO VI": [
+"Margarida",
+"Prosa"
+],
+"LOTEAMENTO ABAETE": [
+"Mata do Jacinto",
+"Prosa"
+],
+"LOTEAMENTO BOSQUE DA ESPERANCA": [
+"Estrela Dalva",
+"Prosa"
+],
+"LOTEAMENTO COPACABANA": [
+"Carandá",
+"Prosa"
+],
+"LOTEAMENTO MUNICIPAL CEASA": [
+"Mata do Jacinto",
+"Prosa"
+],
+"LOTEAMENTO MUNICIPAL GUAICURUS": [
+"Margarida",
+"Prosa"
+],
+"LOTEAMENTO MUNICIPAL JOAQUIM EUZEBIO": [
+"Margarida",
+"Prosa"
+],
+"LOTEAMENTO MUNICIPAL MARIO DE ANDRADE": [
+"Carandá",
+"Prosa"
+],
+"LOTEAMENTO MUNICIPAL NAZARE": [
+"Mata do Jacinto",
+"Prosa"
+],
+"LOTEAMENTO MUNICIPAL VERDE BRASIL": [
+"Margarida",
+"Prosa"
+],
+"LOTEAMENTO NOVA SERRANA": [
+"Noroeste",
+"Prosa"
+],
+"LOTEAMENTO PETIT PARK": [
+"Autonomista",
+"Prosa"
+],
+"LOTEAMENTO RESIDENCIAL VIA PARK": [
+"Carandá",
+"Prosa"
+],
+"LOTEAMENTO SOTER": [
+"Mata do Jacinto",
+"Prosa"
+],
+"NAHIMA PARK": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"NOVO ALAGOAS": [
+"Novos Estados",
+"Prosa"
+],
+"NOVO AMAZONAS": [
+"Novos Estados",
+"Prosa"
+],
+"NOVO MINAS GERAIS": [
+"Novos Estados",
+"Prosa"
+],
+"NOVO PARANA": [
+"Novos Estados",
+"Prosa"
+],
+"NOVO PERNAMBUCO": [
+"Novos Estados",
+"Prosa"
+],
+"NOVO RIO GRANDE DO SUL": [
+"Novos Estados",
+"Prosa"
+],
+"NOVO SAO PAULO": [
+"Novos Estados",
+"Prosa"
+],
+"NOVO SERGIPE": [
+"Novos Estados",
+"Prosa"
+],
+"NUCLEO MARABA": [
+"Margarida",
+"Prosa"
+],
+"PORTAL TAYANA": [
+"Carandá",
+"Prosa"
+],
+"RESIDENCIAL ITACOLOMI": [
+"Carandá",
+"Prosa"
+],
+"RESIDENCIAL SHALOM": [
+"Noroeste",
+"Prosa"
+],
+"RESIDENCIAL VIA PARK ITALIA": [
+"Carandá",
+"Prosa"
+],
+"ROYAL PARK": [
+"Santa Fé",
+"Prosa"
+],
+"SAN MARINO PARK": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"SERRAVILLE": [
+"Noroeste",
+"Prosa"
+],
+"TAQUARAL BOSQUE": [
+"Novos Estados",
+"Prosa"
+],
+"TAYAMA PARK": [
+"Carandá",
+"Prosa"
+],
+"TROPICAL PARK": [
+"Carandá",
+"Prosa"
+],
+"VILA ABDALLA": [
+"Estrela Dalva",
+"Prosa"
+],
+"VILA BOA ESPERANCA": [
+"Autonomista",
+"Prosa"
+],
+"VILA CACIQUE": [
+"Autonomista",
+"Prosa"
+],
+"VILA CAROLINA": [
+"Margarida",
+"Prosa"
+],
+"VILA CATARINA 1": [
+"Margarida",
+"Prosa"
+],
+"VILA CATARINA 2": [
+"Margarida",
+"Prosa"
+],
+"VILA CRUZEIRO DO SUL": [
+"Autonomista",
+"Prosa"
+],
+"VILA DANUBIO AZUL": [
+"Estrela Dalva",
+"Prosa"
+],
+"VILA FUTURISTA": [
+"Estrela Dalva",
+"Prosa"
+],
+"VILA LUCINDA": [
+"Margarida",
+"Prosa"
+],
+"VILA MIGUEL COUTO 1": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"VILA MIGUEL COUTO 2": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"VILA MIGUEL COUTO 3": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"VILA MONTE CARLO": [
+"Autonomista",
+"Prosa"
+],
+"VILA NASCENTE": [
+"Carandá",
+"Prosa"
+],
+"VILA ORSI": [
+"Autonomista",
+"Prosa"
+],
+"VILA PAGE": [
+"Autonomista",
+"Prosa"
+],
+"VILA RAQUEL": [
+"Chácara dos Poderes",
+"Prosa"
+],
+"VILA SONIA": [
+"Chácara dos Poderes",
+"Prosa"
+],
+"VILA TAQUARI": [
+"Autonomista",
+"Prosa"
+],
+"VILA TELMA": [
+"Chácara dos Poderes",
+"Prosa"
+],
+"AGUA LIMPA PARK": [
+"Vila Nasser",
+"Segredo"
+],
+"ARNALDINO DA SILVA": [
+"Mata do Segredo",
+"Segredo"
+],
+"ARY ABUSSAFI DE LIMA": [
+"Coronel Antonino",
+"Segredo"
+],
+"BECO DA LIBERDADE": [
+"Coronel Antonino",
+"Segredo"
+],
+"BOM RETIRO": [
+"Vila Nasser",
+"Segredo"
+],
+"BOSQUE DA SAUDE": [
+"Vila Nasser",
+"Segredo"
+],
+"CENTER PARK": [
+"Monte Castelo",
+"Segredo"
+],
+"CONJUNTO RESIDENCIAL NOVA OLINDA": [
+"Coronel Antonino",
+"Segredo"
+],
+"CONJUNTO RESIDENCIAL ESTRELA DO SUL": [
+"Coronel Antonino",
+"Segredo"
+],
+"CORIOLANDO DA SILVA CORREA": [
+"Nova Lima",
+"Segredo"
+],
+"ELDORADO": [
+"Coronel Antonino",
+"Segredo"
+],
+"FAVELA GUATAMBU": [
+"Coronel Antonino",
+"Segredo"
+],
+"FAVELA NACIONAL": [
+"Coronel Antonino",
+"Segredo"
+],
+"FAVELA RIO DE JANEIRO": [
+"Coronel Antonino",
+"Segredo"
+],
+"GREGORIO CORREA": [
+"Coronel Antonino",
+"Segredo"
+],
+"GUANABARA": [
+"Coronel Antonino",
+"Segredo"
+],
+"JARDIM ALTO SAO FRANCISCO": [
+"Vila Nasser",
+"Segredo"
+],
+"JARDIM ARUBA": [
+"Monte Castelo",
+"Segredo"
+],
+"JARDIM BARCELONA": [
+"Coronel Antonino",
+"Segredo"
+],
+"JARDIM BOSQUE DE AVILAN": [
+"Monte Castelo",
+"Segredo"
+],
+"JARDIM CAMPO BELO": [
+"Mata do Segredo",
+"Segredo"
+],
+"JARDIM CAMPO NOVO": [
+"Mata do Segredo",
+"Segredo"
+],
+"JARDIM CAMPO VERDE": [
+"Coronel Antonino",
+"Segredo"
+],
+"JARDIM DA MOOCA": [
+"Vila Nasser",
+"Segredo"
+],
+"JARDIM DAS ACACIAS": [
+"Vila Nasser",
+"Segredo"
+],
+"JARDIM DAS CEREJEIRAS": [
+"Mata do Segredo",
+"Segredo"
+],
+"JARDIM DAS PAINEIRAS": [
+"José Abrão",
+"Segredo"
+],
+"JARDIM FLUMINENSE": [
+"Vila Nasser",
+"Segredo"
+],
+"JARDIM MIRASOL": [
+"Coronel Antonino",
+"Segredo"
+],
+"JARDIM MONTE ALTO": [
+"Vila Nasser",
+"Segredo"
+],
+"JARDIM NASCENTE DO SEGREDO": [
+"Mata do Segredo",
+"Segredo"
+],
+"JARDIM ORACILIA": [
+"Seminário",
+"Segredo"
+],
+"JARDIM PAQUETA": [
+"Vila Nasser",
+"Segredo"
+],
+"JARDIM PARADISO": [
+"Vila Nasser",
+"Segredo"
+],
+"JARDIM PRESIDENTE": [
+"Mata do Segredo",
+"Segredo"
+],
+"JARDIM SEMINARIO II": [
+"Seminário",
+"Segredo"
+],
+"JARDIM TALISMA": [
+"Coronel Antonino",
+"Segredo"
+],
+"JARDIM VENEZA": [
+"Vila Nasser",
+"Segredo"
+],
+"JARDIM VIDA NOVA": [
+"Nova Lima",
+"Segredo"
+],
+"JOSE PRATES": [
+"Nova Lima",
+"Segredo"
+],
+"JOSE TAVARES DO COUTO": [
+"Nova Lima",
+"Segredo"
+],
+"LAGOA DA CRUZ": [
+"Seminário",
+"Segredo"
+],
+"LOTEAMENTO MORADA DO SOSSEGO": [
+"Coronel Antonino",
+"Segredo"
+],
+"LOTEAMENTO MUNICIPAL JABURU": [
+"Coronel Antonino",
+"Segredo"
+],
+"LOTEAMENTO MUNICIPAL PEREIRA BORGES": [
+"Nova Lima",
+"Segredo"
+],
+"LOTEAMENTO MUNICIPAL RAIZES": [
+"Coronel Antonino",
+"Segredo"
+],
+"LOTEAMENTO CAMPO DOURADO": [
+"Monte Castelo",
+"Segredo"
+],
+"LOTEAMENTO COSTA VERDE": [
+"Monte Castelo",
+"Segredo"
+],
+"LOTEAMENTO MUNICIPAL CRISTALDO": [
+"Mata do Segredo",
+"Segredo"
+],
+"LOTEAMENTO MUNICIPAL DOUTOR MIGUEL VIEIRA FERREIRA": [
+"Vila Nasser",
+"Segredo"
+],
+"LOTEAMENTO MUNICIPAL SALINAS": [
+"Mata do Segredo",
+"Segredo"
+],
+"MORADA DO SOSSEGO II": [
+"Coronel Antonino",
+"Segredo"
+],
+"MORADA DOS DEUSES": [
+"Vila Nasser",
+"Segredo"
+],
+"MORADA VERDE": [
+"Coronel Antonino",
+"Segredo"
+],
+"NORTH PARK": [
+"Seminário",
+"Segredo"
+],
+"NOSSA SENHORA DAS GRACAS": [
+"Vila Nasser",
+"Segredo"
+],
+"NUCLEO HABITACIONAL JOSE ABRAO": [
+"José Abrão",
+"Segredo"
+],
+"NUCLEO MORADA VERDE": [
+"Coronel Antonino",
+"Segredo"
+],
+"NUCLEO PARQUE DOS LARANJAIS": [
+"José Abrão",
+"Segredo"
+],
+"OSCAR SALAZAR": [
+"Nova Lima",
+"Segredo"
+],
+"PARQUE IGUATEMI": [
+"Nova Lima",
+"Segredo"
+],
+"PARQUE IZABEL GARDEN S": [
+"Coronel Antonino",
+"Segredo"
+],
+"PARQUE RESIDENCIAL AZALEIA": [
+"Vila Nasser",
+"Segredo"
+],
+"PORTAL DO GRAMADO": [
+"Seminário",
+"Segredo"
+],
+"PRAIA DA URCA": [
+"Monte Castelo",
+"Segredo"
+],
+"RECANTO PANTANEIRO": [
+"Coronel Antonino",
+"Segredo"
+],
+"RESIDENCIAL ALTO TAMANDARE": [
+"Vila Nasser",
+"Segredo"
+],
+"RESIDENCIAL ATLANTICO SUL": [
+"Coronel Antonino",
+"Segredo"
+],
+"RESIDENCIAL CARAJAS": [
+"Vila Nasser",
+"Segredo"
+],
+"RESIDENCIAL GABURA": [
+"Monte Castelo",
+"Segredo"
+],
+"RESIDENCIAL GAMA": [
+"Mata do Segredo",
+"Segredo"
+],
+"RESIDENCIAL INDAIA": [
+"Monte Castelo",
+"Segredo"
+],
+"RESIDENCIAL OTAVIO PECORA": [
+"Monte Castelo",
+"Segredo"
+],
+"RESIDENCIAL RECANTO DO CERRADO": [
+"Vila Nasser",
+"Segredo"
+],
+"RESIDENCIAL TOLENTINO": [
+"Vila Nasser",
+"Segredo"
+],
+"RESIDENCIAL VALE DO SOL I": [
+"Monte Castelo",
+"Segredo"
+],
+"RESIDENCIAL VALE DO SOL II": [
+"Monte Castelo",
+"Segredo"
+],
+"RESIDENCIAL VALE DO SOL III": [
+"Monte Castelo",
+"Segredo"
+],
+"SANTA LUZIA": [
+"Vila Nasser",
+"Segredo"
+],
+"SAO BENEDITO": [
+"Seminário",
+"Segredo"
+],
+"SAO CAETANO": [
+"Vila Nasser",
+"Segredo"
+],
+"SETVILLAGE": [
+"Vila Nasser",
+"Segredo"
+],
+"TARSILA DO AMARAL": [
+"Nova Lima",
+"Segredo"
+],
+"TREVISO": [
+"Mata do Segredo",
+"Segredo"
+],
+"VILA ANTONIETA": [
+"Seminário",
+"Segredo"
+],
+"VILA CALIFORNIA": [
+"Coronel Antonino",
+"Segredo"
+],
+"VILA COX": [
+"Vila Nasser",
+"Segredo"
+],
+"VILA DALILA": [
+"Seminário",
+"Segredo"
+],
+"VILA DEDE": [
+"Vila Nasser",
+"Segredo"
+],
+"VILA JARDIM MARIA AMELIA": [
+"Seminário",
+"Segredo"
+],
+"VILA LEDA": [
+"Seminário",
+"Segredo"
+],
+"VILA LILI": [
+"Vila Nasser",
+"Segredo"
+],
+"VILA MARLI": [
+"Vila Nasser",
+"Segredo"
+],
+"VILA N SENHORA APARECIDA": [
+"Vila Nasser",
+"Segredo"
+],
+"VILA NEUZA": [
+"Vila Nasser",
+"Segredo"
+],
+"VILA NILZA": [
+"Vila Nasser",
+"Segredo"
+],
+"VILA NOSSA SENHORA DA CONCEICAO": [
+"Seminário",
+"Segredo"
+],
+"VILA NOVO HORIZONTE": [
+"Vila Nasser",
+"Segredo"
+],
+"VILA SANTA LUCIA": [
+"Seminário",
+"Segredo"
+],
+"VILA SAO JOAO BOSCO": [
+"Monte Castelo",
+"Segredo"
+],
+"VILA SAO ROQUE": [
+"Seminário",
+"Segredo"
+],
+"VILA SARAIVA": [
+"Seminário",
+"Segredo"
+],
+"VILA TRIANGULO": [
+"Coronel Antonino",
+"Segredo"
+],
+"VILLA RAVENNA": [
+"Coronel Antonino",
+"Segredo"
+],
+"VILLA RAVENNA II": [
+"Coronel Antonino",
+"Segredo"
+],
+"ALVES PEREIRA": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"PIONEIROS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"GRANDE LAGEADO": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"PARATI": [
+"Parati",
+"Anhanduizinho"
+],
+"CENTENARIO": [
+"Centenário",
+"Anhanduizinho"
+],
+"LOS ANGELES": [
+"Los Angeles",
+"Anhanduizinho"
+],
+"PIRATININGA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"AMERICA": [
+"América",
+"Anhanduizinho"
+],
+"VILASBOAS": [
+"Vilasboas",
+"Bandeira"
+],
+"RITA VIEIRA": [
+"Rita Vieira",
+"Bandeira"
+],
+"MORENINHA": [
+"Moreninha",
+"Bandeira"
+],
+"SAO LOURENCO": [
+"São Lourenço",
+"Bandeira"
+],
+"CARLOTA": [
+"Carlota",
+"Bandeira"
+],
+"MARIA APARECIDA PEDROSSIAN": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"DOUTOR ALBUQUERQUE": [
+"Dr. Albuquerque",
+"Bandeira"
+],
+"BELA VISTA": [
+"Bela Vista",
+"Centro"
+],
+"PLANALTO": [
+"Planalto",
+"Centro"
+],
+"ITANHANGA": [
+"Itanhangá",
+"Centro"
+],
+"CARVALHO": [
+"Carvalho",
+"Centro"
+],
+"MONTE LIBANO": [
+"Monte Líbano",
+"Centro"
+],
+"SAO BENTO": [
+"São Bento",
+"Centro"
+],
+"GLORIA": [
+"Glória",
+"Centro"
+],
+"PANAMA ZE PEREIRA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"LEBLON": [
+"Leblon",
+"Lagoa"
+],
+"TARUMA": [
+"Tarumã",
+"Lagoa"
+],
+"CAIOBA": [
+"Caiobá",
+"Lagoa"
+],
+"BANDEIRANTES": [
+"Bandeirantes",
+"Lagoa"
+],
+"COOPHAVILLA": [
+"Coophavilla",
+"Lagoa"
+],
+"TIJUCA": [
+"Tijuca",
+"Lagoa"
+],
+"SAO CONRADO": [
+"São Conrado",
+"Lagoa"
+],
+"NOVOS ESTADOS": [
+"Novos Estados",
+"Prosa"
+],
+"ESTRELA DALVA": [
+"Estrela Dalva",
+"Prosa"
+],
+"VERANEIO": [
+"Veraneio",
+"Prosa"
+],
+"CARANDA": [
+"Carandá",
+"Prosa"
+],
+"AUTONOMISTA": [
+"Autonomista",
+"Prosa"
+],
+"MARGARIDA": [
+"Margarida",
+"Prosa"
+],
+"NOROESTE": [
+"Noroeste",
+"Prosa"
+],
+"MATA DO SEGREDO": [
+"Mata do Segredo",
+"Segredo"
+],
+"SEMINARIO": [
+"Seminário",
+"Segredo"
+],
+"~CIDADE NOVA": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~COHAFAMA": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"~ANAPOLIS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~DOM ANTONIO BARBOSA": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"~FAVELA DONA NETA": [
+"Guanandi",
+"Anhanduizinho"
+],
+"~FAVELA NUCLEO GUANANDI": [
+"Guanandi",
+"Anhanduizinho"
+],
+"~GRANJA BANDEIRA": [
+"Parati",
+"Anhanduizinho"
+],
+"~GRANJA SAO LUIZ": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"~HOMEX": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~IRACY COELHO": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"~AGULHAS NEGRAS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~BALSAMO": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~BOTAFOGO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~BOTANICO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~CAMPO NOBRE": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~CANGURU": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~CENTENARIO": [
+"Centenário",
+"Anhanduizinho"
+],
+"~CENTRO OESTE": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~COLIBRI": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~COLONIAL": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~COLORADO": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"~DAS HORTENSIAS": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"~DAS MACAUBAS": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~DAS MANSOES UNIVERSITARIAS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~DAS MENINAS": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~DAS NACOES": [
+"Parati",
+"Anhanduizinho"
+],
+"~DAS PRINCESAS": [
+"Centenário",
+"Anhanduizinho"
+],
+"~JACY": [
+"Jacy",
+"Anhanduizinho"
+],
+"~JANE": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~LOS ANGELES": [
+"Los Angeles",
+"Anhanduizinho"
+],
+"~MACAPA": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~MANAIRA": [
+"Centenário",
+"Anhanduizinho"
+],
+"~MARAJOARA": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~MARIO COVAS": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~MONTE ALEGRE": [
+"Centenário",
+"Anhanduizinho"
+],
+"~MONTEREY": [
+"Centenário",
+"Anhanduizinho"
+],
+"~MONUMENTO": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~MORADA DO SOL": [
+"Los Angeles",
+"Anhanduizinho"
+],
+"~MORENAO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~NASHVILLE": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~NHANHA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"~PARATI": [
+"Parati",
+"Anhanduizinho"
+],
+"~PAULO COELHO MACHADO": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~PENFIGO": [
+"Centenário",
+"Anhanduizinho"
+],
+"~RADIALISTA": [
+"Centenário",
+"Anhanduizinho"
+],
+"~ROSELANDIA": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~RUBIACEA": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~SANTA URSULA": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~TAQUARUSSU": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"~UIRAPURU": [
+"Los Angeles",
+"Anhanduizinho"
+],
+"~VICENTINO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~JOCKEY CLUB": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"~AERO RANCHO": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"~ALTO DA BOA VISTA": [
+"Parati",
+"Anhanduizinho"
+],
+"~ALAN SOARES": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~BRANDAO": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~PORTO SEGURO": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~CEDRINHO": [
+"Centenário",
+"Anhanduizinho"
+],
+"~NUCLEO AERO RANCHO I Q": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"~NUCLEO AERO RANCHO Q 5 A": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"~NUCLEO ALVES PEREIRA": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~NUCLEO CENTENARIO": [
+"Centenário",
+"Anhanduizinho"
+],
+"~NUCLEO COLIBRI": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~UNIVERSITARIA": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~UNIVERSITARIA COHAB": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~NUCLEO JARDIM DAS MACAUBAS": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~NUCLEO PIRATININGA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"~NUCLEO VILA NOGUEIRA": [
+"Centenário",
+"Anhanduizinho"
+],
+"~DO LAGEADO": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"~DO SOL": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"~DO TRABALHADOR": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~DOS SABIAS": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"~NOVO SECULO": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~IRACY COELHO NETTO": [
+"Centenário",
+"Anhanduizinho"
+],
+"~LISBOAS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~PORTO GALO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~PROMORAR": [
+"Piratininga",
+"Anhanduizinho"
+],
+"~RECANTO DAS ANDORINHAS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~DO LAGO": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~GERALDO CORREA DA SILVA": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~ILHEUS": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~JOAO SCARANO": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~JOSE TERUEL FILHO": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"~OURO PRETO": [
+"Centenário",
+"Anhanduizinho"
+],
+"~SANTA CELINA": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"~TERRA MORENA": [
+"Los Angeles",
+"Anhanduizinho"
+],
+"~BELA": [
+"Centenário",
+"Anhanduizinho"
+],
+"~VARANDAS DO CAMPO": [
+"Centro-Oeste",
+"Anhanduizinho"
+],
+"~VESPASIANO MARTINS": [
+"Los Angeles",
+"Anhanduizinho"
+],
+"~ADELINA": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~AFONSO PENA": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"~AFONSO PENA JUNIOR": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"~AIMORE": [
+"Centenário",
+"Anhanduizinho"
+],
+"~ALVES PEREIRA": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~AMAPA": [
+"Centenário",
+"Anhanduizinho"
+],
+"~ANTUNES": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~BOM JESUS": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"~CLELIA": [
+"Alves Pereira",
+"Anhanduizinho"
+],
+"~GETULIA BARBOSA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"~IPIRANGA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"~ITAMARATI": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"~JARDIM": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"~PIONEIROS": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~MARCOS ROBERTO": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"~NOGUEIRA": [
+"Centenário",
+"Anhanduizinho"
+],
+"~NOVA BANDEIRANTES": [
+"Jacy",
+"Anhanduizinho"
+],
+"~PIRATININGA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"~SANTA AMELIA BAIS": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"~SANTA BRANCA": [
+"Pioneiros",
+"Anhanduizinho"
+],
+"~SANTO AFONSO": [
+"Taquarussu",
+"Anhanduizinho"
+],
+"~VALPARAISO": [
+"América",
+"Anhanduizinho"
+],
+"~VITTA BELLA": [
+"Piratininga",
+"Anhanduizinho"
+],
+"~AMANTINI RESIDENCE": [
+"Vilasboas",
+"Bandeira"
+],
+"~CHACARA JOSE ANTONIO PEREIRA": [
+"Rita Vieira",
+"Bandeira"
+],
+"~CHACARA NOVO HORIZONTE": [
+"Moreninha",
+"Bandeira"
+],
+"~COOPHARADIO": [
+"Rita Vieira",
+"Bandeira"
+],
+"~EDSON BRITO GARCIA": [
+"Universitário",
+"Bandeira"
+],
+"~ESTRELA PARQUE": [
+"Tiradentes",
+"Bandeira"
+],
+"~INDIANA PARK": [
+"Vilasboas",
+"Bandeira"
+],
+"~AGUAS VIVAS": [
+"Rita Vieira",
+"Bandeira"
+],
+"~AMETISTA": [
+"Universitário",
+"Bandeira"
+],
+"~ANHANGUERA": [
+"Rita Vieira",
+"Bandeira"
+],
+"~ANTARES": [
+"Universitário",
+"Bandeira"
+],
+"~CAMPINA VERDE": [
+"Universitário",
+"Bandeira"
+],
+"~CAMPO ALTO": [
+"Universitário",
+"Bandeira"
+],
+"~CAMPO LIMPO": [
+"Universitário",
+"Bandeira"
+],
+"~CRISTO REDENTOR": [
+"Tiradentes",
+"Bandeira"
+],
+"~DAS PERDIZES": [
+"Universitário",
+"Bandeira"
+],
+"~DO CORREGO": [
+"Moreninha",
+"Bandeira"
+],
+"~FLAMBOYANT": [
+"Tiradentes",
+"Bandeira"
+],
+"~GRAMADO": [
+"Moreninha",
+"Bandeira"
+],
+"~INDIANAPOLIS": [
+"Universitário",
+"Bandeira"
+],
+"~ITAMARACA": [
+"Rita Vieira",
+"Bandeira"
+],
+"~ITAPEMA": [
+"Carlota",
+"Bandeira"
+],
+"~JERUSALEM": [
+"Tiradentes",
+"Bandeira"
+],
+"~LAGOA DOURADA": [
+"Rita Vieira",
+"Bandeira"
+],
+"~MANSUR": [
+"Vilasboas",
+"Bandeira"
+],
+"~MOEMA": [
+"Universitário",
+"Bandeira"
+],
+"~NOSSA SENHORA DO PERPETUO SOCORRO": [
+"Rita Vieira",
+"Bandeira"
+],
+"~NOVA CAPITAL": [
+"Moreninha",
+"Bandeira"
+],
+"~NOVA JERUSALEM": [
+"Moreninha",
+"Bandeira"
+],
+"~PACAEMBU": [
+"Universitário",
+"Bandeira"
+],
+"~PAULISTA": [
+"Jardim Paulista",
+"Bandeira"
+],
+"~SAMAMBAIA": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"~SANTA FELICIDADE": [
+"Moreninha",
+"Bandeira"
+],
+"~SAO JUDAS TADEU": [
+"Tiradentes",
+"Bandeira"
+],
+"~SAO LOURENCO": [
+"São Lourenço",
+"Bandeira"
+],
+"~TROPICAL": [
+"Universitário",
+"Bandeira"
+],
+"~TV MORENA": [
+"TV Morena",
+"Bandeira"
+],
+"~VITORIA": [
+"Tiradentes",
+"Bandeira"
+],
+"~MARCAL DE SOUZA": [
+"Tiradentes",
+"Bandeira"
+],
+"~MORENINHA": [
+"Moreninha",
+"Bandeira"
+],
+"~CAVAN": [
+"Tiradentes",
+"Bandeira"
+],
+"~DALVA DE OLIVEIRA": [
+"Tiradentes",
+"Bandeira"
+],
+"~RIBEIRA": [
+"Moreninha",
+"Bandeira"
+],
+"~PORTOBELLO": [
+"Tiradentes",
+"Bandeira"
+],
+"~VOLPE": [
+"Universitário",
+"Bandeira"
+],
+"~NUCLEO CAMPINA VERDE": [
+"Universitário",
+"Bandeira"
+],
+"~RECANTO DOS ROUXINOIS": [
+"Universitário",
+"Bandeira"
+],
+"~NUCLEO PANORAMA": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"~NUCLEO TIRADENTES": [
+"Tiradentes",
+"Bandeira"
+],
+"~PANORAMA": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"~PARANAENSE": [
+"Jardim Paulista",
+"Bandeira"
+],
+"~DALLAS": [
+"Vilasboas",
+"Bandeira"
+],
+"~ANHEMBI": [
+"Tiradentes",
+"Bandeira"
+],
+"~DAMHA": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"~MARIA APARECIDA PEDROSSIAN": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"~RITA VIEIRA": [
+"Rita Vieira",
+"Bandeira"
+],
+"~PEQUENA FLOR": [
+"Universitário",
+"Bandeira"
+],
+"~RECANTO DAS PALMEIRAS": [
+"Universitário",
+"Bandeira"
+],
+"~REGINA": [
+"Tiradentes",
+"Bandeira"
+],
+"~ARNALDO ESTEVAO DE FIGUEIREDO": [
+"Tiradentes",
+"Bandeira"
+],
+"~BETAVILLE": [
+"Universitário",
+"Bandeira"
+],
+"~ITATIAIA": [
+"Tiradentes",
+"Bandeira"
+],
+"~NOVA TIRADENTES": [
+"Tiradentes",
+"Bandeira"
+],
+"~OITI": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"~TERRA DOS PEQUI": [
+"Moreninha",
+"Bandeira"
+],
+"~OLIMPICA": [
+"Vilasboas",
+"Bandeira"
+],
+"~SITIOCAS ALVORADA": [
+"Universitário",
+"Bandeira"
+],
+"~TIRADENTES": [
+"Tiradentes",
+"Bandeira"
+],
+"~ALMEIDA LIMA": [
+"São Lourenço",
+"Bandeira"
+],
+"~CIDADE MORENA": [
+"Moreninha",
+"Bandeira"
+],
+"~CONCORDIA": [
+"Universitário",
+"Bandeira"
+],
+"~DOM PEDRITO": [
+"Rita Vieira",
+"Bandeira"
+],
+"~IEDA": [
+"Carlota",
+"Bandeira"
+],
+"~SAO BERNARDO": [
+"Tiradentes",
+"Bandeira"
+],
+"~JULIETA": [
+"Universitário",
+"Bandeira"
+],
+"~OLINDA": [
+"Dr. Albuquerque",
+"Bandeira"
+],
+"~PORTINHO FREDERICO PACHE": [
+"Vilasboas",
+"Bandeira"
+],
+"~SANTO EUGENIO": [
+"Universitário",
+"Bandeira"
+],
+"~VILAS BOAS": [
+"Vilasboas",
+"Bandeira"
+],
+"~ZOE": [
+"São Lourenço",
+"Bandeira"
+],
+"~VILLAS PARK RESIDENCE": [
+"Vilasboas",
+"Bandeira"
+],
+"~VIVENDAS DO PARQUE": [
+"Maria Aparecida Pedrossian",
+"Bandeira"
+],
+"~AMAMBAI": [
+"Amambaí",
+"Centro"
+],
+"~CABREUVA": [
+"Cabreúva",
+"Centro"
+],
+"~CACHOEIRA": [
+"Jardim dos Estados",
+"Centro"
+],
+"~CASCUDO": [
+"São Francisco",
+"Centro"
+],
+"~CHACARA BOA VISTA": [
+"Bela Vista",
+"Centro"
+],
+"~CHACARA DOS COQUEIROS": [
+"Jardim dos Estados",
+"Centro"
+],
+"~CHACARA VENDAS": [
+"Bela Vista",
+"Centro"
+],
+"~CLUBE CAMPESTRE YPE": [
+"Cruzeiro",
+"Centro"
+],
+"~COFERMAT": [
+"São Francisco",
+"Centro"
+],
+"~COHASMAT SARGENTO AMARAL": [
+"Amambaí",
+"Centro"
+],
+"~COLINAS DE CAMPO GRANDE": [
+"Planalto",
+"Centro"
+],
+"~COOPHABAN": [
+"Cruzeiro",
+"Centro"
+],
+"~COOPHAGRANDE CONJUNTO EUDES COSTA": [
+"Cruzeiro",
+"Centro"
+],
+"~COOPHAMORENA": [
+"Itanhangá",
+"Centro"
+],
+"~CRUZEIRO": [
+"Cruzeiro",
+"Centro"
+],
+"~DESMEMBRAMENTO CLARA GOLDMAN": [
+"Jardim dos Estados",
+"Centro"
+],
+"~DESMEMBRAMENTO EMILIO CURY": [
+"Carvalho",
+"Centro"
+],
+"~DESMEMBRAMENTO GLAUCOS DA COSTA MARQUES": [
+"Itanhangá",
+"Centro"
+],
+"~DESMEMBRAMENTO HUGO ZAPATA": [
+"Jardim dos Estados",
+"Centro"
+],
+"~7 DE SETEMBRO": [
+"Jardim dos Estados",
+"Centro"
+],
+"~ACLIMACAO": [
+"Centro",
+"Centro"
+],
+"~ACLIMACAO VILA": [
+"Jardim dos Estados",
+"Centro"
+],
+"~BELA VISTA": [
+"Bela Vista",
+"Centro"
+],
+"~BRASIL": [
+"São Francisco",
+"Centro"
+],
+"~DE ALLAH": [
+"Monte Líbano",
+"Centro"
+],
+"~DOS ESTADOS": [
+"Jardim dos Estados",
+"Centro"
+],
+"~GUARUJA": [
+"São Bento",
+"Centro"
+],
+"~NOVA ERA": [
+"Bela Vista",
+"Centro"
+],
+"~PIRACICABA": [
+"Itanhangá",
+"Centro"
+],
+"~SANTA CATARINA": [
+"Bela Vista",
+"Centro"
+],
+"~VISTA ALEGRE": [
+"Itanhangá",
+"Centro"
+],
+"~MONTE VERDE": [
+"Planalto",
+"Centro"
+],
+"~VILLAGE": [
+"Bela Vista",
+"Centro"
+],
+"~SKY RESIDENCE": [
+"Planalto",
+"Centro"
+],
+"~ABDO": [
+"Jardim dos Estados",
+"Centro"
+],
+"~ALTA": [
+"Centro",
+"Centro"
+],
+"~ALTO CAMPO DE MARTE": [
+"Jardim dos Estados",
+"Centro"
+],
+"~ALTO DAS PAINEIRAS": [
+"São Francisco",
+"Centro"
+],
+"~ALTO SUMARE": [
+"Planalto",
+"Centro"
+],
+"~AMERICANA": [
+"Carvalho",
+"Centro"
+],
+"~ANFE": [
+"São Francisco",
+"Centro"
+],
+"~ANTONIO INACIO DE SOUZA": [
+"Monte Líbano",
+"Centro"
+],
+"~APRAZIVEL": [
+"São Francisco",
+"Centro"
+],
+"~AURORA": [
+"Amambaí",
+"Centro"
+],
+"~BARAO DO RIO BRANCO": [
+"Amambaí",
+"Centro"
+],
+"~BARTIRIA": [
+"Centro",
+"Centro"
+],
+"~BENJAMIM": [
+"São Francisco",
+"Centro"
+],
+"~BERNARDO GOLDMAN": [
+"Jardim dos Estados",
+"Centro"
+],
+"~BOA VISTA": [
+"Planalto",
+"Centro"
+],
+"~CAPRI": [
+"São Francisco",
+"Centro"
+],
+"~CARVALHO": [
+"Carvalho",
+"Centro"
+],
+"~CARVALHO BAIS": [
+"Carvalho",
+"Centro"
+],
+"~CASTELO": [
+"Glória",
+"Centro"
+],
+"~CELIA": [
+"Cruzeiro",
+"Centro"
+],
+"~CLEMENTINA": [
+"Centro",
+"Centro"
+],
+"~CORUMBA": [
+"Planalto",
+"Centro"
+],
+"~COSTA LIMA": [
+"Bela Vista",
+"Centro"
+],
+"~CRISTINA": [
+"São Francisco",
+"Centro"
+],
+"~DA SAUDE": [
+"Jardim dos Estados",
+"Centro"
+],
+"~DOUTOR JOAO ROSA": [
+"Itanhangá",
+"Centro"
+],
+"~ESPORTIVA": [
+"Jardim dos Estados",
+"Centro"
+],
+"~ESTEPHANIA": [
+"Planalto",
+"Centro"
+],
+"~EVA": [
+"Glória",
+"Centro"
+],
+"~FLORESTA": [
+"Amambaí",
+"Centro"
+],
+"~FORTUNA": [
+"Glória",
+"Centro"
+],
+"~GALVAO": [
+"São Bento",
+"Centro"
+],
+"~GASPAR": [
+"Glória",
+"Centro"
+],
+"~GATAO": [
+"Itanhangá",
+"Centro"
+],
+"~GENERAL WOLFGRAND": [
+"Centro",
+"Centro"
+],
+"~GLORIA": [
+"Glória",
+"Centro"
+],
+"~GOMES": [
+"Cruzeiro",
+"Centro"
+],
+"~GUARACIABA": [
+"Jardim dos Estados",
+"Centro"
+],
+"~GUARANI": [
+"Cabreúva",
+"Centro"
+],
+"~GUENKA": [
+"Amambaí",
+"Centro"
+],
+"~HELENA": [
+"São Francisco",
+"Centro"
+],
+"~ILGENFRITZ": [
+"Centro",
+"Centro"
+],
+"~INDEPENDENCIA": [
+"Cabreúva",
+"Centro"
+],
+"~ISIS": [
+"Jardim dos Estados",
+"Centro"
+],
+"~ALVORADA": [
+"Glória",
+"Centro"
+],
+"~JOSELITO": [
+"Itanhangá",
+"Centro"
+],
+"~LIA": [
+"Jardim dos Estados",
+"Centro"
+],
+"~LIBERDADE": [
+"Glória",
+"Centro"
+],
+"~MANDETA": [
+"Jardim dos Estados",
+"Centro"
+],
+"~MARACAJU": [
+"Amambaí",
+"Centro"
+],
+"~MARIA": [
+"Jardim dos Estados",
+"Centro"
+],
+"~MARIANA": [
+"Jardim dos Estados",
+"Centro"
+],
+"~MARISA": [
+"Cabreúva",
+"Centro"
+],
+"~MARMAN": [
+"Cruzeiro",
+"Centro"
+],
+"~NOSSA SENHORA DE LOURDES": [
+"Carvalho",
+"Centro"
+],
+"~NOVA SAO BENTO": [
+"São Bento",
+"Centro"
+],
+"~OLGA": [
+"Amambaí",
+"Centro"
+],
+"~ONZE": [
+"Jardim dos Estados",
+"Centro"
+],
+"~ORIENTE": [
+"Glória",
+"Centro"
+],
+"~ORNELAS": [
+"Glória",
+"Centro"
+],
+"~ORPHEU BAIS": [
+"Amambaí",
+"Centro"
+],
+"~PAULISTANA": [
+"Jardim dos Estados",
+"Centro"
+],
+"~PERSEVERANCA": [
+"Amambaí",
+"Centro"
+],
+"~PLANALTO": [
+"Planalto",
+"Centro"
+],
+"~PORTAO DE FERRO": [
+"Amambaí",
+"Centro"
+],
+"~QUITO": [
+"Carvalho",
+"Centro"
+],
+"~REZENDE": [
+"Itanhangá",
+"Centro"
+],
+"~ROLIM": [
+"Jardim dos Estados",
+"Centro"
+],
+"~ROSA": [
+"Cruzeiro",
+"Centro"
+],
+"~ROSA PIRES": [
+"Itanhangá",
+"Centro"
+],
+"~SANTA BARBARA": [
+"São Francisco",
+"Centro"
+],
+"~SANTA DOROTHEA": [
+"Glória",
+"Centro"
+],
+"~SANTA FILOMENA": [
+"Glória",
+"Centro"
+],
+"~SANTA LUIZA": [
+"Carvalho",
+"Centro"
+],
+"~SANTA MARIA": [
+"Carvalho",
+"Centro"
+],
+"~SANTA ODETE": [
+"Jardim dos Estados",
+"Centro"
+],
+"~SANTA TEREZA": [
+"Planalto",
+"Centro"
+],
+"~SANT ANA": [
+"Jardim dos Estados",
+"Centro"
+],
+"~SANTERIO": [
+"Jardim dos Estados",
+"Centro"
+],
+"~SANTO ANDRE": [
+"Monte Líbano",
+"Centro"
+],
+"~SANTOS": [
+"Planalto",
+"Centro"
+],
+"~SAO ELIAS": [
+"Jardim dos Estados",
+"Centro"
+],
+"~SAO FRANCISCO": [
+"São Francisco",
+"Centro"
+],
+"~SAO GABRIEL": [
+"Jardim dos Estados",
+"Centro"
+],
+"~SAO JOAO": [
+"Amambaí",
+"Centro"
+],
+"~SAO JORGE": [
+"Jardim dos Estados",
+"Centro"
+],
+"~SAO JOSE": [
+"Carvalho",
+"Centro"
+],
+"~SAO LUIS": [
+"São Francisco",
+"Centro"
+],
+"~SAO MANOEL": [
+"Planalto",
+"Centro"
+],
+"~SAO MIGUEL": [
+"Glória",
+"Centro"
+],
+"~SAO RAFAEL": [
+"Carvalho",
+"Centro"
+],
+"~SAO SEBASTIAO": [
+"São Francisco",
+"Centro"
+],
+"~SAO THOME": [
+"São Francisco",
+"Centro"
+],
+"~SAO VICENTE": [
+"Amambaí",
+"Centro"
+],
+"~SILVIA": [
+"Cruzeiro",
+"Centro"
+],
+"~SOARES": [
+"Planalto",
+"Centro"
+],
+"~SOL NASCENTE": [
+"Glória",
+"Centro"
+],
+"~SUBURBANO": [
+"Jardim dos Estados",
+"Centro"
+],
+"~SUICA": [
+"Cruzeiro",
+"Centro"
+],
+"~TAVEIRA": [
+"Glória",
+"Centro"
+],
+"~TUPACERETAN": [
+"Jardim dos Estados",
+"Centro"
+],
+"~WARDE": [
+"Amambaí",
+"Centro"
+],
+"~VILLA DI PARMA": [
+"Bela Vista",
+"Centro"
+],
+"~XV DE NOVEMBRO": [
+"Jardim dos Estados",
+"Centro"
+],
+"~BOSQUE DAS ARARAS": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~BOSQUE SANTA MONICA 1 E": [
+"Popular",
+"Imbirussu"
+],
+"~BOSQUE SANTA MONICA": [
+"Popular",
+"Imbirussu"
+],
+"~COOPERMAT": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~COOPHATRABALHO": [
+"Santo Amaro",
+"Imbirussu"
+],
+"~COPHACO": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~AEROPORTO": [
+"Popular",
+"Imbirussu"
+],
+"~AROEIRA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~CANADA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"~CARIOCA": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"~DAS REGINAS": [
+"Popular",
+"Imbirussu"
+],
+"~DO ZE PEREIRA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~IMA": [
+"Santo Antônio",
+"Imbirussu"
+],
+"~INAPOLIS": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"~ITALIA": [
+"Popular",
+"Imbirussu"
+],
+"~ITAPUA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"~LEONIDIA": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~MANDALA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"~MATHILDE": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~PANAMA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~PANTANAL": [
+"Popular",
+"Imbirussu"
+],
+"~SAYONARA": [
+"Popular",
+"Imbirussu"
+],
+"~LAR DO TRABALHADOR": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~PAPA JOAO PAULO": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~JAGUARIBE": [
+"Santo Antônio",
+"Imbirussu"
+],
+"~MACAE": [
+"Popular",
+"Imbirussu"
+],
+"~MORADA IMPERIAL": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"~NOVA CAMPO GRANDE": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"~NUCLEO INDUSTRIAL": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"~DOS IPES": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~BELLINATE": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~DOS BANCARIOS": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~SAO DOMINGOS": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~POLO EMPRESARIAL OESTE": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"~POPULAR": [
+"Popular",
+"Imbirussu"
+],
+"~PORTAL DO PANAMA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~RECANTO DOS PASSAROS": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~SIRIO LIBANES": [
+"Santo Amaro",
+"Imbirussu"
+],
+"~ANA MARIA DO COUTO": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~BUZIOS": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~HUGO RODRIGUES": [
+"Santo Amaro",
+"Imbirussu"
+],
+"~NELSON TRAD": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"~DOS FLAMINGOS": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~SAGARANA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~SANTA CARMELIA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"~ACROPOLIS": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~ALBA": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~ALMEIDA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"~AVIACAO": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~BOSQUE DA SAUDADE": [
+"Santo Antônio",
+"Imbirussu"
+],
+"~CINAMOMO": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~COUTINHO": [
+"Santo Antônio",
+"Imbirussu"
+],
+"~DORIZA": [
+"Santo Antônio",
+"Imbirussu"
+],
+"~DOUTOR JAIR GARCIA": [
+"Santo Amaro",
+"Imbirussu"
+],
+"~DUQUE DE CAXIAS": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~ELIANE": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"~ENTRONCAMENTO": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"~ESPANHOLA": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~BEIJA FLOR": [
+"Santo Amaro",
+"Imbirussu"
+],
+"~MANOEL SECCO THOME": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"~NOSSA SENHORA AUXILIADORA": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~NOVA": [
+"Santo Antônio",
+"Imbirussu"
+],
+"~ROMANA": [
+"Popular",
+"Imbirussu"
+],
+"~ROSALINA": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~SANTA RITA": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~SANTO AMARO": [
+"Santo Amaro",
+"Imbirussu"
+],
+"~SAO MARCOS": [
+"Santo Amaro",
+"Imbirussu"
+],
+"~SERRADINHO": [
+"Nova Campo Grande",
+"Imbirussu"
+],
+"~SILVIA REGINA": [
+"Santo Antônio",
+"Imbirussu"
+],
+"~SOBRINHO": [
+"Vila Sobrinho",
+"Imbirussu"
+],
+"~ALTO LEBLON": [
+"Leblon",
+"Lagoa"
+],
+"~ARAPONGAS": [
+"Tarumã",
+"Lagoa"
+],
+"~BELA LAGUNA": [
+"Caiobá",
+"Lagoa"
+],
+"~CAICARA": [
+"Caiçara",
+"Lagoa"
+],
+"~BONANCA": [
+"Leblon",
+"Lagoa"
+],
+"~SERRA AZUL": [
+"Batistão",
+"Lagoa"
+],
+"~TARUMA": [
+"Tarumã",
+"Lagoa"
+],
+"~COOPHAMAT": [
+"Leblon",
+"Lagoa"
+],
+"~DESMEMBRAMENTO ESTEBAN CORNELAS": [
+"Bandeirantes",
+"Lagoa"
+],
+"~DESMEMBRAMENTO FLORIO ALCEBIADES BRANDAO": [
+"Leblon",
+"Lagoa"
+],
+"~ESTEBAN CORNELAS": [
+"Leblon",
+"Lagoa"
+],
+"~FAVELA TARUMA": [
+"Coophavilla",
+"Lagoa"
+],
+"~ANTARCTICA": [
+"Leblon",
+"Lagoa"
+],
+"~BATISTAO": [
+"Batistão",
+"Lagoa"
+],
+"~CORCOVADO": [
+"Tarumã",
+"Lagoa"
+],
+"~DA LAPA": [
+"Leblon",
+"Lagoa"
+],
+"~DOS BOGGI": [
+"Tijuca",
+"Lagoa"
+],
+"~EUROPA": [
+"Leblon",
+"Lagoa"
+],
+"~MATO GROSSO": [
+"Batistão",
+"Lagoa"
+],
+"~OURO VERDE": [
+"Coophavilla",
+"Lagoa"
+],
+"~RANCHO ALEGRE": [
+"Caiobá",
+"Lagoa"
+],
+"~SANTA EMILIA": [
+"São Conrado",
+"Lagoa"
+],
+"~SAO CONRADO": [
+"São Conrado",
+"Lagoa"
+],
+"~SOL POENTE": [
+"Tarumã",
+"Lagoa"
+],
+"~TATIANA": [
+"Leblon",
+"Lagoa"
+],
+"~TIJUCA": [
+"Tijuca",
+"Lagoa"
+],
+"~VERDES MARES": [
+"Tijuca",
+"Lagoa"
+],
+"~KELLEM": [
+"Coophavilla",
+"Lagoa"
+],
+"~VILLA LOBOS": [
+"Batistão",
+"Lagoa"
+],
+"~LAGOA PARK": [
+"Batistão",
+"Lagoa"
+],
+"~BONJARDIM": [
+"Leblon",
+"Lagoa"
+],
+"~INTERPRAIA": [
+"São Conrado",
+"Lagoa"
+],
+"~BURITI": [
+"Leblon",
+"Lagoa"
+],
+"~DOS GIRASSOIS": [
+"União",
+"Lagoa"
+],
+"~UNIAO": [
+"União",
+"Lagoa"
+],
+"~PORTAL CAIOBA": [
+"Caiobá",
+"Lagoa"
+],
+"~PORTAL DAS LARANJEIRAS": [
+"Tarumã",
+"Lagoa"
+],
+"~AQUARIUS": [
+"São Conrado",
+"Lagoa"
+],
+"~BARRA DA TIJUCA": [
+"Tijuca",
+"Lagoa"
+],
+"~DAS FLORES": [
+"União",
+"Lagoa"
+],
+"~RIVIEIRA PARK": [
+"Caiobá",
+"Lagoa"
+],
+"~SANTOS DUMONT": [
+"Taveirópolis",
+"Lagoa"
+],
+"~SAO JORGE DA LAGOA": [
+"Batistão",
+"Lagoa"
+],
+"~SAO PEDRO": [
+"Tijuca",
+"Lagoa"
+],
+"~BANDEIRANTES": [
+"Bandeirantes",
+"Lagoa"
+],
+"~BELO HORIZONTE": [
+"Taveirópolis",
+"Lagoa"
+],
+"~DOS MARIMBAS": [
+"Caiçara",
+"Lagoa"
+],
+"~FERNANDA": [
+"Caiobá",
+"Lagoa"
+],
+"~JANDAIA": [
+"Tarumã",
+"Lagoa"
+],
+"~ANAHY": [
+"Caiçara",
+"Lagoa"
+],
+"~JUREMA": [
+"Bandeirantes",
+"Lagoa"
+],
+"~JUSSARA": [
+"Leblon",
+"Lagoa"
+],
+"~MAJOR JUARES": [
+"São Conrado",
+"Lagoa"
+],
+"~MARINGA": [
+"Caiçara",
+"Lagoa"
+],
+"~OSPAMPAS": [
+"Leblon",
+"Lagoa"
+],
+"~OURO FINO": [
+"Leblon",
+"Lagoa"
+],
+"~TAVEIROPOLIS": [
+"Taveirópolis",
+"Lagoa"
+],
+"~VILMA": [
+"Tijuca",
+"Lagoa"
+],
+"~ALPHAVILLE CAMPO GRANDE": [
+"Novos Estados",
+"Prosa"
+],
+"~ALTOS DA AFONSO PENA": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"~CHACARA DOS PODERES": [
+"Chácara dos Poderes",
+"Prosa"
+],
+"~CIDADE JARDIM": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"~MATA DO JACINTO": [
+"Mata do Jacinto",
+"Prosa"
+],
+"~NOVA IPANEMA": [
+"Santa Fé",
+"Prosa"
+],
+"~COOPHABANCO": [
+"Autonomista",
+"Prosa"
+],
+"~FAVELA DO LIMAO": [
+"Mata do Jacinto",
+"Prosa"
+],
+"~GOLDEN GATE PARK": [
+"Carandá",
+"Prosa"
+],
+"~AUTONOMISTA": [
+"Autonomista",
+"Prosa"
+],
+"~CABRAL": [
+"Chácara dos Poderes",
+"Prosa"
+],
+"~GIOCONDO ORSI": [
+"Autonomista",
+"Prosa"
+],
+"~JACARANDA": [
+"Novos Estados",
+"Prosa"
+],
+"~MARABA": [
+"Margarida",
+"Prosa"
+],
+"~MONTEVIDEU": [
+"Novos Estados",
+"Prosa"
+],
+"~NOROESTE": [
+"Noroeste",
+"Prosa"
+],
+"~PINHEIROS": [
+"Chácara dos Poderes",
+"Prosa"
+],
+"~UMUARAMA": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"~VITRINE": [
+"Autonomista",
+"Prosa"
+],
+"~JATIUCA PARK": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"~PAULO": [
+"Margarida",
+"Prosa"
+],
+"~ABAETE": [
+"Mata do Jacinto",
+"Prosa"
+],
+"~COPACABANA": [
+"Carandá",
+"Prosa"
+],
+"~CEASA": [
+"Mata do Jacinto",
+"Prosa"
+],
+"~GUAICURUS": [
+"Margarida",
+"Prosa"
+],
+"~JOAQUIM EUZEBIO": [
+"Margarida",
+"Prosa"
+],
+"~MARIO DE ANDRADE": [
+"Carandá",
+"Prosa"
+],
+"~NAZARE": [
+"Mata do Jacinto",
+"Prosa"
+],
+"~VERDE BRASIL": [
+"Margarida",
+"Prosa"
+],
+"~NOVA SERRANA": [
+"Noroeste",
+"Prosa"
+],
+"~PETIT PARK": [
+"Autonomista",
+"Prosa"
+],
+"~VIA PARK": [
+"Carandá",
+"Prosa"
+],
+"~SOTER": [
+"Mata do Jacinto",
+"Prosa"
+],
+"~NAHIMA PARK": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"~NOVA BAHIA": [
+"Novos Estados",
+"Prosa"
+],
+"~NOVO ALAGOAS": [
+"Novos Estados",
+"Prosa"
+],
+"~NOVO AMAZONAS": [
+"Novos Estados",
+"Prosa"
+],
+"~NOVO MARANHAO": [
+"Novos Estados",
+"Prosa"
+],
+"~NOVO MINAS GERAIS": [
+"Novos Estados",
+"Prosa"
+],
+"~NOVO PARANA": [
+"Novos Estados",
+"Prosa"
+],
+"~NOVO PERNAMBUCO": [
+"Novos Estados",
+"Prosa"
+],
+"~NOVO RIO GRANDE DO SUL": [
+"Novos Estados",
+"Prosa"
+],
+"~NOVO SAO PAULO": [
+"Novos Estados",
+"Prosa"
+],
+"~NOVO SERGIPE": [
+"Novos Estados",
+"Prosa"
+],
+"~NUCLEO MARABA": [
+"Margarida",
+"Prosa"
+],
+"~PORTAL TAYANA": [
+"Carandá",
+"Prosa"
+],
+"~ITACOLOMI": [
+"Carandá",
+"Prosa"
+],
+"~SHALOM": [
+"Noroeste",
+"Prosa"
+],
+"~VIA PARK ITALIA": [
+"Carandá",
+"Prosa"
+],
+"~ROYAL PARK": [
+"Santa Fé",
+"Prosa"
+],
+"~SAN MARINO PARK": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"~SERRAVILLE": [
+"Noroeste",
+"Prosa"
+],
+"~TAQUARAL BOSQUE": [
+"Novos Estados",
+"Prosa"
+],
+"~TAYAMA PARK": [
+"Carandá",
+"Prosa"
+],
+"~TROPICAL PARK": [
+"Carandá",
+"Prosa"
+],
+"~CACIQUE": [
+"Autonomista",
+"Prosa"
+],
+"~CAROLINA": [
+"Margarida",
+"Prosa"
+],
+"~CATARINA": [
+"Margarida",
+"Prosa"
+],
+"~CRUZEIRO DO SUL": [
+"Autonomista",
+"Prosa"
+],
+"~DO POLONES": [
+"Carandá",
+"Prosa"
+],
+"~LUCINDA": [
+"Margarida",
+"Prosa"
+],
+"~MANOEL DA COSTA LIMA": [
+"Chácara Cachoeira",
+"Prosa"
+],
+"~MARGARIDA": [
+"Margarida",
+"Prosa"
+],
+"~MONTE CARLO": [
+"Autonomista",
+"Prosa"
+],
+"~NASCENTE": [
+"Carandá",
+"Prosa"
+],
+"~ORSI": [
+"Autonomista",
+"Prosa"
+],
+"~PAGE": [
+"Autonomista",
+"Prosa"
+],
+"~RAQUEL": [
+"Chácara dos Poderes",
+"Prosa"
+],
+"~RICA": [
+"Autonomista",
+"Prosa"
+],
+"~SONIA": [
+"Chácara dos Poderes",
+"Prosa"
+],
+"~TAQUARI": [
+"Autonomista",
+"Prosa"
+],
+"~TELMA": [
+"Chácara dos Poderes",
+"Prosa"
+],
+"~AGUA LIMPA PARK": [
+"Vila Nasser",
+"Segredo"
+],
+"~ARNALDINO DA SILVA": [
+"Mata do Segredo",
+"Segredo"
+],
+"~ARY ABUSSAFI DE LIMA": [
+"Coronel Antonino",
+"Segredo"
+],
+"~BECO DA LIBERDADE": [
+"Coronel Antonino",
+"Segredo"
+],
+"~BOM RETIRO": [
+"Vila Nasser",
+"Segredo"
+],
+"~BOSQUE DA SAUDE": [
+"Vila Nasser",
+"Segredo"
+],
+"~CENTER PARK": [
+"Monte Castelo",
+"Segredo"
+],
+"~NOVA OLINDA": [
+"Coronel Antonino",
+"Segredo"
+],
+"~ESTRELA DO SUL": [
+"Coronel Antonino",
+"Segredo"
+],
+"~COOPHASUL": [
+"Vila Nasser",
+"Segredo"
+],
+"~CORIOLANDO DA SILVA CORREA": [
+"Nova Lima",
+"Segredo"
+],
+"~CORONEL ANTONINO": [
+"Coronel Antonino",
+"Segredo"
+],
+"~ELDORADO": [
+"Coronel Antonino",
+"Segredo"
+],
+"~FAVELA GUATAMBU": [
+"Coronel Antonino",
+"Segredo"
+],
+"~FAVELA NACIONAL": [
+"Coronel Antonino",
+"Segredo"
+],
+"~FAVELA RIO DE JANEIRO": [
+"Coronel Antonino",
+"Segredo"
+],
+"~GREGORIO CORREA": [
+"Coronel Antonino",
+"Segredo"
+],
+"~GUANABARA": [
+"Coronel Antonino",
+"Segredo"
+],
+"~ALTO SAO FRANCISCO": [
+"Vila Nasser",
+"Segredo"
+],
+"~ANACHE": [
+"Nova Lima",
+"Segredo"
+],
+"~ARUBA": [
+"Monte Castelo",
+"Segredo"
+],
+"~BARCELONA": [
+"Coronel Antonino",
+"Segredo"
+],
+"~BOSQUE DE AVILAN": [
+"Monte Castelo",
+"Segredo"
+],
+"~CAMPO BELO": [
+"Mata do Segredo",
+"Segredo"
+],
+"~CAMPO NOVO": [
+"Mata do Segredo",
+"Segredo"
+],
+"~CAMPO VERDE": [
+"Coronel Antonino",
+"Segredo"
+],
+"~COLUMBIA": [
+"Nova Lima",
+"Segredo"
+],
+"~DA MOOCA": [
+"Vila Nasser",
+"Segredo"
+],
+"~DAS ACACIAS": [
+"Vila Nasser",
+"Segredo"
+],
+"~DAS CEREJEIRAS": [
+"Mata do Segredo",
+"Segredo"
+],
+"~DAS PAINEIRAS": [
+"José Abrão",
+"Segredo"
+],
+"~FLUMINENSE": [
+"Vila Nasser",
+"Segredo"
+],
+"~IMPERIAL": [
+"Coronel Antonino",
+"Segredo"
+],
+"~MIRASOL": [
+"Coronel Antonino",
+"Segredo"
+],
+"~MONTE ALTO": [
+"Vila Nasser",
+"Segredo"
+],
+"~NASCENTE DO SEGREDO": [
+"Mata do Segredo",
+"Segredo"
+],
+"~ORACILIA": [
+"Seminário",
+"Segredo"
+],
+"~PAQUETA": [
+"Vila Nasser",
+"Segredo"
+],
+"~PARADISO": [
+"Vila Nasser",
+"Segredo"
+],
+"~PRESIDENTE": [
+"Mata do Segredo",
+"Segredo"
+],
+"~SEMINARIO": [
+"Seminário",
+"Segredo"
+],
+"~TALISMA": [
+"Coronel Antonino",
+"Segredo"
+],
+"~VENEZA": [
+"Vila Nasser",
+"Segredo"
+],
+"~VIDA NOVA": [
+"Nova Lima",
+"Segredo"
+],
+"~JOSE PRATES": [
+"Nova Lima",
+"Segredo"
+],
+"~JOSE TAVARES DO COUTO": [
+"Nova Lima",
+"Segredo"
+],
+"~LAGOA DA CRUZ": [
+"Seminário",
+"Segredo"
+],
+"~MORADA DO SOSSEGO": [
+"Coronel Antonino",
+"Segredo"
+],
+"~JABURU": [
+"Coronel Antonino",
+"Segredo"
+],
+"~PEREIRA BORGES": [
+"Nova Lima",
+"Segredo"
+],
+"~RAIZES": [
+"Coronel Antonino",
+"Segredo"
+],
+"~CAMPO DOURADO": [
+"Monte Castelo",
+"Segredo"
+],
+"~COSTA VERDE": [
+"Monte Castelo",
+"Segredo"
+],
+"~CRISTALDO": [
+"Mata do Segredo",
+"Segredo"
+],
+"~DOUTOR MIGUEL VIEIRA FERREIRA": [
+"Vila Nasser",
+"Segredo"
+],
+"~SALINAS": [
+"Mata do Segredo",
+"Segredo"
+],
+"~MORADA DOS DEUSES": [
+"Vila Nasser",
+"Segredo"
+],
+"~MORADA VERDE": [
+"Coronel Antonino",
+"Segredo"
+],
+"~NORTH PARK": [
+"Seminário",
+"Segredo"
+],
+"~NOSSA SENHORA DAS GRACAS": [
+"Vila Nasser",
+"Segredo"
+],
+"~NOVA LIMA": [
+"Nova Lima",
+"Segredo"
+],
+"~JOSE ABRAO": [
+"José Abrão",
+"Segredo"
+],
+"~NUCLEO MORADA VERDE": [
+"Coronel Antonino",
+"Segredo"
+],
+"~NUCLEO PARQUE DOS LARANJAIS": [
+"José Abrão",
+"Segredo"
+],
+"~OSCAR SALAZAR": [
+"Nova Lima",
+"Segredo"
+],
+"~IGUATEMI": [
+"Nova Lima",
+"Segredo"
+],
+"~IZABEL GARDEN S": [
+"Coronel Antonino",
+"Segredo"
+],
+"~AZALEIA": [
+"Vila Nasser",
+"Segredo"
+],
+"~PORTAL DO GRAMADO": [
+"Seminário",
+"Segredo"
+],
+"~PRAIA DA URCA": [
+"Monte Castelo",
+"Segredo"
+],
+"~RECANTO PANTANEIRO": [
+"Coronel Antonino",
+"Segredo"
+],
+"~ALTO TAMANDARE": [
+"Vila Nasser",
+"Segredo"
+],
+"~ATLANTICO SUL": [
+"Coronel Antonino",
+"Segredo"
+],
+"~CARAJAS": [
+"Vila Nasser",
+"Segredo"
+],
+"~GABURA": [
+"Monte Castelo",
+"Segredo"
+],
+"~GAMA": [
+"Mata do Segredo",
+"Segredo"
+],
+"~INDAIA": [
+"Monte Castelo",
+"Segredo"
+],
+"~OTAVIO PECORA": [
+"Monte Castelo",
+"Segredo"
+],
+"~RECANTO DO CERRADO": [
+"Vila Nasser",
+"Segredo"
+],
+"~TOLENTINO": [
+"Vila Nasser",
+"Segredo"
+],
+"~VALE DO SOL": [
+"Monte Castelo",
+"Segredo"
+],
+"~SANTA LUZIA": [
+"Vila Nasser",
+"Segredo"
+],
+"~SAO BENEDITO": [
+"Seminário",
+"Segredo"
+],
+"~SAO CAETANO": [
+"Vila Nasser",
+"Segredo"
+],
+"~SETVILLAGE": [
+"Vila Nasser",
+"Segredo"
+],
+"~TARSILA DO AMARAL": [
+"Nova Lima",
+"Segredo"
+],
+"~TREVISO": [
+"Mata do Segredo",
+"Segredo"
+],
+"~ANTONIETA": [
+"Seminário",
+"Segredo"
+],
+"~CALIFORNIA": [
+"Coronel Antonino",
+"Segredo"
+],
+"~COX": [
+"Vila Nasser",
+"Segredo"
+],
+"~DALILA": [
+"Seminário",
+"Segredo"
+],
+"~DEDE": [
+"Vila Nasser",
+"Segredo"
+],
+"~MARIA AMELIA": [
+"Seminário",
+"Segredo"
+],
+"~LEDA": [
+"Seminário",
+"Segredo"
+],
+"~LILI": [
+"Vila Nasser",
+"Segredo"
+],
+"~MARLI": [
+"Vila Nasser",
+"Segredo"
+],
+"~N SENHORA APARECIDA": [
+"Vila Nasser",
+"Segredo"
+],
+"~NASSER": [
+"Vila Nasser",
+"Segredo"
+],
+"~NEUZA": [
+"Vila Nasser",
+"Segredo"
+],
+"~NILZA": [
+"Vila Nasser",
+"Segredo"
+],
+"~NOSSA SENHORA DA CONCEICAO": [
+"Seminário",
+"Segredo"
+],
+"~NOVO HORIZONTE": [
+"Vila Nasser",
+"Segredo"
+],
+"~SANTA LUCIA": [
+"Seminário",
+"Segredo"
+],
+"~SAO JOAO BOSCO": [
+"Monte Castelo",
+"Segredo"
+],
+"~SAO ROQUE": [
+"Seminário",
+"Segredo"
+],
+"~SARAIVA": [
+"Seminário",
+"Segredo"
+],
+"~TRIANGULO": [
+"Coronel Antonino",
+"Segredo"
+],
+"~VILLA RAVENNA": [
+"Coronel Antonino",
+"Segredo"
+],
+"~GRANDE LAGEADO": [
+"Grande Lageado",
+"Anhanduizinho"
+],
+"~VILASBOAS": [
+"Vilasboas",
+"Bandeira"
+],
+"~CENTRO": [
+"Centro",
+"Centro"
+],
+"~ITANHANGA": [
+"Itanhangá",
+"Centro"
+],
+"~PANAMA ZE PEREIRA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~CAIOBA": [
+"Caiobá",
+"Lagoa"
+],
+"~COOPHAVILLA": [
+"Coophavilla",
+"Lagoa"
+],
+"~NOVOS ESTADOS": [
+"Novos Estados",
+"Prosa"
+],
+"~ESTRELA DALVA": [
+"Estrela Dalva",
+"Prosa"
+],
+"~CARANDA": [
+"Carandá",
+"Prosa"
+],
+"~MATA DO SEGREDO": [
+"Mata do Segredo",
+"Segredo"
+],
+"~BASE AEREA": [
+"Taveirópolis",
+"Lagoa"
+],
+"~BOM JARDIM": [
+"Leblon",
+"Lagoa"
+],
+"~BORDON": [
+"Popular",
+"Imbirussu"
+],
+"~CHACARA DAS MANSOES": [
+"Zona rural",
+"Zona rural"
+],
+"~OCTAVIO PECORA": [
+"Monte Castelo",
+"Segredo"
+],
+"~DISTRITO DE AGUAO": [
+"Distrito de Rochedinho",
+"Distritos"
+],
+"~DISTRITO DE ANHANDUI": [
+"Distrito de Anhanduí",
+"Distritos"
+],
+"~DISTRITO DE ROCHEDINHO": [
+"Distrito de Bom Fim",
+"Distritos"
+],
+"~ESTRELA D ALVA": [
+"Estrela Dalva",
+"Prosa"
+],
+"~EUDES COSTA": [
+"Cruzeiro",
+"Centro"
+],
+"~INDUBRASIL": [
+"Núcleo Industrial",
+"Imbirussu"
+],
+"~DAS HORTENCIAS": [
+"Aero Rancho",
+"Anhanduizinho"
+],
+"~TRES BARRAS": [
+"Zona rural",
+"Zona rural"
+],
+"~ALBUQUERQUE": [
+"Dr. Albuquerque",
+"Bandeira"
+],
+"~BANDEIRANTE": [
+"Bandeirantes",
+"Lagoa"
+],
+"~JOCKEI CLUBE": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"~SANTA DOROTHEIA": [
+"Glória",
+"Centro"
+],
+"~ZE PEREIRA": [
+"Panamá / Zé Pereira",
+"Imbirussu"
+],
+"~JOCKEY CLUBE": [
+"Jockey Club",
+"Anhanduizinho"
+],
+"~UNIVERSITARIAS": [
+"Alves Pereira",
+"Anhanduizinho"
+]
+}
+}
