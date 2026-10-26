@@ -123,6 +123,19 @@ def title_pt(s: str) -> str:
     return " ".join(out)
 
 
+_SIGLAS_MAIUSC = {"PT", "PL", "PP", "PDT", "PSDB", "PSD", "MDB", "PSB", "PSOL", "PV", "PTB", "PSL", "PSC", "PCB", "PCO", "PSTU",
+                  "UP", "DC", "PRD", "PMB", "PMN", "CG", "MS", "TV", "UFMS", "UEMS", "II", "III", "IV", "VI", "VII", "VIII", "IX", "XI"}
+
+
+def nome_urna(s: str) -> str:
+    """Nome de urna em caixa de título, mantendo siglas (ex.: 'ZECA DO PT' -> 'Zeca do PT')."""
+    out = []
+    for w in title_pt(s).split():
+        bare = strip_accents(w).upper().strip(".")
+        out.append(w.upper() if bare in _SIGLAS_MAIUSC else w)
+    return " ".join(out)
+
+
 def to_float(v: str | None) -> float | None:
     if v is None:
         return None
@@ -380,7 +393,7 @@ def build_dataset(ds: dict, locais_cache: dict) -> dict | None:
 
     candidatos = sorted(
         ([nr, title_pt(nomes[nr]) if len(nr) > 2 else f"Legenda {partidos_nome.get(nr, nr)}", nr[:2], tot_cand[nr],
-          title_pt(urnas[nr]) if nr in urnas else ""]
+          nome_urna(urnas[nr]) if nr in urnas else ""]
          for nr in tot_cand),
         key=lambda x: -x[3],
     )
