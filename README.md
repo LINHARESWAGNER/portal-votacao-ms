@@ -11,14 +11,18 @@ a partir do Portal de Dados Abertos do TSE.
 
 ## O que o portal faz
 
-- **Mapa** dos locais de votação, com o **resumo embaixo** por bairro ou cidade.
-- **Abrangência:** Estado, Capital (Campo Grande) ou Interior; no Estado e no Interior dá para ver por **bairros** ou só por **cidades**.
+- **Filtros no painel lateral:** abrangência (Estado, Capital, Interior), agrupamento
+  (Capital: Regiões / Bairros / Locais de votação; Estado e Interior: Cidades / Bairros / Locais de votação),
+  município, partido e busca de candidato.
+- **Mapa:** em Campo Grande, regiões e bairros aparecem **pintados** pelo contorno oficial; nos demais casos,
+  bolhas por local, bairro ou cidade. Passe o mouse para ver os números; clique para abrir o ranking na tabela.
+- **Tabela e gráfico de colunas** logo abaixo do mapa, com as mesmas linhas e a mesma ordem (o gráfico mostra votos ou % dos válidos).
 - **Comparação de até 4 candidatos**, da mesma eleição ou de eleições diferentes
-  (ex.: vereador 2020 × vereador 2024, ou vereador 2024 × deputado estadual 2026).
-  A mesma pessoa é reconhecida entre eleições pelo nome completo; os locais são casados pela coordenada
-  e os bairros pelo nome padronizado. No mapa, cada local fica com a cor de quem teve a maior % dos votos válidos ali.
-- **Campo Grande por região:** na Capital, o resumo mostra as **7 regiões urbanas** (Anhanduizinho, Bandeira,
-  Centro, Imbirussu, Lagoa, Prosa, Segredo), os **bairros oficiais** ou os **bairros como estão no cadastro do TSE**.
+  (ex.: vereador 2020 × vereador 2024, ou vereador 2024 × deputado estadual 2026). As colunas ficam sempre em
+  **ordem cronológica** e a diferença (Δ) é **eleição mais recente − mais antiga**.
+  A mesma pessoa é reconhecida entre eleições pelo nome completo; os locais são casados pela coordenada.
+  No mapa, cada área fica com a cor de quem teve a maior % dos votos válidos ali (cor mais forte = vantagem maior).
+- **Campo Grande:** 7 regiões urbanas (Anhanduizinho, Bandeira, Centro, Imbirussu, Lagoa, Prosa, Segredo) e 74 bairros oficiais.
   Distritos (Anhanduí, Rochedinho, Bom Fim) e zona rural aparecem à parte.
 - O endereço da página guarda a análise (eleição, candidatos, recorte), então dá para compartilhar o link.
 
@@ -89,6 +93,10 @@ Branch: `main` / pasta `/docs`**. Cada `git push` atualiza o site.
   [OpenStreetMap](https://www.openstreetmap.org/user/ivaldonm/diary/36824) (dados © contribuidores OSM, licença ODbL).
 - **Regiões**: da planilha *ListaGlobalRegioes* (loteamento → bairro → região urbana).
 - **`nome`**: reserva por nome de bairro/loteamento, usada quando surge um local novo sem coordenada conhecida.
+
+Os contornos usados para pintar o mapa ficam em `docs/data/geo/` (`cg_bairros.geojson` e `cg_regioes.geojson`):
+72 bairros vêm do OpenStreetMap (via Nominatim); Pioneiros e Centenário, que lá só existem como ponto, foram
+desenhados pelo vão entre os bairros vizinhos. As regiões são a união dos bairros de cada uma.
 
 Se uma eleição futura trouxer locais novos, eles caem na reserva por nome; o que não casar aparece como "Não classificado".
 

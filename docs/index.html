@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Votação MS por Bairro</title>
-<meta name="description" content="Resultados eleitorais de Mato Grosso do Sul por local de votação, bairro e cidade, a partir dos dados abertos do TSE.">
+<meta name="description" content="Resultados eleitorais de Mato Grosso do Sul por local de votação, bairro, região e cidade, a partir dos dados abertos do TSE.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
@@ -23,7 +23,7 @@
 </header>
 
 <main class="layout">
-  <aside class="panel side">
+  <aside class="side">
     <section class="kpis" id="kpis"></section>
 
     <section class="block" id="cmpBlock" hidden>
@@ -35,6 +35,19 @@
     </section>
 
     <section class="block">
+      <h2>Filtros</h2>
+      <div class="row stack">
+        <label>Abrangência</label>
+        <div class="seg" id="segScope" role="group" aria-label="Abrangência">
+          <button data-v="estado">Estado</button>
+          <button data-v="capital">Capital</button>
+          <button data-v="interior">Interior</button>
+        </div>
+      </div>
+      <div class="row stack">
+        <label>Agrupar por</label>
+        <div class="seg" id="segLevel" role="group" aria-label="Agrupar por"></div>
+      </div>
       <div class="row">
         <label for="fMun">Município</label>
         <select id="fMun"></select>
@@ -63,18 +76,9 @@
       <div id="toast" class="toast" hidden></div>
     </div>
 
-    <section class="summary">
-      <div class="summary-head">
+    <section class="card">
+      <div class="card-head">
         <h2 id="detTitulo">Resumo</h2>
-        <div class="seg" id="segScope" role="group" aria-label="Abrangência">
-          <button data-v="estado">Estado</button>
-          <button data-v="capital">Capital</button>
-          <button data-v="interior">Interior</button>
-        </div>
-        <div class="seg" id="segLevel" role="group" aria-label="Nível">
-          <button data-v="bairros">Bairros</button>
-          <button data-v="cidades">Cidades</button>
-        </div>
         <button id="voltar" class="link" hidden>← voltar</button>
         <span class="spacer"></span>
         <button id="csv" class="link">baixar CSV</button>
@@ -83,15 +87,32 @@
       <div class="tablewrap">
         <table id="tabela"><thead></thead><tbody></tbody></table>
       </div>
-      <p class="note">
-        "Bairro" é onde fica o <em>local de votação</em> (a escola), não onde o eleitor mora.
-        Entre eleições diferentes, o mesmo candidato é reconhecido pelo nome completo; locais e bairros são casados pela posição e pelo nome.
-      </p>
     </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2 id="chartTitulo">Gráfico</h2>
+        <span class="spacer"></span>
+        <div class="seg" id="segMetric" role="group" aria-label="Medida do gráfico">
+          <button data-v="v" aria-pressed="true">Votos</button>
+          <button data-v="p" aria-pressed="false">% dos válidos</button>
+        </div>
+      </div>
+      <p id="chartSub" class="muted small"></p>
+      <div class="chartbox"><canvas id="chart" aria-label="Gráfico de colunas com os dados da tabela" role="img"></canvas></div>
+    </section>
+
+    <p class="note">
+      "Bairro" é onde fica o <em>local de votação</em> (a escola), não onde o eleitor mora.
+      Entre eleições diferentes, o mesmo candidato é reconhecido pelo nome completo; locais e bairros são casados pela posição e pelo nome.
+      Diferenças (Δ) são sempre da eleição mais recente menos a mais antiga.
+      Limites de bairros: © contribuidores do OpenStreetMap (ODbL).
+    </p>
   </section>
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
