@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Votação MS por Bairro</title>
-<meta name="description" content="Resultados eleitorais de Mato Grosso do Sul por local de votação e bairro, a partir dos dados abertos do TSE.">
+<meta name="description" content="Resultados eleitorais de Mato Grosso do Sul por local de votação, bairro e cidade, a partir dos dados abertos do TSE.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
@@ -26,6 +26,14 @@
   <aside class="panel side">
     <section class="kpis" id="kpis"></section>
 
+    <section class="block" id="cmpBlock" hidden>
+      <div class="block-head">
+        <h2>Comparação</h2>
+        <button id="limpar" class="link">limpar</button>
+      </div>
+      <ul id="chips" class="chips"></ul>
+    </section>
+
     <section class="block">
       <div class="row">
         <label for="fMun">Município</label>
@@ -41,32 +49,46 @@
     <section class="block grow">
       <div class="block-head">
         <h2>Candidatos</h2>
-        <button id="limpar" class="link" hidden>limpar seleção</button>
+        <span class="muted small">clique para comparar (até 4)</span>
       </div>
       <ol id="listaCand" class="cand-list"></ol>
     </section>
   </aside>
 
-  <section class="mapwrap">
-    <div id="map"></div>
-    <div id="legend" class="legend"></div>
-    <div id="loading" class="loading">Carregando…</div>
-  </section>
+  <section class="main">
+    <div class="mapwrap">
+      <div id="map"></div>
+      <div id="legend" class="legend"></div>
+      <div id="loading" class="loading">Carregando…</div>
+      <div id="toast" class="toast" hidden></div>
+    </div>
 
-  <aside class="panel detail">
-    <div class="block-head">
-      <h2 id="detTitulo">Bairros</h2>
-      <button id="csv" class="link">baixar CSV</button>
-    </div>
-    <p id="detSub" class="muted small"></p>
-    <div class="tablewrap">
-      <table id="tabela"><thead></thead><tbody></tbody></table>
-    </div>
-    <p class="note">
-      <strong>Atenção:</strong> "bairro" é onde fica o <em>local de votação</em> (a escola), não onde o eleitor mora.
-      Nomes de bairro foram padronizados a partir do cadastro do TSE. Votos de legenda aparecem como "Legenda".
-    </p>
-  </aside>
+    <section class="summary">
+      <div class="summary-head">
+        <h2 id="detTitulo">Resumo</h2>
+        <div class="seg" id="segScope" role="group" aria-label="Abrangência">
+          <button data-v="estado">Estado</button>
+          <button data-v="capital">Capital</button>
+          <button data-v="interior">Interior</button>
+        </div>
+        <div class="seg" id="segLevel" role="group" aria-label="Nível">
+          <button data-v="bairros">Bairros</button>
+          <button data-v="cidades">Cidades</button>
+        </div>
+        <button id="voltar" class="link" hidden>← voltar</button>
+        <span class="spacer"></span>
+        <button id="csv" class="link">baixar CSV</button>
+      </div>
+      <p id="detSub" class="muted small"></p>
+      <div class="tablewrap">
+        <table id="tabela"><thead></thead><tbody></tbody></table>
+      </div>
+      <p class="note">
+        "Bairro" é onde fica o <em>local de votação</em> (a escola), não onde o eleitor mora.
+        Entre eleições diferentes, o mesmo candidato é reconhecido pelo nome completo; locais e bairros são casados pela posição e pelo nome.
+      </p>
+    </section>
+  </section>
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
