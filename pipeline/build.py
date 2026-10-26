@@ -48,6 +48,21 @@ csv.field_size_limit(10**9)
 # OpenStreetMap) e "nome": {bairro do TSE normalizado: [bairro, região]} (reserva para locais novos).
 CAPITAL_NOME = "Campo Grande"
 _CG = json.loads((Path(__file__).resolve().parent / "geo" / "cg_regioes.json").read_text("utf-8"))
+# Bairros oficiais do IBGE (Censo 2022) nos municípios que têm bairros definidos em lei:
+# coord do local -> [bairro, região, código]; população residente por código de bairro.
+_IBGE = json.loads((Path(__file__).resolve().parent / "geo" / "bairros_ibge.json").read_text("utf-8"))
+
+
+def bairro_ibge(info: dict) -> str | None:
+    if info.get("lat") is None:
+        return None
+    hit = _IBGE["coord"].get(f"{info['lat']:.4f},{info['lon']:.4f}")
+    return hit[0] if hit else None
+
+
+def pop_bairro(mun: str, bairro: str) -> int | None:
+    cd = _IBGE["nome_cd"].get(f"{mun}|{bairro}")
+    return _IBGE["pop"].get(str(cd)) if cd else None
 
 
 def cg_bairro_regiao(info: dict) -> tuple[str, str]:
@@ -435,7 +450,7 @@ def build_dataset(ds: dict, locais_cache: dict) -> dict | None:
     for lid in lids:
         i = local_info[lid]
         top = sorted(por_local[lid], key=lambda x: -x[1])[:10]
-        bo, reg = cg_bairro_regiao(i) if title_pt(i["municipio"]) == CAPITAL_NOME else (agrupa_bairro_interior(i["bairro"], i.get("bairro_raw", "")), "")
+        bo, reg = cg_bairro_regiao(i) if title_pt(i["municipio"]) == CAPITAL_NOME else (bairro_ibge(i) or agrupa_bairro_interior(i["bairro"], i.get("bairro_raw", "")), "")
         cg_info[lid] = (bo, reg)
         locais_out.append([
             lid, title_pt(i["nome"]), title_pt(i["endereco"]), i["bairro"], title_pt(i["municipio"]),
@@ -461,7 +476,7 @@ def build_dataset(ds: dict, locais_cache: dict) -> dict | None:
             x["locais"].append(lidx[lid]); x["validos"] += validos_local[lid]; x["eleitores"] += local_info[lid]["eleitores"]
             for nr, q in por_local[lid]:
                 x["cand"][nr] += q
-        cg_grupos[nivel] = [{"m": x["m"], "b": k[1], "r": x["r"], "l": x["locais"], "v": x["validos"], "e": x["eleitores"],
+        cg_grupos[nivel] = [{"m": x["m"], "b": k[1], "r": x["r"], "pop": pop_bairro(x["m"], k[1]) if nivel == "bairro" else None, "l": x["locais"], "v": x["validos"], "e": x["eleitores"],
                              "top": [[nr, q] for nr, q in sorted(x["cand"].items(), key=lambda t: -t[1])[:20]]}
                             for k, x in sorted(g.items())]
 

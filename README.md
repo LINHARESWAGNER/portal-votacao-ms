@@ -28,7 +28,12 @@ a partir do Portal de Dados Abertos do TSE.
   Bonito/Serra da Bodoquena, Caminhos da Fronteira, Vale das Águas, Grande Dourados, 7 Caminhos da Natureza/Cone Sul
   e Rota Norte), pintadas no mapa. A lista município → região está em `pipeline/geo/regioes_ms.py`.
 - **Campo Grande:** 7 regiões urbanas e 74 bairros oficiais; distritos e zona rural à parte.
-- **Bairros do interior:** agrupados a partir do cadastro do TSE — numerações viram um bairro só
+- **Bairros oficiais do IBGE (Censo 2022):** nos 18 municípios de MS que têm bairros definidos em lei (Campo Grande,
+  Naviraí, Três Lagoas, Nova Andradina, Corumbá, Ponta Porã, Angélica, Aquidauana, Bela Vista, Eldorado, Batayporã,
+  Iguatemi, Ivinhema, São Gabriel do Oeste, Ladário, Antônio João, Bonito e Laguna Carapã), cada local de votação é
+  classificado pela posição dentro do bairro oficial, os bairros são pintados no mapa e aparecem com a **população
+  residente** do Censo 2022.
+- **Demais bairros do interior** (ex.: Dourados): agrupados a partir do cadastro do TSE — numerações viram um bairro só
   (Jardim Flórida e Jardim Flórida II), cada distrito vira "Distrito de …", e zona rural, assentamentos e
   aldeias/reservas indígenas formam três grupos.
 - O endereço da página guarda a análise (eleições, candidatos, recorte), então dá para compartilhar o link.
@@ -99,19 +104,25 @@ O site fica na pasta `docs/`, que o GitHub Pages publica direto, sem build.
 No repositório: **Settings → Pages → Build and deployment → Source: Deploy from a branch →
 Branch: `main` / pasta `/docs`**. Cada `git push` atualiza o site.
 
-## Regiões e bairros oficiais de Campo Grande
+## Bairros oficiais (IBGE) e regiões de Campo Grande
+
+`pipeline/geo/bairros_ibge.json` vem da **malha de bairros do Censo 2022** (`MS_bairros_CD2022.zip`) e da tabela
+**População residente por bairros** do IBGE: diz em qual bairro oficial cai cada local de votação (pela coordenada;
+locais a até ~300 m da divisa vão para o bairro mais próximo) e a população de cada bairro. Os contornos do mapa
+estão em `docs/data/geo/ms_bairros.geojson`. Para atualizar, baixe os dois arquivos do IBGE em `data/raw`:
+
+- https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/MS_bairros_CD2022.zip
+- https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/tabelas_complementares/Populacao_residente_por_bairros_sexo_idade.xlsx
+
+### Regiões de Campo Grande
 
 `pipeline/geo/cg_regioes.json` diz a qual bairro oficial e região pertence cada local de votação da capital:
 
-- **`coord`**: classificação pela coordenada do local, feita com os limites de bairros do
-  [OpenStreetMap](https://www.openstreetmap.org/user/ivaldonm/diary/36824) (dados © contribuidores OSM, licença ODbL).
+- **`coord`**: bairro oficial (IBGE) e região urbana de cada local, pela coordenada.
 - **Regiões**: da planilha *ListaGlobalRegioes* (loteamento → bairro → região urbana).
 - **`nome`**: reserva por nome de bairro/loteamento, usada quando surge um local novo sem coordenada conhecida.
 
-Os contornos usados para pintar o mapa ficam em `docs/data/geo/`: `ms.geojson` (estado), `ms_municipios.geojson` (79 municípios, simplificados a ~1 km), `ms_regioes.geojson` (10 regiões do estado, união dos municípios), `cg_bairros.geojson` e `cg_regioes.geojson`.
-Nos bairros:
-72 bairros vêm do OpenStreetMap (via Nominatim); Pioneiros e Centenário, que lá só existem como ponto, foram
-desenhados pelo vão entre os bairros vizinhos. As regiões são a união dos bairros de cada uma.
+Os contornos usados para pintar o mapa ficam em `docs/data/geo/`: `ms.geojson` (estado), `ms_municipios.geojson` (79 municípios, simplificados a ~1 km), `ms_regioes.geojson` (10 regiões do estado, união dos municípios), `ms_bairros.geojson` (296 bairros oficiais do IBGE) e `cg_regioes.geojson` (regiões urbanas de Campo Grande, união dos bairros do IBGE).
 
 Se uma eleição futura trouxer locais novos, eles caem na reserva por nome; o que não casar aparece como "Não classificado".
 
@@ -124,7 +135,7 @@ Se uma eleição futura trouxer locais novos, eles caem na reserva por nome; o q
 | `candidatos.json` | `[número, nome civil, nº partido, votos, nome de urna]`, ordenado por votos |
 | `partidos.json` | `[número, sigla, votos nominais + legenda]` |
 | `bairros.json` | por bairro: índices dos locais, votos válidos, eleitores, top 20 |
-| `cg_grupos.json` | Campo Grande por bairro oficial e por região urbana (top 20 de cada) |
+| `cg_grupos.json` | bairros agrupados de todos os municípios (com população do IBGE quando houver) e regiões urbanas de Campo Grande (top 20 de cada) |
 | `municipios.json` | ranking completo de candidatos por município |
 | `cand/<número>.json` | `[índice do local, votos]` de um candidato |
 

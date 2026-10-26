@@ -136,7 +136,7 @@
     if (!state.datasets.length) { loading("Nenhum conjunto de dados gerado ainda."); return; }
     setTopHeight();
 
-    const geo = await Promise.all(["cg_bairros", "cg_regioes", "ms", "ms_municipios", "ms_regioes"].map((n) => getJSON(`data/geo/${n}.geojson`).catch(() => null)));
+    const geo = await Promise.all(["ms_bairros", "cg_regioes", "ms", "ms_municipios", "ms_regioes"].map((n) => getJSON(`data/geo/${n}.geojson`).catch(() => null)));
     state.geo.bairro = geo[0]; state.geo.regiao = geo[1]; state.geo.mun = geo[3]; state.geo.regms = geo[4];
     // município -> região do estado
     (geo[4]?.features || []).forEach((f) => f.properties.municipios.forEach((m) => state.regDe.set(normName(m), f.properties.nome)));
@@ -268,6 +268,9 @@
     if (l[L.BO]) return { k: "B|" + m + "|" + l[L.BO], m, b: l[L.BO], r: cg ? l[L.REG] : regTur(m), g: "bairro" };
     return { k: m + "|" + l[L.BAIRRO], m, b: l[L.BAIRRO], g: "tse" };
   }
+  // população residente (Censo 2022) dos bairros oficiais do IBGE
+  const popOf = (u) => (u.g === "bairro" ? D(principal())?.cg.bairro.get(u.m + "|" + u.b)?.pop
+    ?? state.datasets.map((m) => D(m.id)?.cg.bairro.get(u.m + "|" + u.b)?.pop).find((x) => x != null) : null);
   function unitTop(d, u) {
     if (u.g === "cidade") return d.municipios[u.m] || [];
     if (u.g === "regiao") return d.cg.regiao.get(u.b)?.top || [];
@@ -477,7 +480,8 @@
     if (lvl === "cidades" && state.geo.mun) return { fc: state.geo.mun, key: (u) => u.m };
     if (!capView() && lvl === "regioes" && state.geo.regms) return { fc: state.geo.regms, key: (u) => u.b };
     if (capView() && lvl === "regioes" && state.geo.regiao) return { fc: state.geo.regiao, key: (u) => u.b };
-    if (capView() && lvl === "bairros" && state.geo.bairro) return { fc: state.geo.bairro, key: (u) => u.b };
+    // bairros oficiais do IBGE (Censo 2022), em qualquer município que os tenha
+    if (lvl === "bairros" && state.geo.bairro) return { fc: state.geo.bairro, key: (u) => u.m + "|" + u.b, fkey: (f) => f.properties.mun + "|" + f.properties.nome };
     return null;
   }
 
@@ -492,15 +496,16 @@
     const sh = shapesFor(lvl), drawn = new Set(), llPoly = [];
     if (sh) {
       const byName = new Map(units.map((u) => [sh.key(u), u]));
+      const fk = sh.fkey || ((f) => f.properties.nome);
       window.L.geoJSON(sh.fc, {
         renderer: svgRenderer,
-        filter: (f) => byName.has(f.properties.nome),
+        filter: (f) => byName.has(fk(f)),
         style: (f) => {
-          const st = unitStyle(byName.get(f.properties.nome), ctx);
+          const st = unitStyle(byName.get(fk(f)), ctx);
           return { color: "#1b1f1d", weight: lvl === "cidades" ? 0.8 : 1.2, opacity: 0.75, fillColor: st.fill, fillOpacity: st.any ? st.op : 0.06 };
         },
         onEachFeature: (f, lyr) => {
-          const u = byName.get(f.properties.nome); drawn.add(u.k);
+          const u = byName.get(fk(f)); drawn.add(u.k);
           const w = lvl === "cidades" ? 0.8 : 1.2;
           lyr.bindTooltip(() => tipHtml(u), { sticky: true, className: "tip", opacity: 1 });
           lyr.on("mouseover", () => { lyr.setStyle({ weight: 3 }); lyr.bringToFront(); });
@@ -560,7 +565,8 @@
         `<tr><td>${esc(shortName(displayName(p, nr)))}</td><td class="n">${fmt.format(v)}</td><td class="n">${fmtPct(pct(v, u.val[p] || 0))}</td></tr>`).join("")}</table>`;
     }
     return `<h3>${esc(head)}</h3>${addr ? `<div class="addr">${addr}</div>` : ""}` +
-      `<div class="small" style="margin-bottom:4px">${u.g !== "local" ? fmt.format(nl) + " locais · " : ""}${fmt.format(val)} votos válidos</div>${body}`;
+      `<div class="small" style="margin-bottom:4px">${u.g !== "local" ? fmt.format(nl) + (nl === 1 ? " local · " : " locais · ") : ""}${fmt.format(val)} votos válidos` +
+      `${popOf(u) ? ` · ${fmt.format(popOf(u))} habitantes (Censo 2022)` : ""}</div>${body}`;
   }
 
   function renderLegend(sh) {
@@ -614,7 +620,7 @@
           : `${label(eles[0])} · clique numa linha (ou no mapa) para ver o ranking completo`;
         cols = [...geoCols];
         if (!multi) {
-          cols.push(...(lvl !== "locais" ? [["nl", "Locais", true]] : []), ["e", "Eleitores", true], ["v", "Válidos", true], ["lider", "Mais votado"], ["lv", "Votos", true]);
+          cols.push(...(lvl === "bairros" ? [["hab", "Habitantes", true]] : []), ...(lvl !== "locais" ? [["nl", "Locais", true]] : []), ["e", "Eleitores", true], ["v", "Válidos", true], ["lider", "Mais votado"], ["lv", "Votos", true]);
         } else {
           eles.forEach((id, k) => cols.push([`v_${k}`, `Válidos · ${esc(label(id))}`, true], [`l_${k}`, `Mais votado · ${esc(label(id))}`], [`lv_${k}`, "Votos", true]));
         }
@@ -623,14 +629,14 @@
           eles.forEach((id, k) => {
             const lead = unitTop(D(id), u)[0];
             const nm = lead ? displayName(id, lead[0]) : "—";
-            if (!multi) Object.assign(r, { nl: u.nl[id] || 0, e: u.el[id] || 0, v: u.val[id] || 0, lider: nm, lv: lead ? lead[1] : 0 });
+            if (!multi) Object.assign(r, { hab: popOf(u) ?? null, nl: u.nl[id] || 0, e: u.el[id] || 0, v: u.val[id] || 0, lider: nm, lv: lead ? lead[1] : 0 });
             else Object.assign(r, { [`v_${k}`]: u.val[id] ?? null, [`l_${k}`]: u.val[id] != null ? nm : "", [`lv_${k}`]: u.val[id] != null && lead ? lead[1] : null });
           });
           r.v_chart = u.val[principal()] || 0;
           return r;
         });
         total = {};
-        if (!multi) Object.assign(total, { nl: sum(rows, "nl"), e: sum(rows, "e"), v: sum(rows, "v") });
+        if (!multi) Object.assign(total, { hab: lvl === "bairros" ? sum(rows, "hab") || null : null, nl: sum(rows, "nl"), e: sum(rows, "e"), v: sum(rows, "v") });
         else eles.forEach((id, k) => { total[`v_${k}`] = sum(rows, `v_${k}`); });
         const tv = sum(rows, "v_chart"); rows.forEach((r) => { r.p = pct(r.v_chart, tv); });
       } else {

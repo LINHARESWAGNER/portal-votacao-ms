@@ -1,5 +1,5 @@
 {
-"fonte": "Bairros: limites do OpenStreetMap (contribuidores OSM, ODbL). Regiões urbanas: planilha ListaGlobalRegioes (Prefeitura de Campo Grande).",
+"fonte": "Bairros: limites do IBGE (malha de bairros do Censo 2022). Regiões urbanas: planilha ListaGlobalRegioes (Prefeitura de Campo Grande).",
 "coord": {
 "-20.5296,-54.6578": [
 "Aero Rancho",
@@ -154,7 +154,7 @@
 "Centro"
 ],
 "-20.4693,-54.6211": [
-"Amambaí",
+"Centro",
 "Centro"
 ],
 "-20.5528,-54.6097": [
@@ -190,7 +190,7 @@
 "Bandeira"
 ],
 "-20.4234,-54.6346": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.4359,-54.6485": [
@@ -202,19 +202,19 @@
 "Imbirussu"
 ],
 "-20.5348,-54.6735": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "-20.5363,-54.6695": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "-20.5348,-54.6687": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "-20.5357,-54.6706": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "-20.4303,-54.5988": [
@@ -242,7 +242,7 @@
 "Distritos"
 ],
 "-20.5521,-54.6490": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "-20.4288,-54.5611": [
@@ -406,7 +406,7 @@
 "Prosa"
 ],
 "-20.5315,-54.6689": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "-20.5193,-54.5769": [
@@ -586,7 +586,7 @@
 "Lagoa"
 ],
 "-20.5475,-54.6464": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "-20.5338,-54.6449": [
@@ -614,7 +614,7 @@
 "Lagoa"
 ],
 "-20.4436,-54.6691": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "-20.5089,-54.6037": [
@@ -634,7 +634,7 @@
 "Prosa"
 ],
 "-20.4551,-54.6434": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "-20.4465,-54.6491": [
@@ -658,7 +658,7 @@
 "Centro"
 ],
 "-20.4433,-54.6208": [
-"São Francisco",
+"Cabreúva",
 "Centro"
 ],
 "-20.4404,-54.6231": [
@@ -702,7 +702,7 @@
 "Zona rural"
 ],
 "-20.4807,-54.5998": [
-"TV Morena",
+"Tv Morena",
 "Bandeira"
 ],
 "-20.4799,-54.6662": [
@@ -738,11 +738,11 @@
 "Segredo"
 ],
 "-20.4584,-54.6388": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "-20.4622,-54.6349": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "-20.4996,-54.6034": [
@@ -750,7 +750,7 @@
 "Bandeira"
 ],
 "-20.4394,-54.6597": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "-20.4410,-54.6524": [
@@ -810,11 +810,11 @@
 "Anhanduizinho"
 ],
 "-20.4913,-54.6245": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "-20.4898,-54.6264": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "-20.4967,-54.6588": [
@@ -834,23 +834,23 @@
 "Prosa"
 ],
 "-20.4184,-54.6382": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.4141,-54.6360": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.4163,-54.6348": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.4145,-54.6359": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.4153,-54.6351": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.4962,-54.6384": [
@@ -862,7 +862,7 @@
 "Imbirussu"
 ],
 "-20.4448,-54.6599": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "-20.4980,-54.6290": [
@@ -922,7 +922,7 @@
 "Centro"
 ],
 "-20.4126,-54.6431": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.5223,-54.5929": [
@@ -938,15 +938,15 @@
 "Imbirussu"
 ],
 "-20.4486,-54.6336": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "-20.4583,-54.6369": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "-20.4821,-54.5948": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "-20.4508,-54.5821": [
@@ -954,7 +954,7 @@
 "Prosa"
 ],
 "-20.4329,-54.6734": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "-20.4663,-54.6337": [
@@ -1026,7 +1026,7 @@
 "Distritos"
 ],
 "-20.5521,-54.6491": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "-20.4936,-54.6444": [
@@ -1074,7 +1074,7 @@
 "Prosa"
 ],
 "-20.5315,-54.6688": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "-20.5193,-54.5768": [
@@ -1082,7 +1082,7 @@
 "Bandeira"
 ],
 "-20.4879,-54.6041": [
-"TV Morena",
+"Tv Morena",
 "Bandeira"
 ],
 "-20.5523,-54.6617": [
@@ -1214,7 +1214,7 @@
 "Bandeira"
 ],
 "-20.4821,-54.5947": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "-20.4695,-54.5684": [
@@ -1226,7 +1226,7 @@
 "Lagoa"
 ],
 "-20.4536,-54.6040": [
-"Cruzeiro",
+"Jardim dos Estados",
 "Centro"
 ],
 "-20.4961,-54.6582": [
@@ -1346,7 +1346,7 @@
 "Bandeira"
 ],
 "-20.4231,-54.6345": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.4359,-54.6486": [
@@ -1354,19 +1354,19 @@
 "Imbirussu"
 ],
 "-20.5364,-54.6696": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "-20.5346,-54.6735": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "-20.5349,-54.6686": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "-20.5357,-54.6705": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "-20.4313,-54.5991": [
@@ -1390,7 +1390,7 @@
 "Distritos"
 ],
 "-20.5521,-54.6489": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "-20.4182,-54.5975": [
@@ -1486,7 +1486,7 @@
 "Anhanduizinho"
 ],
 "-20.4913,-54.6244": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "-20.4767,-54.6122": [
@@ -1514,7 +1514,7 @@
 "Anhanduizinho"
 ],
 "-20.4878,-54.6041": [
-"TV Morena",
+"Tv Morena",
 "Bandeira"
 ],
 "-20.4902,-54.6054": [
@@ -1674,7 +1674,7 @@
 "Lagoa"
 ],
 "-20.4435,-54.6691": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "-20.4749,-54.5434": [
@@ -1682,7 +1682,7 @@
 "Bandeira"
 ],
 "-20.4553,-54.6430": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "-20.4465,-54.6492": [
@@ -1754,7 +1754,7 @@
 "Segredo"
 ],
 "-20.4622,-54.6348": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "-20.5310,-54.6019": [
@@ -1814,15 +1814,15 @@
 "Prosa"
 ],
 "-20.4161,-54.6349": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.4152,-54.6352": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.4142,-54.6360": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.4963,-54.6384": [
@@ -1830,7 +1830,7 @@
 "Anhanduizinho"
 ],
 "-20.4449,-54.6600": [
-"Santo Amaro",
+"Panamá",
 "Imbirussu"
 ],
 "-20.4976,-54.6295": [
@@ -1878,11 +1878,11 @@
 "Anhanduizinho"
 ],
 "-20.4126,-54.6432": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.4116,-54.6438": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "-20.4465,-54.6669": [
@@ -1890,15 +1890,15 @@
 "Imbirussu"
 ],
 "-20.4487,-54.6336": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "-20.4584,-54.6369": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "-20.4821,-54.5949": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "-20.4508,-54.5822": [
@@ -1906,7 +1906,7 @@
 "Prosa"
 ],
 "-20.4329,-54.6733": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ]
 },
@@ -2004,7 +2004,7 @@
 "Bandeira"
 ],
 "COOPHASUL": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "COOPHATRABALHO": [
@@ -2012,7 +2012,7 @@
 "Imbirussu"
 ],
 "COOPHAVILA II": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "CORONEL ANTONINO": [
@@ -2032,7 +2032,7 @@
 "Distritos"
 ],
 "DOM ANTONIO BARBOSA": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "ESTRELA D ALVA I": [
@@ -2156,7 +2156,7 @@
 "Prosa"
 ],
 "JARDIM OURO VERDE": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "JARDIM PACAEMBU": [
@@ -2276,7 +2276,7 @@
 "Lagoa"
 ],
 "PARQUE DO LAGEADO": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "PARQUE RESIDENCIAL IRACY COELHO NETTO": [
@@ -2300,7 +2300,7 @@
 "Lagoa"
 ],
 "RECANTO DOS PASSAROS": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "RESIDENCIAL BETAVILLE": [
@@ -2348,7 +2348,7 @@
 "Zona rural"
 ],
 "TV MORENA": [
-"TV Morena",
+"Tv Morena",
 "Bandeira"
 ],
 "UNIAO": [
@@ -2372,7 +2372,7 @@
 "Segredo"
 ],
 "VILA ALBA": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "VILA ALBUQUERQUE": [
@@ -2428,7 +2428,7 @@
 "Anhanduizinho"
 ],
 "VILA JOCKEI CLUBE": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "VILA JUSSARA": [
@@ -2444,7 +2444,7 @@
 "Prosa"
 ],
 "VILA NASSER": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "VILA NHANHA": [
@@ -2456,7 +2456,7 @@
 "Imbirussu"
 ],
 "VILA PALMIRA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "VILA PIRATININGA": [
@@ -2488,7 +2488,7 @@
 "Centro"
 ],
 "VILA SANTA LUZIA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "VILA SANTO EUGENIO": [
@@ -2504,11 +2504,11 @@
 "Imbirussu"
 ],
 "VILA SOBRINHO": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "VILA VILAS BOAS": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "VIVENDAS DO BOSQUE": [
@@ -2516,7 +2516,7 @@
 "Prosa"
 ],
 "ZE PEREIRA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "JARDIM BOTAFOGO": [
@@ -2524,7 +2524,7 @@
 "Anhanduizinho"
 ],
 "JARDIM JOCKEY CLUBE": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "JARDIM LOS ANGELES": [
@@ -2628,7 +2628,7 @@
 "Anhanduizinho"
 ],
 "JARDIM COLORADO": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "JARDIM DAS HORTENSIAS I": [
@@ -2732,7 +2732,7 @@
 "Anhanduizinho"
 ],
 "JOCKEY CLUB": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "LOTEAMENTO AERO RANCHO": [
@@ -2828,7 +2828,7 @@
 "Anhanduizinho"
 ],
 "PARQUE DO SOL": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "PARQUE DO TRABALHADOR": [
@@ -2836,7 +2836,7 @@
 "Anhanduizinho"
 ],
 "PARQUE DOS SABIAS": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "PARQUE NOVO SECULO": [
@@ -2892,7 +2892,7 @@
 "Anhanduizinho"
 ],
 "RESIDENCIAL JOSE TERUEL FILHO": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "RESIDENCIAL OURO PRETO": [
@@ -2900,7 +2900,7 @@
 "Anhanduizinho"
 ],
 "RESIDENCIAL SANTA CELINA": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "RESIDENCIAL TERRA MORENA": [
@@ -2948,7 +2948,7 @@
 "Anhanduizinho"
 ],
 "VILA BOM JESUS": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "VILA CLELIA": [
@@ -2964,7 +2964,7 @@
 "Anhanduizinho"
 ],
 "VILA JARDIM": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "VILA JARDIM AMERICA": [
@@ -2980,7 +2980,7 @@
 "Anhanduizinho"
 ],
 "VILA MARCOS ROBERTO": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "VILA NOGUEIRA": [
@@ -2996,7 +2996,7 @@
 "Anhanduizinho"
 ],
 "VILA SANTA AMELIA BAIS": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "VILA SANTA BRANCA 1": [
@@ -3020,7 +3020,7 @@
 "Anhanduizinho"
 ],
 "AMANTINI RESIDENCE": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "CHACARA JOSE ANTONIO PEREIRA": [
@@ -3044,7 +3044,7 @@
 "Bandeira"
 ],
 "INDIANA PARK": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "JARDIM AGUAS VIVAS": [
@@ -3052,7 +3052,7 @@
 "Bandeira"
 ],
 "JARDIM ALEGRE": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "JARDIM AMETISTA": [
@@ -3068,7 +3068,7 @@
 "Bandeira"
 ],
 "JARDIM AUXILIADORA": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "JARDIM CAMPINA VERDE": [
@@ -3116,7 +3116,7 @@
 "Bandeira"
 ],
 "JARDIM IPANEMA": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "JARDIM ITAPEMA": [
@@ -3132,7 +3132,7 @@
 "Bandeira"
 ],
 "JARDIM MANSUR": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "JARDIM MOEMA": [
@@ -3172,7 +3172,7 @@
 "Bandeira"
 ],
 "JARDIM TV MORENA": [
-"TV Morena",
+"Tv Morena",
 "Bandeira"
 ],
 "JARDIM VITORIA": [
@@ -3248,7 +3248,7 @@
 "Bandeira"
 ],
 "PARQUE DALLAS": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "PARQUE RESIDENCIAL ANHEMBI": [
@@ -3308,7 +3308,7 @@
 "Bandeira"
 ],
 "RESIDENCIAL VILA OLIMPICA": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "SITIOCAS ALVORADA": [
@@ -3364,7 +3364,7 @@
 "Bandeira"
 ],
 "VILA PORTINHO FREDERICO PACHE": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "VILA ZOE": [
@@ -3372,7 +3372,7 @@
 "Bandeira"
 ],
 "VILLAS PARK RESIDENCE": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "VIVENDAS DO PARQUE": [
@@ -3960,7 +3960,7 @@
 "Centro"
 ],
 "BOSQUE DAS ARARAS": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "BOSQUE SANTA MONICA 1 E 2": [
@@ -3972,11 +3972,11 @@
 "Imbirussu"
 ],
 "COOPERMAT": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "COPHACO": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "JARDIM AEROPORTO": [
@@ -3984,7 +3984,7 @@
 "Imbirussu"
 ],
 "JARDIM AROEIRA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "JARDIM CANADA": [
@@ -4004,7 +4004,7 @@
 "Imbirussu"
 ],
 "JARDIM DO ZE PEREIRA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "JARDIM INAPOLIS": [
@@ -4020,7 +4020,7 @@
 "Imbirussu"
 ],
 "JARDIM LEONIDIA": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "JARDIM MANDALA": [
@@ -4028,31 +4028,31 @@
 "Imbirussu"
 ],
 "JARDIM MATHILDE": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "JARDIM PANAMA 1": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "JARDIM PANAMA 2": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "JARDIM PANAMA 3": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "JARDIM PANAMA 4": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "JARDIM PANAMA 5": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "JARDIM PANAMA 6": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "JARDIM PANTANAL": [
@@ -4064,11 +4064,11 @@
 "Imbirussu"
 ],
 "LAR DO TRABALHADOR": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "LOTEAMENTO PAPA JOAO PAULO II": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "LOTEAMENTO MUNICIPAL JAGUARIBE": [
@@ -4092,7 +4092,7 @@
 "Imbirussu"
 ],
 "PARQUE DOS IPES": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "PARQUE DOS LARANJAIS": [
@@ -4100,15 +4100,15 @@
 "Imbirussu"
 ],
 "PARQUE RESIDENCIAL BELLINATE": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "PARQUE RESIDENCIAL DOS BANCARIOS": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "PARQUE SAO DOMINGOS": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "POLO EMPRESARIAL OESTE": [
@@ -4120,7 +4120,7 @@
 "Imbirussu"
 ],
 "PORTAL DO PANAMA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "RESIDENCIAL SIRIO LIBANES 1": [
@@ -4132,11 +4132,11 @@
 "Imbirussu"
 ],
 "RESIDENCIAL ANA MARIA DO COUTO": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "RESIDENCIAL BUZIOS": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "RESIDENCIAL HUGO RODRIGUES": [
@@ -4148,11 +4148,11 @@
 "Imbirussu"
 ],
 "RESIDENCIAL PARQUE DOS FLAMINGOS": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "RESIDENCIAL SAGARANA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "SANTA CARMELIA": [
@@ -4160,11 +4160,11 @@
 "Imbirussu"
 ],
 "VILA ACROPOLIS": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "VILA AVIACAO": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "VILA BOSQUE DA SAUDADE": [
@@ -4172,7 +4172,7 @@
 "Imbirussu"
 ],
 "VILA CINAMOMO": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "VILA COUTINHO": [
@@ -4188,7 +4188,7 @@
 "Imbirussu"
 ],
 "VILA DUQUE DE CAXIAS": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "VILA ENTRONCAMENTO": [
@@ -4196,7 +4196,7 @@
 "Imbirussu"
 ],
 "VILA ESPANHOLA": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "VILA JARDIM BEIJA FLOR": [
@@ -4208,7 +4208,7 @@
 "Imbirussu"
 ],
 "VILA NOSSA SENHORA AUXILIADORA": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "VILA NOVA": [
@@ -4216,7 +4216,7 @@
 "Imbirussu"
 ],
 "VILA OESTE": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "VILA ROMANA": [
@@ -4224,11 +4224,11 @@
 "Imbirussu"
 ],
 "VILA ROSALINA": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "VILA SANTA RITA": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "VILA SANTO AMARO": [
@@ -4284,7 +4284,7 @@
 "Lagoa"
 ],
 "FAVELA TARUMA": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "JARDIM ANTARCTICA": [
@@ -4324,11 +4324,11 @@
 "Lagoa"
 ],
 "JARDIM OURO VERDE 1": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "JARDIM OURO VERDE 2": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "JARDIM RANCHO ALEGRE I": [
@@ -4356,11 +4356,11 @@
 "Lagoa"
 ],
 "JARDIM VILA KELLEM 1": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "JARDIM VILA KELLEM 2": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "JARDIM VILLA LOBOS 1": [
@@ -4880,7 +4880,7 @@
 "Prosa"
 ],
 "AGUA LIMPA PARK": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "ARNALDINO DA SILVA": [
@@ -4896,11 +4896,11 @@
 "Segredo"
 ],
 "BOM RETIRO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "BOSQUE DA SAUDE": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "CENTER PARK": [
@@ -4944,7 +4944,7 @@
 "Segredo"
 ],
 "JARDIM ALTO SAO FRANCISCO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "JARDIM ARUBA": [
@@ -4972,11 +4972,11 @@
 "Segredo"
 ],
 "JARDIM DA MOOCA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "JARDIM DAS ACACIAS": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "JARDIM DAS CEREJEIRAS": [
@@ -4988,7 +4988,7 @@
 "Segredo"
 ],
 "JARDIM FLUMINENSE": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "JARDIM MIRASOL": [
@@ -4996,7 +4996,7 @@
 "Segredo"
 ],
 "JARDIM MONTE ALTO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "JARDIM NASCENTE DO SEGREDO": [
@@ -5008,11 +5008,11 @@
 "Segredo"
 ],
 "JARDIM PAQUETA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "JARDIM PARADISO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "JARDIM PRESIDENTE": [
@@ -5028,7 +5028,7 @@
 "Segredo"
 ],
 "JARDIM VENEZA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "JARDIM VIDA NOVA": [
@@ -5076,7 +5076,7 @@
 "Segredo"
 ],
 "LOTEAMENTO MUNICIPAL DOUTOR MIGUEL VIEIRA FERREIRA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "LOTEAMENTO MUNICIPAL SALINAS": [
@@ -5088,7 +5088,7 @@
 "Segredo"
 ],
 "MORADA DOS DEUSES": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "MORADA VERDE": [
@@ -5100,7 +5100,7 @@
 "Segredo"
 ],
 "NOSSA SENHORA DAS GRACAS": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "NUCLEO HABITACIONAL JOSE ABRAO": [
@@ -5128,7 +5128,7 @@
 "Segredo"
 ],
 "PARQUE RESIDENCIAL AZALEIA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "PORTAL DO GRAMADO": [
@@ -5144,7 +5144,7 @@
 "Segredo"
 ],
 "RESIDENCIAL ALTO TAMANDARE": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "RESIDENCIAL ATLANTICO SUL": [
@@ -5152,7 +5152,7 @@
 "Segredo"
 ],
 "RESIDENCIAL CARAJAS": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "RESIDENCIAL GABURA": [
@@ -5172,11 +5172,11 @@
 "Segredo"
 ],
 "RESIDENCIAL RECANTO DO CERRADO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "RESIDENCIAL TOLENTINO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "RESIDENCIAL VALE DO SOL I": [
@@ -5192,7 +5192,7 @@
 "Segredo"
 ],
 "SANTA LUZIA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "SAO BENEDITO": [
@@ -5200,11 +5200,11 @@
 "Segredo"
 ],
 "SAO CAETANO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "SETVILLAGE": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "TARSILA DO AMARAL": [
@@ -5224,7 +5224,7 @@
 "Segredo"
 ],
 "VILA COX": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "VILA DALILA": [
@@ -5232,7 +5232,7 @@
 "Segredo"
 ],
 "VILA DEDE": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "VILA JARDIM MARIA AMELIA": [
@@ -5244,23 +5244,23 @@
 "Segredo"
 ],
 "VILA LILI": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "VILA MARLI": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "VILA N SENHORA APARECIDA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "VILA NEUZA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "VILA NILZA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "VILA NOSSA SENHORA DA CONCEICAO": [
@@ -5268,7 +5268,7 @@
 "Segredo"
 ],
 "VILA NOVO HORIZONTE": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "VILA SANTA LUCIA": [
@@ -5308,7 +5308,7 @@
 "Anhanduizinho"
 ],
 "GRANDE LAGEADO": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "PARATI": [
@@ -5332,7 +5332,7 @@
 "Anhanduizinho"
 ],
 "VILASBOAS": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "RITA VIEIRA": [
@@ -5388,7 +5388,7 @@
 "Centro"
 ],
 "PANAMA ZE PEREIRA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "LEBLON": [
@@ -5408,7 +5408,7 @@
 "Lagoa"
 ],
 "COOPHAVILLA": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "TIJUCA": [
@@ -5468,7 +5468,7 @@
 "Anhanduizinho"
 ],
 "~DOM ANTONIO BARBOSA": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "~FAVELA DONA NETA": [
@@ -5536,7 +5536,7 @@
 "Anhanduizinho"
 ],
 "~COLORADO": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "~DAS HORTENSIAS": [
@@ -5660,7 +5660,7 @@
 "Anhanduizinho"
 ],
 "~JOCKEY CLUB": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "~AERO RANCHO": [
@@ -5728,11 +5728,11 @@
 "Anhanduizinho"
 ],
 "~DO LAGEADO": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "~DO SOL": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "~DO TRABALHADOR": [
@@ -5740,7 +5740,7 @@
 "Anhanduizinho"
 ],
 "~DOS SABIAS": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "~NOVO SECULO": [
@@ -5784,7 +5784,7 @@
 "Anhanduizinho"
 ],
 "~JOSE TERUEL FILHO": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "~OURO PRETO": [
@@ -5792,7 +5792,7 @@
 "Anhanduizinho"
 ],
 "~SANTA CELINA": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "~TERRA MORENA": [
@@ -5840,7 +5840,7 @@
 "Anhanduizinho"
 ],
 "~BOM JESUS": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "~CLELIA": [
@@ -5860,7 +5860,7 @@
 "Anhanduizinho"
 ],
 "~JARDIM": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "~PIONEIROS": [
@@ -5868,7 +5868,7 @@
 "Anhanduizinho"
 ],
 "~MARCOS ROBERTO": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "~NOGUEIRA": [
@@ -5884,7 +5884,7 @@
 "Anhanduizinho"
 ],
 "~SANTA AMELIA BAIS": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "~SANTA BRANCA": [
@@ -5904,7 +5904,7 @@
 "Anhanduizinho"
 ],
 "~AMANTINI RESIDENCE": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "~CHACARA JOSE ANTONIO PEREIRA": [
@@ -5928,7 +5928,7 @@
 "Bandeira"
 ],
 "~INDIANA PARK": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "~AGUAS VIVAS": [
@@ -6000,7 +6000,7 @@
 "Bandeira"
 ],
 "~MANSUR": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "~MOEMA": [
@@ -6048,7 +6048,7 @@
 "Bandeira"
 ],
 "~TV MORENA": [
-"TV Morena",
+"Tv Morena",
 "Bandeira"
 ],
 "~VITORIA": [
@@ -6108,7 +6108,7 @@
 "Bandeira"
 ],
 "~DALLAS": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "~ANHEMBI": [
@@ -6164,7 +6164,7 @@
 "Bandeira"
 ],
 "~OLIMPICA": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "~SITIOCAS ALVORADA": [
@@ -6208,7 +6208,7 @@
 "Bandeira"
 ],
 "~PORTINHO FREDERICO PACHE": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "~SANTO EUGENIO": [
@@ -6216,7 +6216,7 @@
 "Bandeira"
 ],
 "~VILAS BOAS": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "~ZOE": [
@@ -6224,7 +6224,7 @@
 "Bandeira"
 ],
 "~VILLAS PARK RESIDENCE": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "~VIVENDAS DO PARQUE": [
@@ -6784,7 +6784,7 @@
 "Centro"
 ],
 "~BOSQUE DAS ARARAS": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~BOSQUE SANTA MONICA 1 E": [
@@ -6796,7 +6796,7 @@
 "Imbirussu"
 ],
 "~COOPERMAT": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~COOPHATRABALHO": [
@@ -6804,7 +6804,7 @@
 "Imbirussu"
 ],
 "~COPHACO": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~AEROPORTO": [
@@ -6812,7 +6812,7 @@
 "Imbirussu"
 ],
 "~AROEIRA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~CANADA": [
@@ -6828,7 +6828,7 @@
 "Imbirussu"
 ],
 "~DO ZE PEREIRA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~IMA": [
@@ -6848,7 +6848,7 @@
 "Imbirussu"
 ],
 "~LEONIDIA": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~MANDALA": [
@@ -6856,11 +6856,11 @@
 "Imbirussu"
 ],
 "~MATHILDE": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~PANAMA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~PANTANAL": [
@@ -6872,11 +6872,11 @@
 "Imbirussu"
 ],
 "~LAR DO TRABALHADOR": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~PAPA JOAO PAULO": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~JAGUARIBE": [
@@ -6900,19 +6900,19 @@
 "Imbirussu"
 ],
 "~DOS IPES": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~BELLINATE": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~DOS BANCARIOS": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~SAO DOMINGOS": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~POLO EMPRESARIAL OESTE": [
@@ -6924,11 +6924,11 @@
 "Imbirussu"
 ],
 "~PORTAL DO PANAMA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~RECANTO DOS PASSAROS": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~SIRIO LIBANES": [
@@ -6936,11 +6936,11 @@
 "Imbirussu"
 ],
 "~ANA MARIA DO COUTO": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~BUZIOS": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~HUGO RODRIGUES": [
@@ -6952,11 +6952,11 @@
 "Imbirussu"
 ],
 "~DOS FLAMINGOS": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~SAGARANA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~SANTA CARMELIA": [
@@ -6964,11 +6964,11 @@
 "Imbirussu"
 ],
 "~ACROPOLIS": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~ALBA": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~ALMEIDA": [
@@ -6976,7 +6976,7 @@
 "Imbirussu"
 ],
 "~AVIACAO": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~BOSQUE DA SAUDADE": [
@@ -6984,7 +6984,7 @@
 "Imbirussu"
 ],
 "~CINAMOMO": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~COUTINHO": [
@@ -7000,7 +7000,7 @@
 "Imbirussu"
 ],
 "~DUQUE DE CAXIAS": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~ELIANE": [
@@ -7012,7 +7012,7 @@
 "Imbirussu"
 ],
 "~ESPANHOLA": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~BEIJA FLOR": [
@@ -7024,7 +7024,7 @@
 "Imbirussu"
 ],
 "~NOSSA SENHORA AUXILIADORA": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~NOVA": [
@@ -7036,11 +7036,11 @@
 "Imbirussu"
 ],
 "~ROSALINA": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~SANTA RITA": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~SANTO AMARO": [
@@ -7060,7 +7060,7 @@
 "Imbirussu"
 ],
 "~SOBRINHO": [
-"Vila Sobrinho",
+"Sobrinho",
 "Imbirussu"
 ],
 "~ALTO LEBLON": [
@@ -7108,7 +7108,7 @@
 "Lagoa"
 ],
 "~FAVELA TARUMA": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "~ANTARCTICA": [
@@ -7140,7 +7140,7 @@
 "Lagoa"
 ],
 "~OURO VERDE": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "~RANCHO ALEGRE": [
@@ -7172,7 +7172,7 @@
 "Lagoa"
 ],
 "~KELLEM": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "~VILLA LOBOS": [
@@ -7584,7 +7584,7 @@
 "Prosa"
 ],
 "~AGUA LIMPA PARK": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~ARNALDINO DA SILVA": [
@@ -7600,11 +7600,11 @@
 "Segredo"
 ],
 "~BOM RETIRO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~BOSQUE DA SAUDE": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~CENTER PARK": [
@@ -7620,7 +7620,7 @@
 "Segredo"
 ],
 "~COOPHASUL": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~CORIOLANDO DA SILVA CORREA": [
@@ -7656,7 +7656,7 @@
 "Segredo"
 ],
 "~ALTO SAO FRANCISCO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~ANACHE": [
@@ -7692,11 +7692,11 @@
 "Segredo"
 ],
 "~DA MOOCA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~DAS ACACIAS": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~DAS CEREJEIRAS": [
@@ -7708,7 +7708,7 @@
 "Segredo"
 ],
 "~FLUMINENSE": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~IMPERIAL": [
@@ -7720,7 +7720,7 @@
 "Segredo"
 ],
 "~MONTE ALTO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~NASCENTE DO SEGREDO": [
@@ -7732,11 +7732,11 @@
 "Segredo"
 ],
 "~PAQUETA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~PARADISO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~PRESIDENTE": [
@@ -7752,7 +7752,7 @@
 "Segredo"
 ],
 "~VENEZA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~VIDA NOVA": [
@@ -7800,7 +7800,7 @@
 "Segredo"
 ],
 "~DOUTOR MIGUEL VIEIRA FERREIRA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~SALINAS": [
@@ -7808,7 +7808,7 @@
 "Segredo"
 ],
 "~MORADA DOS DEUSES": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~MORADA VERDE": [
@@ -7820,7 +7820,7 @@
 "Segredo"
 ],
 "~NOSSA SENHORA DAS GRACAS": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~NOVA LIMA": [
@@ -7852,7 +7852,7 @@
 "Segredo"
 ],
 "~AZALEIA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~PORTAL DO GRAMADO": [
@@ -7868,7 +7868,7 @@
 "Segredo"
 ],
 "~ALTO TAMANDARE": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~ATLANTICO SUL": [
@@ -7876,7 +7876,7 @@
 "Segredo"
 ],
 "~CARAJAS": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~GABURA": [
@@ -7896,11 +7896,11 @@
 "Segredo"
 ],
 "~RECANTO DO CERRADO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~TOLENTINO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~VALE DO SOL": [
@@ -7908,7 +7908,7 @@
 "Segredo"
 ],
 "~SANTA LUZIA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~SAO BENEDITO": [
@@ -7916,11 +7916,11 @@
 "Segredo"
 ],
 "~SAO CAETANO": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~SETVILLAGE": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~TARSILA DO AMARAL": [
@@ -7940,7 +7940,7 @@
 "Segredo"
 ],
 "~COX": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~DALILA": [
@@ -7948,7 +7948,7 @@
 "Segredo"
 ],
 "~DEDE": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~MARIA AMELIA": [
@@ -7960,27 +7960,27 @@
 "Segredo"
 ],
 "~LILI": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~MARLI": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~N SENHORA APARECIDA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~NASSER": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~NEUZA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~NILZA": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~NOSSA SENHORA DA CONCEICAO": [
@@ -7988,7 +7988,7 @@
 "Segredo"
 ],
 "~NOVO HORIZONTE": [
-"Vila Nasser",
+"Nasser",
 "Segredo"
 ],
 "~SANTA LUCIA": [
@@ -8016,11 +8016,11 @@
 "Segredo"
 ],
 "~GRANDE LAGEADO": [
-"Grande Lageado",
+"Lageado",
 "Anhanduizinho"
 ],
 "~VILASBOAS": [
-"Vilasboas",
+"Vilas Boas",
 "Bandeira"
 ],
 "~CENTRO": [
@@ -8032,7 +8032,7 @@
 "Centro"
 ],
 "~PANAMA ZE PEREIRA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~CAIOBA": [
@@ -8040,7 +8040,7 @@
 "Lagoa"
 ],
 "~COOPHAVILLA": [
-"Coophavilla",
+"Coophavila II",
 "Lagoa"
 ],
 "~NOVOS ESTADOS": [
@@ -8120,7 +8120,7 @@
 "Lagoa"
 ],
 "~JOCKEI CLUBE": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "~SANTA DOROTHEIA": [
@@ -8128,11 +8128,11 @@
 "Centro"
 ],
 "~ZE PEREIRA": [
-"Panamá / Zé Pereira",
+"Panamá",
 "Imbirussu"
 ],
 "~JOCKEY CLUBE": [
-"Jockey Club",
+"Jóckey Club",
 "Anhanduizinho"
 ],
 "~UNIVERSITARIAS": [
