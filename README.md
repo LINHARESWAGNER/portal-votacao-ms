@@ -65,14 +65,15 @@ Conjuntos sem arquivo em `data/raw/` são pulados.
 
 ### 3. Ver o portal localmente
 
-O navegador não carrega JSON via `file://`, então sirva a pasta `docs/`:
+O navegador não carrega JSON via `file://`, então a pasta `docs/` precisa ser servida por um servidor local.
+No Windows, dê dois cliques em **`servir.bat`** (abre o portal em http://localhost:8077). Ou, no terminal:
 
 ```bash
-cd docs
-python -m http.server 8000
+python -m http.server 8077 --directory docs
 ```
 
-Abra http://localhost:8000.
+e abra http://localhost:8077. Se a 8077 também estiver ocupada, troque por outro número (ex.: 8090)
+no comando e no endereço.
 
 ### 4. Publicar (GitHub Pages)
 
