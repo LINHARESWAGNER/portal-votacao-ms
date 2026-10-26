@@ -48,7 +48,10 @@
   };
 
   // ------------------------------------------------------------------ mapa
-  const map = window.L.map("map").setView([-20.47, -54.62], 12);
+  // mapa preso a Mato Grosso do Sul (limites reais aplicados quando o contorno do estado carrega)
+  const MS_BOUNDS = window.L.latLngBounds([-24.2, -58.3], [-17.0, -50.8]);
+  const map = window.L.map("map", { maxBounds: MS_BOUNDS.pad(0.08), maxBoundsViscosity: 1.0, minZoom: 5 }).fitBounds(MS_BOUNDS);
+  map.createPane("mascara"); map.getPane("mascara").style.zIndex = 350; map.getPane("mascara").style.pointerEvents = "none";
   window.L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -106,8 +109,9 @@
     $("#tabs").innerHTML = state.datasets.map((d) => `<button data-id="${d.id}" aria-pressed="false">${esc(d.titulo)}</button>`).join("");
 
     // contornos de Campo Grande (bairros oficiais e regiões)
-    const geo = await Promise.all(["cg_bairros", "cg_regioes"].map((n) => getJSON(`data/geo/${n}.geojson`).catch(() => null)));
+    const geo = await Promise.all(["cg_bairros", "cg_regioes", "ms"].map((n) => getJSON(`data/geo/${n}.geojson`).catch(() => null)));
     state.geo.bairro = geo[0]; state.geo.regiao = geo[1];
+    if (geo[2]) maskOutsideMS(geo[2]);
 
     // índice de pessoas entre eleições (pelo nome completo)
     await Promise.all(state.datasets.map(async (m) => {
@@ -133,6 +137,19 @@
       if (state.datasets.some((m) => m.id === d)) { try { await addSeries(d, nr, false); } catch (e) { /* ignora */ } }
     }
     renderAll(true);
+  }
+
+  // escurece tudo fora de MS e trava o mapa no estado
+  function maskOutsideMS(fc) {
+    const ring = fc.features[0].geometry.coordinates[0].map(([x, y]) => [y, x]);
+    const world = [[-89, -179], [-89, 179], [89, 179], [89, -179]];
+    const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+    window.L.polygon([world, ring], { pane: "mascara", stroke: false, fillColor: dark ? "#111513" : "#f4f5f2", fillOpacity: 0.82, interactive: false }).addTo(map);
+    window.L.polygon(ring, { pane: "mascara", color: dark ? "#9aa49f" : "#1b1f1d", weight: 1.6, opacity: 0.8, fill: false, interactive: false }).addTo(map);
+    const b = window.L.latLngBounds(ring);
+    state.msBounds = b;
+    map.setMaxBounds(b.pad(0.06));
+    map.setMinZoom(Math.max(4, map.getBoundsZoom(b, false) - 0));
   }
 
   function setTopHeight() {
@@ -411,7 +428,10 @@
       mk.addTo(layer); ll.push([u.lat, u.lon]);
     });
     const fitTo = llPoly.length ? llPoly : ll;   // com contornos, enquadra a área urbana (distritos ficam fora do quadro)
-    if (fit && fitTo.length) map.fitBounds(window.L.latLngBounds(fitTo), { padding: [24, 24], maxZoom: 14 });
+    if (fit) {
+      if (!capView() && state.mun === TODOS && state.msBounds) map.fitBounds(state.msBounds, { padding: [10, 10] });
+      else if (fitTo.length) map.fitBounds(window.L.latLngBounds(fitTo), { padding: [24, 24], maxZoom: 14 });
+    }
     renderLegend(fc);
   }
 

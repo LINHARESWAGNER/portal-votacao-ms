@@ -169,3 +169,6 @@ tbody tr.total { font-weight: 600; background: var(--bg); cursor: default; }
   .tabs { flex-wrap: nowrap; overflow-x: auto; width: 100%; padding-bottom: 2px; }
   .tabs button { flex: none; }
 }
+
+/* sem contorno de foco nas formas do mapa */
+.leaflet-interactive:focus { outline: none; }

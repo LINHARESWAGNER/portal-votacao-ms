@@ -14,6 +14,7 @@ a partir do Portal de Dados Abertos do TSE.
 - **Filtros no painel lateral:** abrangência (Estado, Capital, Interior), agrupamento
   (Capital: Regiões / Bairros / Locais de votação; Estado e Interior: Cidades / Bairros / Locais de votação),
   município, partido e busca de candidato.
+- **Mapa preso a Mato Grosso do Sul:** abre enquadrado no estado, não deixa arrastar nem afastar o zoom para fora dele, e escurece o que fica fora de MS (`docs/data/geo/ms.geojson`).
 - **Mapa:** em Campo Grande, regiões e bairros aparecem **pintados** pelo contorno oficial; nos demais casos,
   bolhas por local, bairro ou cidade. Passe o mouse para ver os números; clique para abrir o ranking na tabela.
 - **Tabela e gráfico de colunas** logo abaixo do mapa, com as mesmas linhas e a mesma ordem (o gráfico mostra votos ou % dos válidos).
