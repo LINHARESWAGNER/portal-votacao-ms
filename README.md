@@ -11,17 +11,22 @@ a partir do Portal de Dados Abertos do TSE.
 
 ## O que o portal faz
 
-- **Filtros no painel lateral**, com várias seleções ou "Todos": **Eleição**, **Município** e **Partido**;
-  além de abrangência (Estado, Capital, Interior), agrupamento (Capital: Regiões urbanas / Bairros / Locais de votação;
-  Estado e Interior: Regiões do estado / Cidades / Bairros) e busca de candidato.
-  Com várias eleições, a lista de candidatos junta todas (com a eleição indicada) e a tabela mostra válidos e mais votado de cada uma.
+- **Dois modos no painel lateral:**
+  - **Explorar eleição:** cartões grandes com as eleições (um cargo por linha); clique escolhe uma, o **+** soma outra.
+    A tabela mostra válidos e mais votado de cada eleição marcada.
+  - **Comparar candidatos:** cada candidato vira um cartão com a eleição em destaque na cor dele; para adicionar outro,
+    escolha a eleição e clique no nome (ou use os atalhos "também concorreu"). Voltar para Explorar não apaga a comparação.
+  - Uma faixa sobre o mapa diz sempre o que está na tela (ex.: "Comparando Silvio Pitu · Vereador 2020 → Vereador 2024").
+  - **Recorte**, comum aos dois modos: abrangência (Estado, Capital, Interior), agrupamento (Capital: Regiões urbanas /
+    Bairros / Locais de votação; Estado e Interior: Regiões do estado / Cidades / Bairros), **Município** e **Partido**.
 - **Mapa** ocupando a tela, preso a Mato Grosso do Sul (o que fica fora do estado aparece escurecido), com botão **⌖ centralizar**.
   Regiões, municípios e bairros oficiais aparecem **pintados** pelo contorno; locais de votação e bairros sem contorno oficial, como bolhas.
   Ao agrupar por bairros (ou locais), a cidade aparece só com o **contorno tracejado**, sem preenchimento.
   Passe o mouse para ver os números; clique para abrir o ranking na tabela.
 - **Tabela e gráfico de colunas** abaixo do mapa, com as mesmas linhas e a mesma ordem (votos ou % dos válidos).
 - **Comparação de até 4 candidatos**, da mesma eleição ou de eleições diferentes. Colunas em **ordem cronológica**;
-  a diferença (Δ) é **eleição mais recente − mais antiga**. A mesma pessoa é reconhecida entre eleições pelo nome completo.
+  a diferença (Δ) é **eleição mais recente − mais antiga**, com a **taxa de crescimento (%)** ao lado. A mesma pessoa é reconhecida
+  entre eleições pelo nome completo. Por local de votação, a coluna **Situação** diz se o local é novo ou foi desativado no cadastro do TSE.
 - **Nomes dos candidatos:** o portal mostra o **nome de urna** do TSE (ex.: "Marquinhos Trad"). Em **⚙ Ajustes de nomes**
   dá para corrigir qualquer nome; o ajuste fica salvo no navegador e pode ser exportado como `docs/data/apelidos.json`
   para valer para todos que acessarem o site.

@@ -24,18 +24,30 @@
 
 <main class="layout">
   <aside class="side">
+    <div class="tabs" role="tablist" aria-label="Modo de análise">
+      <button role="tab" id="tabExplorar" data-mode="explorar" aria-selected="true">Explorar eleição</button>
+      <button role="tab" id="tabComparar" data-mode="comparar" aria-selected="false">Comparar candidatos <span id="nCmp" class="badge" hidden></span></button>
+    </div>
 
-    <section class="block" id="cmpBlock" hidden>
+    <section class="block" id="pnlExplorar">
       <div class="block-head">
-        <h2>Comparação</h2>
+        <h2>Eleição</h2>
+        <span class="muted small">clique para escolher · <b>+</b> soma outra</span>
+      </div>
+      <div id="cards" class="ele-cards"></div>
+    </section>
+
+    <section class="block" id="pnlComparar" hidden>
+      <div class="block-head">
+        <h2>Comparação <span class="muted small">(até 4)</span></h2>
         <button id="limpar" class="link">limpar</button>
       </div>
       <ul id="chips" class="chips"></ul>
+      <p id="cmpVazio" class="muted small" hidden>Nenhum candidato ainda. Escolha a eleição e o nome em <b>Adicionar à comparação</b>, abaixo.</p>
     </section>
 
     <section class="block">
-      <h2>Filtros</h2>
-      <div class="row"><label>Eleição</label><div class="ms" id="fEleicao"></div></div>
+      <h2>Recorte</h2>
       <div class="row stack">
         <label>Abrangência</label>
         <div class="seg" id="segScope" role="group" aria-label="Abrangência">
@@ -50,14 +62,15 @@
       </div>
       <div class="row"><label>Município</label><div class="ms" id="fMun"></div></div>
       <div class="row"><label>Partido</label><div class="ms" id="fPartido"></div></div>
-      <input id="fBusca" type="search" placeholder="Buscar candidato por nome ou número…" autocomplete="off">
     </section>
 
     <section class="block grow">
       <div class="block-head">
-        <h2>Candidatos</h2>
-        <span class="muted small">clique para comparar (até 4)</span>
+        <h2 id="candTitulo">Candidatos</h2>
+        <span id="candDica" class="muted small"></span>
       </div>
+      <div id="addRow" class="row" hidden><label for="addEleicao">Eleição</label><select id="addEleicao"></select></div>
+      <input id="fBusca" type="search" placeholder="Buscar candidato por nome ou número…" autocomplete="off">
       <ol id="listaCand" class="cand-list"></ol>
     </section>
   </aside>
@@ -65,6 +78,7 @@
   <section class="main">
     <div class="mapwrap">
       <div id="map"></div>
+      <div id="contexto" class="contexto"></div>
       <div id="legend" class="legend"></div>
       <div id="loading" class="loading">Carregando…</div>
       <div id="toast" class="toast" hidden></div>

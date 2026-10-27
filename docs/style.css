@@ -39,12 +39,6 @@ h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacin
 .brand { display: flex; align-items: center; gap: 10px; }
 .logo { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 8px; background: var(--accent); color: #fff; font-weight: 700; }
 .sub { font-size: 12px; }
-.tabs { display: flex; gap: 6px; flex-wrap: wrap; }
-.tabs button {
-  border: 1px solid var(--line); background: transparent; color: var(--ink);
-  padding: 6px 12px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 13px;
-}
-.tabs button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 /* página rolável: painel lateral fixo, coluna principal rola */
 /* o painel lateral acompanha a altura da página (até o fim do gráfico) */
@@ -225,3 +219,40 @@ code { font-size: 12px; background: var(--bg); padding: 1px 4px; border-radius: 
 .sit-novo { color: #16a34a; font-weight: 600; }
 .sit-fora { color: #dc2626; font-weight: 600; }
 .sit-ok { color: var(--muted, #6b7280); }
+
+/* ---------- modos: Explorar eleição / Comparar candidatos ---------- */
+.tabs { display: flex; gap: 2px; padding: 8px 14px 0; border-bottom: 1px solid var(--line); background: var(--panel); position: sticky; top: 0; z-index: 2; }
+.tabs button { flex: 1; white-space: nowrap; border-radius: 0; background: none; border: 0; border-bottom: 3px solid transparent; padding: 10px 4px 9px; font: inherit; font-weight: 600; font-size: 13px; color: var(--muted); cursor: pointer; }
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.tabs button:hover { color: var(--ink); }
+.tabs .badge { display: inline-block; min-width: 18px; padding: 0 5px; margin-left: 4px; border-radius: 9px; background: var(--accent); color: var(--panel); font-size: 11px; line-height: 18px; }
+
+/* cartões de eleição (modo Explorar) */
+.ele-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.ele-card { position: relative; text-align: left; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 9px; padding: 8px 30px 8px 10px; font: inherit; cursor: pointer; }
+.ele-card b { display: block; font-size: 13.5px; }
+.ele-card span { font-size: 11.5px; color: var(--muted); }
+.ele-card:hover { border-color: var(--accent); }
+.ele-card[aria-pressed="true"] { border: 2px solid var(--accent); background: var(--accent-soft); padding: 7px 29px 7px 9px; }
+.ele-card[aria-pressed="true"] span { color: var(--accent); }
+.ele-card .mais { position: absolute; top: 6px; right: 6px; width: 22px; height: 22px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--muted); font-size: 14px; line-height: 20px; text-align: center; }
+.ele-card .mais:hover { border-color: var(--accent); color: var(--accent); }
+.ele-card[aria-pressed="true"] .mais { background: var(--accent); border-color: var(--accent); color: var(--panel); }
+
+/* cartões da comparação: faixa com a eleição na cor do candidato */
+.chips .chip { padding: 0; border-left-width: 1px; overflow: hidden; }
+.chip .band { display: flex; align-items: center; gap: 6px; padding: 5px 8px; background: color-mix(in srgb, var(--c) 22%, var(--panel)); font-size: 11.5px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; }
+.chip .band .dot { flex: none; }
+.chip .band .x { margin-left: auto; background: none; border: 0; color: var(--muted); cursor: pointer; font-size: 16px; line-height: 1; padding: 0 2px; }
+.chip .body { padding: 6px 8px 8px; }
+.chip .body .chip-top .nm { font-size: 14.5px; }
+
+/* o que está sendo analisado, sobre o mapa */
+.contexto {
+  position: absolute; top: 10px; left: 56px; right: 60px; z-index: 500; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px;
+  background: color-mix(in srgb, var(--panel) 94%, transparent); border: 1px solid var(--line); border-radius: 10px; padding: 8px 14px; pointer-events: none; width: fit-content; max-width: calc(100% - 116px);
+}
+.contexto .k { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.contexto .p { display: inline-flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 700; }
+.contexto .seta { color: var(--muted); font-weight: 700; }
+.contexto .w { font-size: 12px; color: var(--muted); }

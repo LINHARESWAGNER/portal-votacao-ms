@@ -57,6 +57,9 @@
     muns: new Set(),            // municípios selecionados (vazio = todos do recorte)
     partidos: new Set(),        // siglas selecionadas (vazio = todos)
     series: [], seq: 0,         // comparação: [{ds, nr, color, ord, votes}] em ordem cronológica
+    mode: "explorar",           // "explorar" (uma ou mais eleições) | "comparar" (candidatos)
+    saved: [],                  // comparação guardada enquanto se está em Explorar
+    addDs: null,                // eleição de onde vêm os candidatos para adicionar à comparação
     persons: new Map(),         // nome civil normalizado -> [{ds, nr, v}]
     apelidos: {}, apelidosLocal: {},
     geo: { bairro: null, regiao: null, mun: null, regms: null }, regDe: new Map(),
@@ -162,7 +165,7 @@
   const yearOf = (id) => +meta(id).ano || 0;
   const chrono = (ids) => [...ids].sort((a, b) => yearOf(a) - yearOf(b) || state.datasets.findIndex((d) => d.id === a) - state.datasets.findIndex((d) => d.id === b));
   const selEleicoes = () => chrono(state.eleicoes);
-  const principal = () => { const s = selEleicoes(); return s[s.length - 1]; };   // a mais recente selecionada
+  const principal = () => { const s = involved(); return s[s.length - 1]; };   // a mais recente em análise
   const A = () => D(principal());
 
   // nome exibido: ajuste local > apelidos.json > nome de urna > nome civil
@@ -217,6 +220,11 @@
     for (const [d, nr] of ser.slice(0, MAX_SERIES)) {
       if (state.datasets.some((m) => m.id === d) && D(d).candByNr.has(nr)) await addSeries(d, nr, false);
     }
+    const ad = h.get("a");
+    state.addDs = state.datasets.some((d) => d.id === ad) ? ad : (state.series.length ? state.series[state.series.length - 1].ds : selEleicoes().slice(-1)[0]);
+    // links antigos com candidatos (sem "mo") abrem em Comparar
+    if (h.get("mo") !== "c" && (h.get("mo") === "e" || !state.series.length)) { state.saved = state.series; state.series = []; }
+    else state.mode = "comparar";
     loading(null);
     renderAll(true);
   }
@@ -279,13 +287,14 @@
       onChange(fn) { onChange = fn; },
     };
   }
-  const msEleicao = multiSelect($("#fEleicao"), { allLabel: "Todas", minOne: true });
   const msMun = multiSelect($("#fMun"), { allLabel: "Todos", search: true });
   const msPartido = multiSelect($("#fPartido"), { allLabel: "Todos", search: true });
 
   // ------------------------------------------------------------ recorte
   const onlyCapital = (d) => Object.keys(d.municipios).length === 1 && d.municipios[CAPITAL];
-  const involved = () => (state.series.length ? chrono(new Set(state.series.map((s) => s.ds))) : selEleicoes());
+  const involved = () => (state.mode === "comparar"
+    ? (state.series.length ? chrono(new Set(state.series.map((s) => s.ds))) : [state.addDs])
+    : selEleicoes());
   const capView = () => state.scope === "capital" || (state.muns.size === 1 && state.muns.has(CAPITAL));
   const LEVELS_CAP = [["regioes", "Regiões"], ["bairros", "Bairros"], ["locais", "Locais de votação"]];
   const LEVELS_EST = [["regioes", "Regiões"], ["cidades", "Cidades"], ["bairros", "Bairros"]];
@@ -393,9 +402,66 @@
 
   // ------------------------------------------------------------- render
   function renderAll(fit) {
-    renderControls(); renderChips(); renderCandList();
+    renderMode(); renderControls(); renderChips(); renderCandList();
     state.units = buildUnits();
-    drawMap(fit); renderTable(); renderChart(); updateHash();
+    drawMap(fit); renderContexto(); renderTable(); renderChart(); updateHash();
+  }
+
+  // ------------------------------------------------- modos Explorar / Comparar
+  function setMode(m) {
+    if (m === state.mode) return;
+    if (m === "explorar") { state.saved = state.series; state.series = []; }
+    else {
+      state.series = state.saved; state.saved = [];
+      if (!state.addDs) state.addDs = state.series.length ? state.series[state.series.length - 1].ds : principal();
+    }
+    state.mode = m; state.detail = null; state.sort = { key: null, dir: -1 };
+  }
+  function renderMode() {
+    const cmp = state.mode === "comparar";
+    $("#tabExplorar").setAttribute("aria-selected", String(!cmp));
+    $("#tabComparar").setAttribute("aria-selected", String(cmp));
+    const nc = cmp ? state.series.length : state.saved.length;
+    $("#nCmp").hidden = !nc; $("#nCmp").textContent = nc;
+    $("#pnlExplorar").hidden = cmp; $("#pnlComparar").hidden = !cmp;
+    $("#cmpVazio").hidden = !cmp || state.series.length > 0;
+    $("#addRow").hidden = !cmp;
+    $("#candTitulo").textContent = cmp ? "Adicionar à comparação" : "Candidatos";
+    $("#candDica").textContent = cmp ? "clique no nome" : "clique para comparar";
+    // cartões de eleição
+    // um cargo por linha, anos lado a lado
+    const cargo = (id) => (meta(id).titulo || id).split(" · ")[0].replace(/\s*\d{4}$/, "");
+    const ordCargo = [...new Set(state.datasets.map((d) => cargo(d.id)))];
+    const porCargo = state.datasets.map((d) => d.id).sort((a, b) => ordCargo.indexOf(cargo(a)) - ordCargo.indexOf(cargo(b)) || yearOf(a) - yearOf(b));
+    $("#cards").innerHTML = porCargo.map((id) => {
+      const [t, area] = (meta(id).titulo || id).split(" · "), on = state.eleicoes.has(id);
+      return `<button type="button" class="ele-card" data-ds="${id}" aria-pressed="${on}"><b>${esc(t)}</b><span>${esc(area || "")}</span>` +
+        `<span class="mais" data-mais="${id}" role="button" aria-label="${on ? "Tirar" : "Somar"} ${esc(t)}" title="${on ? "Tirar desta análise" : "Somar a esta análise"}">${on ? "✓" : "+"}</span></button>`;
+    }).join("");
+    $("#addEleicao").innerHTML = chrono(state.datasets.map((d) => d.id)).map((id) =>
+      `<option value="${id}" ${id === state.addDs ? "selected" : ""}>${esc(meta(id).titulo || id)}</option>`).join("");
+  }
+  function renderContexto() {
+    const el = $("#contexto"), lvl = effLevel(), onde = `${whereLabel()} · por ${LVLNAME[lvl].toLowerCase()}`;
+    if (state.mode === "explorar") {
+      el.innerHTML = `<span class="k">Explorando</span>` + selEleicoes().map((id) => `<span class="p">${esc(label(id))}</span>`).join(`<span class="seta">+</span>`) + `<span class="w">${esc(onde)}</span>`;
+      return;
+    }
+    if (!state.series.length) { el.innerHTML = `<span class="k">Comparar</span><span class="w">nenhum candidato escolhido ainda · mostrando ${esc(label(state.addDs))} · ${esc(onde)}</span>`; return; }
+    const pessoa = new Set(state.series.map((s) => normName(D(s.ds).candByNr.get(s.nr)?.[1] || s.nr)));
+    const anos = new Set(state.series.map((s) => yearOf(s.ds)));
+    const sep = anos.size === state.series.length ? "→" : "×";
+    el.innerHTML = `<span class="k">Comparando</span>` + (pessoa.size === 1 ? `<span class="p">${esc(seriesName(state.series[0]))}</span><span class="seta">·</span>` : "") +
+      state.series.map((s) => `<span class="p"><span class="dot" style="--c:${s.color}"></span>${pessoa.size === 1 ? "" : esc(shortName(seriesName(s))) + " · "}${esc(label(s.ds))}</span>`).join(`<span class="seta">${sep}</span>`) +
+      `<span class="w">${esc(onde)}</span>`;
+  }
+  // clique num candidato (lista ou tabela): leva para Comparar e adiciona
+  function onCand(dsId, nr) {
+    if (state.mode === "explorar") {
+      setMode("comparar");
+      if (state.series.some((s) => s.ds === dsId && s.nr === nr)) { renderAll(false); return; }
+    }
+    addSeries(dsId, nr);
   }
 
   function renderControls() {
@@ -410,42 +476,45 @@
     $("#segLevel").innerHTML = opts.map(([v, t]) =>
       `<button data-v="${v}" aria-pressed="${v === lvl}" ${!capView() && state.muns.size === 1 && v !== "bairros" ? "disabled" : ""}>${t}</button>`).join("");
 
-    msEleicao.set(chrono(state.datasets.map((d) => d.id)).map((id) => ({ v: id, t: meta(id).titulo })), state.eleicoes.size === state.datasets.length ? new Set() : state.eleicoes);
+    const fontes = [...new Set([...involved(), ...(state.mode === "comparar" ? [state.addDs] : [])])];
     const muns = new Set();
-    selEleicoes().forEach((id) => Object.keys(D(id).municipios).forEach((m) => {
+    fontes.forEach((id) => Object.keys(D(id).municipios).forEach((m) => {
       if (state.scope === "estado" || (state.scope === "capital" ? m === CAPITAL : m !== CAPITAL)) muns.add(m);
     }));
     [...state.muns].forEach((m) => { if (!muns.has(m)) state.muns.delete(m); });
     msMun.set([...muns].sort((x, y) => x.localeCompare(y, "pt-BR")).map((m) => ({ v: m, t: m })), state.muns, muns.size <= 1);
     const sgs = new Set();
-    selEleicoes().forEach((id) => D(id).partidos.forEach((p) => sgs.add(sigla(p[1]))));
+    fontes.forEach((id) => D(id).partidos.forEach((p) => sgs.add(sigla(p[1]))));
     msPartido.set([...sgs].sort((x, y) => x.localeCompare(y, "pt-BR")).map((s) => ({ v: s, t: s })), state.partidos);
     document.querySelectorAll("#segMetric button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === state.metric)));
   }
 
   function renderChips() {
-    $("#cmpBlock").hidden = !state.series.length;
     $("#chips").innerHTML = state.series.map((s, si) => {
       const d = D(s.ds), c = d.candByNr.get(s.nr);
       const outras = c && s.nr.length > 2 ? (state.persons.get(normName(c[1])) || [])
         .filter((p) => !state.series.some((x) => x.ds === p.ds && x.nr === p.nr))
         .sort((x, y) => yearOf(x.ds) - yearOf(y.ds)) : [];
       return `<li class="chip" style="--c:${s.color}">
-        <div class="chip-top"><span class="nm" title="${esc(c?.[1])}">${esc(seriesName(s))}</span>
-          <span class="v">${fmt.format(seriesTotal(s))}</span>
-          <button class="x" data-rm="${si}" title="Remover">×</button></div>
-        <div class="meta">${esc(label(s.ds))} · ${esc(s.nr)} · ${esc(partySigla(d, s.nr))}</div>
-        ${outras.length ? `<div class="outras">${outras.map((p) =>
-          `<button data-add="${p.ds}:${p.nr}" title="Adicionar à comparação">+ ${esc(label(p.ds))} · ${fmt.format(p.v)}</button>`).join("")}</div>` : ""}
+        <div class="band"><span class="dot"></span>${esc(meta(s.ds).titulo || s.ds)}
+          <button class="x" data-rm="${si}" title="Remover da comparação" aria-label="Remover">×</button></div>
+        <div class="body">
+          <div class="chip-top"><span class="nm" title="${esc(c?.[1])}">${esc(seriesName(s))}</span>
+            <span class="v">${fmt.format(seriesTotal(s))}</span></div>
+          <div class="meta">${esc(s.nr)} · ${esc(partySigla(d, s.nr))}</div>
+          ${outras.length ? `<div class="outras"><span class="muted small">também concorreu:</span>${outras.map((p) =>
+            `<button data-add="${p.ds}:${p.nr}" title="Adicionar à comparação">+ ${esc(label(p.ds))} · ${fmt.format(p.v)}</button>`).join("")}</div>` : ""}
+        </div>
       </li>`;
     }).join("");
   }
 
   function renderCandList() {
-    const q = normName(state.busca), multi = state.eleicoes.size > 1;
+    const fontes = state.mode === "comparar" ? [state.addDs] : selEleicoes();
+    const q = normName(state.busca), multi = fontes.length > 1;
     const sel = new Map(state.series.map((s) => [s.ds + ":" + s.nr, s.color]));
     let items = [];
-    selEleicoes().forEach((id) => {
+    fontes.forEach((id) => {
       const d = D(id);
       rankOf(d).forEach(([nr, v]) => {
         const c = d.candByNr.get(nr); if (!c) return;
@@ -859,7 +928,10 @@
   function updateHash() {
     const p = new URLSearchParams();
     p.set("e", selEleicoes().join(","));
-    if (state.series.length) p.set("s", state.series.map((s) => `${s.ds}:${s.nr}`).join(","));
+    const ser = state.mode === "comparar" ? state.series : state.saved;
+    if (ser.length) p.set("s", ser.map((s) => `${s.ds}:${s.nr}`).join(","));
+    p.set("mo", state.mode === "comparar" ? "c" : "e");
+    if (state.mode === "comparar" && state.addDs) p.set("a", state.addDs);
     if (state.scope !== "estado") p.set("g", state.scope);
     if (state.level !== "cidades") p.set("n", state.level);
     if (state.levelCap !== "regioes") p.set("nc", state.levelCap);
@@ -879,19 +951,34 @@
     const blob = new Blob(["﻿" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = `votacao_${selEleicoes().join("-")}_${state.scope}_${effLevel()}${state.series.length ? "_comparacao" : ""}.csv`;
+    a.download = `votacao_${involved().join("-")}_${state.scope}_${effLevel()}${state.series.length ? "_comparacao" : ""}.csv`;
     a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   }
 
   // ------------------------------------------------------------- eventos
-  msEleicao.onChange((sel) => {
-    state.eleicoes = sel.size ? sel : new Set(state.datasets.map((d) => d.id));
+  $(".tabs").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-mode]"); if (!b) return;
+    setMode(b.dataset.mode); renderAll(true);
+  });
+  $("#cards").addEventListener("click", (e) => {
+    const mais = e.target.closest("[data-mais]"), card = e.target.closest("[data-ds]");
+    if (!card) return;
+    const id = card.dataset.ds;
+    if (mais) {
+      if (state.eleicoes.has(id)) { if (state.eleicoes.size > 1) state.eleicoes.delete(id); }
+      else state.eleicoes.add(id);
+    } else state.eleicoes = new Set([id]);
     state.detail = null; state.sort = { key: null, dir: -1 };
     renderAll(true);
   });
+  $("#addEleicao").addEventListener("change", (e) => {
+    state.addDs = e.target.value;
+    if (!state.series.length) { state.detail = null; renderAll(true); }
+    else { renderControls(); renderCandList(); renderContexto(); updateHash(); }
+  });
   msMun.onChange((sel) => { state.muns = sel; state.detail = null; state.sort = { key: null, dir: -1 }; renderAll(true); });
   msPartido.onChange((sel) => { state.partidos = sel; renderCandList(); updateHash(); });
-  $("#listaCand").addEventListener("click", (e) => { const li = e.target.closest("li[data-nr]"); if (li) addSeries(li.dataset.ds, li.dataset.nr); });
+  $("#listaCand").addEventListener("click", (e) => { const li = e.target.closest("li[data-nr]"); if (li) onCand(li.dataset.ds, li.dataset.nr); });
   $("#chips").addEventListener("click", (e) => {
     const rm = e.target.closest("[data-rm]"), ad = e.target.closest("[data-add]");
     if (rm) { state.series.splice(+rm.dataset.rm, 1); renderAll(false); }
@@ -923,7 +1010,7 @@
   $("#tabela tbody").addEventListener("click", (e) => {
     const tr = e.target.closest("tr"); if (!tr) return;
     const r = state.rows[+tr.dataset.ri]; if (!r) return;
-    if (r._nr) { addSeries(r._ds, r._nr); return; }
+    if (r._nr) { onCand(r._ds, r._nr); return; }
     if (r._u) onUnit(r._u);
   });
 
