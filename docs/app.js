@@ -852,10 +852,36 @@
     $("#chartSub").textContent = all.length > CHART_MAX
       ? `Mostrando as ${CHART_MAX} primeiras linhas, na ordem da tabela (clique no cabeçalho da tabela para mudar a ordem).`
       : "Mesmas linhas e ordem da tabela.";
-    const ink = cssVar("--muted") || "#66706b", grid = cssVar("--line") || "#e2e5e0";
+    const ink = cssVar("--muted") || "#66706b", grid = cssVar("--line") || "#e2e5e0", txt = cssVar("--ink") || "#1b1f1d";
+    // rótulo de cada barra: número inteiro (ou % com 1 casa); deitado se cabe na largura da barra, em pé se não
+    const rotulo = (v) => (m === "p" ? fmtPct(v) : fmt.format(Math.round(v)));
+    const FONT = "600 11px Inter, system-ui, sans-serif";
+    const cv = document.createElement("canvas").getContext("2d"); cv.font = FONT;
+    let maxV = 0, maxW = 0;
+    datasets.forEach((d) => d.data.forEach((v) => { if (v > 0) { maxV = Math.max(maxV, v); maxW = Math.max(maxW, cv.measureText(rotulo(v)).width); } }));
+    const box = $("#chart").parentElement, plotW = Math.max(200, box.clientWidth - 70), plotH = Math.max(150, box.clientHeight - 130);
+    const barW = (plotW / Math.max(1, rows.length)) * 0.8 * 0.9 / datasets.length;
+    const deitado = maxW + 6 <= barW;
+    const folga = (deitado ? 18 : maxW + 10) / plotH;   // fração da altura reservada acima da barra mais alta
+    const rotulos = {
+      id: "rotulos",
+      afterDatasetsDraw(c) {
+        const ctx = c.ctx; ctx.save(); ctx.font = FONT; ctx.fillStyle = txt;
+        c.data.datasets.forEach((d, di) => {
+          const meta = c.getDatasetMeta(di); if (meta.hidden) return;
+          meta.data.forEach((bar, i) => {
+            const v = d.data[i]; if (!(v > 0)) return;
+            const t = rotulo(v);
+            if (deitado) { ctx.textAlign = "center"; ctx.textBaseline = "bottom"; ctx.fillText(t, bar.x, bar.y - 3); }
+            else { ctx.save(); ctx.translate(bar.x, bar.y - 4); ctx.rotate(-Math.PI / 2); ctx.textAlign = "left"; ctx.textBaseline = "middle"; ctx.fillText(t, 0, 0); ctx.restore(); }
+          });
+        });
+        ctx.restore();
+      },
+    };
     if (chart) chart.destroy();
     chart = new window.Chart($("#chart"), {
-      type: "bar", data: { labels, datasets },
+      type: "bar", data: { labels, datasets }, plugins: [rotulos],
       options: {
         responsive: true, maintainAspectRatio: false, animation: { duration: 250 },
         interaction: { mode: "index", intersect: false },
@@ -866,7 +892,7 @@
         scales: {
           x: { ticks: { color: ink, autoSkip: false, maxRotation: 60, minRotation: 0, font: { size: 11 },
             callback: function (v) { const s = this.getLabelForValue(v); return s.length > 22 ? s.slice(0, 21) + "…" : s; } }, grid: { display: false } },
-          y: { beginAtZero: true, ticks: { color: ink, callback: (v) => (m === "p" ? v + "%" : fmt.format(v)) }, grid: { color: grid } },
+          y: { beginAtZero: true, afterDataLimits: (sc) => { if (maxV > 0) sc.max = Math.max(sc.max, maxV / Math.max(0.35, 1 - folga)); }, ticks: { color: ink, callback: (v) => (m === "p" ? v + "%" : fmt.format(v)) }, grid: { color: grid } },
         },
       },
     });
