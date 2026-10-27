@@ -15,6 +15,10 @@
   const pct = (a, b) => (b ? (100 * a / b) : 0);
   const fmtPct = (x) => x.toLocaleString("pt-BR", { maximumFractionDigits: 1, minimumFractionDigits: 1 }) + "%";
   const fmtDelta = (x) => (x > 0 ? "+" : "") + fmt.format(x);
+  // taxa de crescimento (%) da eleição mais antiga (a) para a mais recente (b); null quando a base é zero
+  const growth = (a, b) => (a > 0 ? (100 * (b - a)) / a : null);
+  const fmtGrowth = (g, a, b) => (g == null ? (b > 0 ? "novo" : "—") : (g > 0 ? "+" : "") + fmtPct(g));
+  const growthCls = (g, b) => ((g == null ? b > 0 : g > 0) ? "pos-d" : g < 0 ? "neg-d" : "");
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const normName = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toUpperCase().replace(/[^A-Z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
   const shortName = (s) => { const p = String(s).split(" "); return p.length > 2 ? `${p[0]} ${p[p.length - 1]}` : s; };
@@ -554,7 +558,7 @@
     if (n) {
       body = `<table>${state.series.map((s, si) => `<tr><td><span class="dot" style="--c:${s.color}"></span>${esc(shortName(seriesName(s)))}</td>` +
         `<td>${esc(label(s.ds))}</td><td class="n">${fmt.format(u.v[si])}</td><td class="n">${u.sh[si] != null ? fmtPct(u.sh[si]) : "—"}</td></tr>`).join("")}` +
-        (n === 2 ? `<tr><td colspan="2"><b>${esc(deltaLabel())}</b></td><td class="n"><b>${fmtDelta(u.v[1] - u.v[0])}</b></td><td></td></tr>` : "") + `</table>`;
+        (n === 2 ? `<tr><td colspan="2"><b>${esc(deltaLabel())}</b></td><td class="n"><b>${fmtDelta(u.v[1] - u.v[0])}</b></td><td class="n ${growthCls(growth(u.v[0], u.v[1]), u.v[1])}"><b>${fmtGrowth(growth(u.v[0], u.v[1]), u.v[0], u.v[1])}</b></td></tr>` : "") + `</table>`;
     } else {
       body = `<div class="small muted" style="margin:2px 0">${esc(label(p))}</div><table>${unitTop(a, u).slice(0, 6).map(([nr, v]) =>
         `<tr><td>${esc(shortName(displayName(p, nr)))}</td><td class="n">${fmt.format(v)}</td><td class="n">${fmtPct(pct(v, u.val[p] || 0))}</td></tr>`).join("")}</table>`;
@@ -637,7 +641,7 @@
       } else {
         sub = (n === 1 ? "% = participação nos votos válidos de cada linha · % cand. = parte da votação total do candidato"
           : "% = participação nos votos válidos da eleição de cada candidato, na mesma linha") +
-          (n === 2 ? ` · ${deltaLabel()} = eleição mais recente menos a mais antiga` : "") + " · colunas em ordem cronológica";
+          (n === 2 ? ` · ${deltaLabel()} = eleição mais recente menos a mais antiga · Cresc. % = Δ votos ÷ votos da eleição mais antiga ("novo" = não tinha votos antes)` : "") + " · colunas em ordem cronológica";
         cols = [...geoCols];
         const multiDs = involved().length > 1;
         state.series.forEach((s, si) => {
@@ -645,13 +649,13 @@
           cols.push([`p${si}`, "%", true, s.color]);
         });
         if (n === 1) cols.push(["pc", "% cand.", true]);
-        if (n === 2) cols.push(["d", deltaLabel(), true]);
+        if (n === 2) cols.push(["d", deltaLabel(), true], ["dg", "Cresc. %", true]);
         const totS = state.series.map((s) => seriesTotal(s));
         rows = units.filter((u) => u.v.some((x) => x > 0)).map((u) => {
           const r = { m: u.m, b: u.b, r: u.r || "", bb: u.bb || "", _u: u };
           state.series.forEach((s, si) => { r[`v${si}`] = u.v[si]; r[`p${si}`] = u.sh[si]; });
           if (n === 1) r.pc = pct(u.v[0], totS[0]);
-          if (n === 2) r.d = u.v[1] - u.v[0];
+          if (n === 2) { r.d = u.v[1] - u.v[0]; r.dg = growth(u.v[0], u.v[1]); r._g = [u.v[0], u.v[1]]; }
           return r;
         });
         total = {};
@@ -660,7 +664,7 @@
           total[`p${si}`] = pct(totS[si], units.reduce((acc, u) => acc + (u.val[s.ds] || 0), 0));
         });
         if (n === 1) total.pc = 100;
-        if (n === 2) total.d = totS[1] - totS[0];
+        if (n === 2) { total.d = totS[1] - totS[0]; total.dg = growth(totS[0], totS[1]); total._g = [totS[0], totS[1]]; }
       }
       const defKey = n ? "v0" : (eles.length > 1 ? `v_${eles.length - 1}` : "v");
       const k = state.sort.key && cols.some((c) => c[0] === state.sort.key) ? state.sort.key : defKey;
@@ -683,6 +687,7 @@
     $("#tabela thead").innerHTML = "<tr>" + cols.map(([key, t, num]) => `<th data-k="${key}" class="${num ? "n" : ""}">${t}</th>`).join("") + "</tr>";
     $("#tabela tbody").innerHTML = state.rows.slice(0, 2500).map((r, ri) => `<tr data-ri="${ri}" class="${r._total ? "total" : ""}">` + cols.map(([key, , num, color]) => {
       let v = r[key];
+      if (key === "dg") return `<td class="n ${growthCls(v, r._g[1])}">${fmtGrowth(v, r._g[0], r._g[1])}</td>`;
       if (v == null) v = "";
       else if (/^p\d?$/.test(key)) v = (!r._total ? `<span class="pct-bar" style="width:${Math.round(28 * v / maxP[key])}px;${color ? `--c:${color}` : ""}"></span>` : "") + fmtPct(v);
       else if (key === "pc") v = fmtPct(v);
@@ -809,9 +814,10 @@
   }
 
   function exportCSV() {
+    const v0 = (r) => r.dg;
     const strip = (h) => h.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&");
     const lines = [state.cols.map((c) => strip(c[1])), ...state.rows.map((r) => state.cols.map(([k]) => {
-      const v = r[k];
+      const v = k === "dg" && v0(r) == null ? fmtGrowth(null, ...r._g) : r[k];
       return typeof v === "number" ? String(Math.round(v * 100) / 100).replace(".", ",") : v ?? "";
     }))].map((row) => row.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(";"));
     const blob = new Blob(["﻿" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });
