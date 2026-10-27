@@ -19,6 +19,13 @@
   const growth = (a, b) => (a > 0 ? (100 * (b - a)) / a : null);
   const fmtGrowth = (g, a, b) => (g == null ? (b > 0 ? "novo" : "—") : (g > 0 ? "+" : "") + fmtPct(g));
   const growthCls = (g, b) => ((g == null ? b > 0 : g > 0) ? "pos-d" : g < 0 ? "neg-d" : "");
+  // situação do local de votação entre as duas eleições comparadas (só quando são eleições diferentes)
+  function situacaoLocal(u) {
+    const [a, b] = state.series.map((s) => s.ds);
+    if (state.series.length !== 2 || u.g !== "local" || a === b) return null;
+    const ya = yearOf(a), yb = yearOf(b), ta = !!u.nl[a], tb = !!u.nl[b];
+    return ta && tb ? { k: "ok", t: "nas duas eleições" } : tb ? { k: "novo", t: `novo em ${yb}` } : { k: "fora", t: `desativado em ${yb}` };
+  }
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const normName = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toUpperCase().replace(/[^A-Z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
   const shortName = (s) => { const p = String(s).split(" "); return p.length > 2 ? `${p[0]} ${p[p.length - 1]}` : s; };
@@ -130,7 +137,7 @@
         const d = lat != null && e.lat != null ? distM(lat, lon, e.lat, e.lon) : null;
         const sim = simNome(tk, e.tk), mesmoId = e.ids.has(id);
         let score = -1;
-        if (mesmoId && (d == null || d < 800)) score = 3 + sim;
+        if (mesmoId && (d == null || d < 800 || sim >= 0.8)) score = 3 + sim;   // mesmo número e mesmo nome: o TSE só corrigiu a coordenada
         else if (d != null && ((d <= 200 && sim >= 0.5) || (d <= 40 && sim >= 0.25))) score = 1 + sim - d / 1000;
         if (score > bestScore) { bestScore = score; best = e; }
       };
@@ -597,7 +604,8 @@
     if (n) {
       body = `<table>${state.series.map((s, si) => `<tr><td><span class="dot" style="--c:${s.color}"></span>${esc(shortName(seriesName(s)))}</td>` +
         `<td>${esc(label(s.ds))}</td><td class="n">${fmt.format(u.v[si])}</td><td class="n">${u.sh[si] != null ? fmtPct(u.sh[si]) : "—"}</td></tr>`).join("")}` +
-        (n === 2 ? `<tr><td colspan="2"><b>${esc(deltaLabel())}</b></td><td class="n"><b>${fmtDelta(u.v[1] - u.v[0])}</b></td><td class="n ${growthCls(growth(u.v[0], u.v[1]), u.v[1])}"><b>${fmtGrowth(growth(u.v[0], u.v[1]), u.v[0], u.v[1])}</b></td></tr>` : "") + `</table>`;
+        (n === 2 ? `<tr><td colspan="2"><b>${esc(deltaLabel())}</b></td><td class="n"><b>${fmtDelta(u.v[1] - u.v[0])}</b></td><td class="n ${growthCls(growth(u.v[0], u.v[1]), u.v[1])}"><b>${fmtGrowth(growth(u.v[0], u.v[1]), u.v[0], u.v[1])}</b></td></tr>` : "") + `</table>` +
+        ((st) => (st && st.k !== "ok" ? `<div class="small sit-${st.k}" style="margin-top:4px">Local ${esc(st.t)} (cadastro do TSE)</div>` : ""))(situacaoLocal(u));
     } else {
       body = `<div class="small muted" style="margin:2px 0">${esc(label(p))}</div><table>${unitTop(a, u).slice(0, 6).map(([nr, v]) =>
         `<tr><td>${esc(shortName(displayName(p, nr)))}</td><td class="n">${fmt.format(v)}</td><td class="n">${fmtPct(pct(v, u.val[p] || 0))}</td></tr>`).join("")}</table>`;
@@ -689,12 +697,15 @@
         });
         if (n === 1) cols.push(["pc", "% cand.", true]);
         if (n === 2) cols.push(["d", deltaLabel(), true], ["dg", "Cresc. %", true]);
+        const comSit = n === 2 && lvl === "locais" && state.series[0].ds !== state.series[1].ds;
+        if (comSit) cols.push(["sit", "Situação"]);
         const totS = state.series.map((s) => seriesTotal(s));
         rows = units.filter((u) => u.v.some((x) => x > 0)).map((u) => {
           const r = { m: u.m, b: u.b, r: u.r || "", bb: u.bb || "", _u: u };
           state.series.forEach((s, si) => { r[`v${si}`] = u.v[si]; r[`p${si}`] = u.sh[si]; });
           if (n === 1) r.pc = pct(u.v[0], totS[0]);
           if (n === 2) { r.d = u.v[1] - u.v[0]; r.dg = growth(u.v[0], u.v[1]); r._g = [u.v[0], u.v[1]]; }
+          if (comSit) { const st = situacaoLocal(u); r.sit = st.t; r._sk = st.k; }
           return r;
         });
         total = {};
@@ -703,6 +714,11 @@
           total[`p${si}`] = pct(totS[si], units.reduce((acc, u) => acc + (u.val[s.ds] || 0), 0));
         });
         if (n === 1) total.pc = 100;
+        if (comSit) {
+          const cnt = (k) => units.filter((u) => situacaoLocal(u).k === k).length;
+          const [ya, yb] = state.series.map((s) => yearOf(s.ds));
+          sub += ` · Situação = presença do local no cadastro do TSE: ${fmt.format(cnt("novo"))} locais novos em ${yb} e ${fmt.format(cnt("fora"))} desativados (existiam em ${ya}, não em ${yb})`;
+        }
         if (n === 2) { total.d = totS[1] - totS[0]; total.dg = growth(totS[0], totS[1]); total._g = [totS[0], totS[1]]; }
       }
       const defKey = n ? "v0" : (eles.length > 1 ? `v_${eles.length - 1}` : "v");
@@ -727,6 +743,7 @@
     $("#tabela tbody").innerHTML = state.rows.slice(0, 2500).map((r, ri) => `<tr data-ri="${ri}" class="${r._total ? "total" : ""}">` + cols.map(([key, , num, color]) => {
       let v = r[key];
       if (key === "dg") return `<td class="n ${growthCls(v, r._g[1])}">${fmtGrowth(v, r._g[0], r._g[1])}</td>`;
+      if (key === "sit") return `<td class="sit-${r._sk || ""}">${esc(v || "")}</td>`;
       if (v == null) v = "";
       else if (/^p\d?$/.test(key)) v = (!r._total ? `<span class="pct-bar" style="width:${Math.round(28 * v / maxP[key])}px;${color ? `--c:${color}` : ""}"></span>` : "") + fmtPct(v);
       else if (key === "pc") v = fmtPct(v);

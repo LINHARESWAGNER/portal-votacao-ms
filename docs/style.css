@@ -220,3 +220,8 @@ code { font-size: 12px; background: var(--bg); padding: 1px 4px; border-radius: 
 
 .row > * { min-width: 0; }
 @media (max-width: 900px) { .side { min-height: 0; } .block.grow { min-height: 0; } }
+
+/* situação do local de votação entre duas eleições */
+.sit-novo { color: #16a34a; font-weight: 600; }
+.sit-fora { color: #dc2626; font-weight: 600; }
+.sit-ok { color: var(--muted, #6b7280); }
