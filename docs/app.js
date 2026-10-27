@@ -456,10 +456,14 @@
       `<span class="w">${esc(onde)}</span>`;
   }
   // clique num candidato (lista ou tabela): leva para Comparar e adiciona
+  // vindo de Explorar, começa uma comparação nova só com esse candidato (não mistura com a anterior)
   function onCand(dsId, nr) {
     if (state.mode === "explorar") {
+      const tinha = state.saved.length;
+      state.saved = [];
       setMode("comparar");
-      if (state.series.some((s) => s.ds === dsId && s.nr === nr)) { renderAll(false); return; }
+      state.addDs = dsId;
+      if (tinha) toast("Nova comparação iniciada com este candidato. A comparação anterior foi substituída.");
     }
     addSeries(dsId, nr);
   }
