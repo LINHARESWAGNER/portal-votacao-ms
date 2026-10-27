@@ -107,8 +107,47 @@
       bairroIdx: new Map(bairros.map((b, i) => [b.m + "|" + b.b, i])),
       votes: new Map(),
     };
+    casarLocais(locais, id);
     state.cache.set(id, D);
     return D;
+  }
+
+  // O mesmo local de votação muda um pouco de coordenada, de nome ou até de número entre eleições.
+  // Cada local recebe uma chave comum (l._ck): mesmo número do TSE e perto, ou bem perto com nome parecido.
+  const LOC = { list: [], grid: new Map(), byId: new Map() };
+  const STOP = new Set("ESCOLA EST ESTADUAL MUNICIPAL MUN CENTRO EDUCACAO EDUCACIONAL INFANTIL ENSINO FUNDAMENTAL MEDIO PROF PROFA PROFESSOR PROFESSORA DONA DOM SAO COLEGIO INSTITUTO UNIDADE POLO DOS DAS".split(" "));
+  const toks = (s) => new Set(normName(s).split(" ").filter((w) => w.length > 2 && !STOP.has(w)));
+  const simNome = (a, b) => { if (!a.size || !b.size) return 0; let k = 0; a.forEach((w) => b.has(w) && k++); return k / Math.min(a.size, b.size); };
+  const distM = (a, b, c, d) => { const x = (d - b) * 111320 * Math.cos((a * Math.PI) / 180), y = (c - a) * 110540; return Math.hypot(x, y); };
+  const cell = (lat, lon) => Math.floor(lat / 0.003) + ":" + Math.floor(lon / 0.003);
+  function casarLocais(locais, dsId) {
+    const usados = new Set();
+    locais.forEach((l) => {
+      const lat = l[L.LAT], lon = l[L.LON], tk = toks(l[L.NOME]), id = l[L.ID];
+      let best = null, bestScore = -1;
+      const avalia = (e) => {
+        if (usados.has(e.i)) return;
+        const d = lat != null && e.lat != null ? distM(lat, lon, e.lat, e.lon) : null;
+        const sim = simNome(tk, e.tk), mesmoId = e.ids.has(id);
+        let score = -1;
+        if (mesmoId && (d == null || d < 800)) score = 3 + sim;
+        else if (d != null && ((d <= 200 && sim >= 0.5) || (d <= 40 && sim >= 0.25))) score = 1 + sim - d / 1000;
+        if (score > bestScore) { bestScore = score; best = e; }
+      };
+      (LOC.byId.get(id) || []).forEach(avalia);
+      if (lat != null) {
+        const [ci, cj] = cell(lat, lon).split(":").map(Number);
+        for (let di = -1; di <= 1; di++) for (let dj = -1; dj <= 1; dj++) (LOC.grid.get(ci + di + ":" + (cj + dj)) || []).forEach(avalia);
+      }
+      if (!best) {
+        best = { i: LOC.list.length, lat, lon, tk, ids: new Set() };
+        LOC.list.push(best);
+        if (lat != null) { const c = cell(lat, lon); if (!LOC.grid.has(c)) LOC.grid.set(c, []); LOC.grid.get(c).push(best); }
+      }
+      if (!best.ids.has(id)) { best.ids.add(id); if (!LOC.byId.has(id)) LOC.byId.set(id, []); LOC.byId.get(id).push(best); }
+      usados.add(best.i);
+      l._ck = best.i;
+    });
   }
   const D = (id) => state.cache.get(id);
   const meta = (id) => state.datasets.find((d) => d.id === id) || {};
@@ -268,7 +307,7 @@
       const r = regTur(m);
       return { k: "RT|" + r, m: r, b: r, g: "regms" };
     }
-    if (lvl === "locais") return { k: "L|" + (coordKey(l) || l[L.ID]), m, b: l[L.NOME], bb: l[L.BO] || l[L.BAIRRO], g: "local" };
+    if (lvl === "locais") return { k: "L|" + (l._ck ?? coordKey(l) ?? l[L.ID]), m, b: l[L.NOME], bb: l[L.BO] || l[L.BAIRRO], g: "local" };
     if (l[L.BO]) return { k: "B|" + m + "|" + l[L.BO], m, b: l[L.BO], r: cg ? l[L.REG] : regTur(m), g: "bairro" };
     return { k: m + "|" + l[L.BAIRRO], m, b: l[L.BAIRRO], g: "tse" };
   }
