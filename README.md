@@ -1,4 +1,4 @@
-# Portal de Votação MS por Bairro
+# Votação MS
 
 Mapa e rankings de votação por **local de votação** e **bairro** em Mato Grosso do Sul,
 a partir do Portal de Dados Abertos do TSE.

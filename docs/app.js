@@ -343,7 +343,7 @@
 
   // ------------------------------------------------------------- render
   function renderAll(fit) {
-    renderControls(); renderKPIs(); renderChips(); renderCandList();
+    renderControls(); renderChips(); renderCandList();
     state.units = buildUnits();
     drawMap(fit); renderTable(); renderChart(); updateHash();
   }
@@ -371,20 +371,6 @@
     selEleicoes().forEach((id) => D(id).partidos.forEach((p) => sgs.add(sigla(p[1]))));
     msPartido.set([...sgs].sort((x, y) => x.localeCompare(y, "pt-BR")).map((s) => ({ v: s, t: s })), state.partidos);
     document.querySelectorAll("#segMetric button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === state.metric)));
-  }
-
-  function renderKPIs() {
-    let validos = 0, eleit = 0, nLoc = 0, bn = 0;
-    A().locais.forEach((l) => {
-      if (!munIn(l[L.MUN])) return;
-      nLoc++; validos += l[L.VALIDOS]; eleit += l[L.ELEIT]; bn += l[L.BRANCOS] + l[L.NULOS];
-    });
-    const k = [[fmt.format(validos), "votos válidos"], [fmt.format(eleit), "eleitores aptos"],
-      [fmt.format(nLoc), "locais de votação"], [fmt.format(bn), "brancos + nulos"]];
-    $("#kpis").innerHTML = k.map(([b, s]) => `<div class="kpi"><b>${b}</b><span>${s}</span></div>`).join("");
-    const nota = $("#kpiNota");
-    nota.hidden = state.eleicoes.size < 2;
-    nota.textContent = `Números do topo: ${meta(principal()).titulo} (a mais recente selecionada).`;
   }
 
   function renderChips() {
