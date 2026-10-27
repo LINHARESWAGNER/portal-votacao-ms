@@ -17,7 +17,7 @@
   const fmtDelta = (x) => (x > 0 ? "+" : "") + fmt.format(x);
   // taxa de crescimento (%) da eleição mais antiga (a) para a mais recente (b); null quando a base é zero
   const growth = (a, b) => (a > 0 ? (100 * (b - a)) / a : null);
-  const fmtGrowth = (g, a, b) => (g == null ? (b > 0 ? "novo" : "—") : (g > 0 ? "+" : "") + fmtPct(g));
+  const fmtGrowth = (g, a, b) => (g == null ? (b > 0 ? "sem votos antes" : "—") : (g > 0 ? "+" : "") + fmtPct(g));
   const growthCls = (g, b) => ((g == null ? b > 0 : g > 0) ? "pos-d" : g < 0 ? "neg-d" : "");
   // situação do local de votação entre as duas eleições comparadas (só quando são eleições diferentes)
   function situacaoLocal(u) {
@@ -761,7 +761,7 @@
       } else {
         sub = (n === 1 ? "% = participação nos votos válidos de cada linha · % cand. = parte da votação total do candidato"
           : "% = participação nos votos válidos da eleição de cada candidato, na mesma linha") +
-          (n === 2 ? ` · ${deltaLabel()} = eleição mais recente menos a mais antiga · Cresc. % = Δ votos ÷ votos da eleição mais antiga ("novo" = não tinha votos antes)` : "") + " · colunas em ordem cronológica";
+          (n === 2 ? ` · ${deltaLabel()} = eleição mais recente menos a mais antiga · Cresc. % = Δ votos ÷ votos da eleição mais antiga ("sem votos antes" = o candidato teve 0 voto ali na eleição mais antiga, então não há % sobre zero; não quer dizer que o lugar é novo)` : "") + " · colunas em ordem cronológica";
         cols = [...geoCols];
         const multiDs = involved().length > 1;
         state.series.forEach((s, si) => {
@@ -815,7 +815,7 @@
     $("#tabela thead").innerHTML = "<tr>" + cols.map(([key, t, num]) => `<th data-k="${key}" class="${num ? "n" : ""}">${t}</th>`).join("") + "</tr>";
     $("#tabela tbody").innerHTML = state.rows.slice(0, 2500).map((r, ri) => `<tr data-ri="${ri}" class="${r._total ? "total" : ""}">` + cols.map(([key, , num, color]) => {
       let v = r[key];
-      if (key === "dg") return `<td class="n ${growthCls(v, r._g[1])}">${fmtGrowth(v, r._g[0], r._g[1])}</td>`;
+      if (key === "dg") return `<td class="n ${growthCls(v, r._g[1])}"${v == null && r._g[1] > 0 ? ` title="Na eleição mais antiga o candidato teve 0 voto aqui; não dá para calcular % de crescimento sobre zero."` : ""}>${fmtGrowth(v, r._g[0], r._g[1])}</td>`;
       if (key === "sit") return `<td class="sit-${r._sk || ""}">${esc(v || "")}</td>`;
       if (v == null) v = "";
       else if (/^p\d?$/.test(key)) v = (!r._total ? `<span class="pct-bar" style="width:${Math.round(28 * v / maxP[key])}px;${color ? `--c:${color}` : ""}"></span>` : "") + fmtPct(v);
